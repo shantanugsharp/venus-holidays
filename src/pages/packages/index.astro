@@ -187,18 +187,22 @@ const breadcrumbLd = {
           tip.style.top = y + 'px';
           tip.classList.add('show');
         };
+        const hideTip = () => tip.classList.remove('show');
         document.querySelectorAll('.map-state').forEach((path) => {
           path.addEventListener('pointermove', (e) => {
             if (e.pointerType === 'touch') return;
             showTip(path, e.clientX, e.clientY);
           });
-          path.addEventListener('pointerleave', () => tip.classList.remove('show'));
+          path.addEventListener('pointerleave', hideTip);
           path.addEventListener('focus', () => {
+            // Keyboard focus only — a tap also focuses, but must not pin the tooltip.
+            if (!path.matches(':focus-visible')) return;
             const r = path.getBoundingClientRect();
             showTip(path, r.left + r.width / 2, r.top + r.height / 4);
           });
-          path.addEventListener('blur', () => tip.classList.remove('show'));
+          path.addEventListener('blur', hideTip);
         });
+        window.addEventListener('scroll', hideTip, { passive: true });
       }
     }
     document.addEventListener('astro:page-load', initFilters);
