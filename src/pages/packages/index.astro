@@ -165,7 +165,11 @@ const breadcrumbLd = {
             pill.append(x);
             status.append(pill);
           }
-          grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          // Gentle scroll: land with the "Showing <state>" pill at the top,
+          // filters below it and the first result cards peeking in.
+          const anchor = status || grid;
+          const top = anchor.getBoundingClientRect().top + window.scrollY - 84;
+          window.scrollTo({ top, behavior: 'smooth' });
         }
         applyFilters();
       }

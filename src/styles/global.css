@@ -246,14 +246,20 @@ header.site {
 .map-state {
   fill: #eef2ee; stroke: #ffffff; stroke-width: 1;
   transition: fill 0.2s ease, transform 0.25s ease, filter 0.25s ease;
+  outline: none; /* no default blue focus rectangle on tap */
 }
 .map-state.has {
   fill: #8fc7a8; cursor: pointer;
 }
-.map-state.has:hover, .map-state.has:focus-visible {
+.map-state.has:hover {
   fill: var(--accent); transform: translateY(-5px);
   filter: drop-shadow(0 8px 10px rgba(5, 40, 33, 0.35));
-  outline: none;
+}
+/* Keyboard focus gets a clear brand-coloured ring instead */
+.map-state.has:focus-visible {
+  fill: var(--accent); transform: translateY(-5px);
+  stroke: #052821; stroke-width: 2.5;
+  filter: drop-shadow(0 8px 10px rgba(5, 40, 33, 0.35));
 }
 .map-state.selected {
   fill: var(--mustard); transform: translateY(-5px);
