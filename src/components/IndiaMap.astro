@@ -1,0 +1,49 @@
+---
+import { STATES, MAP_W, MAP_H } from '../data/india-map.js';
+import { PKG_STATES } from '../data/state-tours.js';
+import packages from '../data/packages.json';
+
+// trips per state code
+const counts: Record<string, number> = {};
+for (const pkg of packages) {
+  for (const code of PKG_STATES[pkg.id] || []) counts[code] = (counts[code] || 0) + 1;
+}
+const label = (n: number) => (n === 1 ? '1 trip' : `${n} trips`);
+---
+
+<div class="imap-wrap">
+  <div class="imap-scene">
+    <svg
+      class="imap"
+      viewBox={`0 -8 ${MAP_W} ${MAP_H + 24}`}
+      role="group"
+      aria-label="Map of India — select a state to filter tours"
+    >
+      {/* extrusion slab: silhouette shifted down for the 3D thickness */}
+      <g class="imap-base" aria-hidden="true" transform="translate(0 5)">
+        {STATES.map((s) => <path d={s.d} />)}
+      </g>
+      <g class="imap-states">
+        {STATES.map((s) => {
+          const n = counts[s.code] || 0;
+          return (
+            <path
+              class:list={['map-state', { has: n > 0 }]}
+              d={s.d}
+              data-code={s.code}
+              data-name={s.name}
+              data-count={n}
+              role={n > 0 ? 'button' : undefined}
+              tabindex={n > 0 ? 0 : undefined}
+              aria-label={`${s.name}${n > 0 ? ` — ${label(n)}` : ''}`}
+            />
+          );
+        })}
+      </g>
+    </svg>
+  </div>
+  <div class="imap-tip" id="imapTip" aria-hidden="true"></div>
+  <div class="imap-status" id="imapStatus" aria-live="polite">
+    <span class="imap-hint">Tap a highlighted state to see its trips</span>
+  </div>
+</div>

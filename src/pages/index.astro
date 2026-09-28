@@ -1,0 +1,381 @@
+---
+import Base from '../layouts/Base.astro';
+import PackageCard from '../components/PackageCard.astro';
+import packages from '../data/packages.json';
+import { ART } from '../data/art.js';
+import { SITE, SERVICES, waLink, FEATURED, TRENDING } from '../data/site.js';
+
+const featured = FEATURED.map((id) => packages.find((p) => p.id === id)).filter(Boolean);
+const trending = TRENDING.map((id) => packages.find((p) => p.id === id)).filter(Boolean);
+
+const title = 'Venus Holidays — Custom Tour Packages from India | Kashmir, Kerala, Bali & More';
+const description =
+  'Custom holiday packages planned by destination specialists — Kashmir, Kerala, Rajasthan, Goa, Bali, Dubai and more. Transparent pricing, IATA accredited, itinerary on WhatsApp in 30 minutes.';
+
+const faqs = [
+  {
+    q: 'How do I book a tour package with Venus Holidays?',
+    a: 'Send us your destination, rough dates and budget on WhatsApp or through the enquiry form. A destination specialist replies with a custom itinerary within 30 minutes (9 am – 9 pm IST). You reserve with a 25% advance and pay the balance up to 21 days before departure — no payment is taken online.',
+  },
+  {
+    q: 'Are the package prices per person or per couple?',
+    a: 'All prices shown are per person on twin sharing, with taxes included. Final pricing depends on your travel dates, hotel category and group size — we confirm an exact all-inclusive quote before you pay anything.',
+  },
+  {
+    q: 'Can the itineraries be customised?',
+    a: 'Yes — every package on this site is a starting point. Hotels, number of nights, pace and activities are adjusted around your dates and budget. We do not resell fixed third-party itineraries.',
+  },
+  {
+    q: 'Do you arrange flights and visas?',
+    a: 'Yes. We are IATA accredited and can book flights alongside your package, and we assist with visas for international destinations like Dubai, Thailand and Bali (visa on arrival guidance included).',
+  },
+  {
+    q: 'Is Venus Holidays a registered tour operator?',
+    a: 'Yes — Venus Holidays is IATA accredited and recognised by the Ministry of Tourism, Government of India. We have been operating from Mumbai since 2009.',
+  },
+];
+
+const websiteLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: SITE.name,
+  url: Astro.site?.href,
+};
+const faqLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
+
+const destOptions = [
+  'Not sure yet — surprise me',
+  'Kashmir', 'Kerala', 'Rajasthan', 'Himachal', 'Uttarakhand', 'Goa',
+  'Andaman', 'Northeast', 'Sikkim–Darjeeling', 'Char Dham Yatra',
+  'Golden Triangle (Delhi–Agra)', 'South India', 'Gujarat–Saurashtra',
+  'Pilgrimage / Yatra', 'Bali', 'Dubai', 'Thailand', 'Maldives',
+];
+---
+
+<Base title={title} description={description} jsonLd={[websiteLd, faqLd]}>
+  <!-- Hero: planner -->
+  <div class="ota-hero">
+    <video
+      class="hero-video"
+      muted
+      loop
+      playsinline
+      preload="none"
+      aria-hidden="true"
+      tabindex="-1"
+    >
+      <source src="/videos/hero-loop.mp4" type="video/mp4" />
+    </video>
+    <div class="wrap ota-grid">
+      <div class="ota-copy">
+        <p class="eyebrow">Venus Holidays · Est. {SITE.foundingYear}</p>
+        <h1>Holidays built around you. Not a brochure.</h1>
+        <p class="ota-lede">
+          Tell us who's going and where you're dreaming of — a destination specialist crafts a
+          custom itinerary and sends it to you on WhatsApp within 30 minutes.
+        </p>
+        <div class="proof-row">
+          <span class="proof">★ 4.8 · 2,400+ Google reviews</span>
+          <span class="proof">143 trips booked last week</span>
+          <span class="proof">IATA accredited</span>
+        </div>
+      </div>
+      <div class="planner-card">
+        <h2>Start planning</h2>
+        <p class="pl-hint">Free — no login, no spam. Your itinerary lands on WhatsApp.</p>
+        <span class="pl-label" id="pax-label">Who's coming along?</span>
+        <div class="pax-chips" role="group" aria-labelledby="pax-label">
+          <button class="pax-chip active" type="button">Couple</button>
+          <button class="pax-chip" type="button">Family</button>
+          <button class="pax-chip" type="button">Friends</button>
+          <button class="pax-chip" type="button">Solo</button>
+        </div>
+        <label class="pl-label" for="pl-dest">Where to?</label>
+        <select id="pl-dest">
+          {destOptions.map((d) => <option>{d}</option>)}
+        </select>
+        <label class="pl-label" for="pl-when">Rough dates</label>
+        <input id="pl-when" type="text" placeholder="e.g. mid-December, 6 nights" />
+        <button class="btn btn-cta" id="plannerGo" type="button">Get my itinerary →</button>
+        <p class="pl-note">Opens WhatsApp with your trip brief pre-filled.</p>
+      </div>
+    </div>
+    <div class="wrap">
+      <p class="strip-label">Trending with our travellers right now</p>
+      <div class="dest-carousel">
+        <button class="dest-nav prev" id="destPrev" type="button" aria-label="Previous destinations">‹</button>
+        <div class="dest-track" id="destTrack" aria-label="Trending destinations">
+          {trending.map((p) => (
+            <a class="dest-tile" href={`/packages/${p.slug}/`} aria-label={p.name}>
+              {p.photo ? (
+                <img src={p.photo} alt="" width="900" height="520" loading="lazy" decoding="async" />
+              ) : (
+                <Fragment set:html={`<svg viewBox="0 0 400 150" preserveAspectRatio="xMidYMid slice" aria-hidden="true">${ART[p.id]}</svg>`} />
+              )}
+              <span>{p.name.split(' — ')[0]}</span>
+            </a>
+          ))}
+          {/* Duplicate set for the seamless loop — hidden from screen readers & tab order */}
+          {trending.map((p) => (
+            <a class="dest-tile" href={`/packages/${p.slug}/`} aria-hidden="true" tabindex="-1">
+              {p.photo ? (
+                <img src={p.photo} alt="" width="900" height="520" loading="lazy" decoding="async" />
+              ) : (
+                <Fragment set:html={`<svg viewBox="0 0 400 150" preserveAspectRatio="xMidYMid slice" aria-hidden="true">${ART[p.id]}</svg>`} />
+              )}
+              <span>{p.name.split(' — ')[0]}</span>
+            </a>
+          ))}
+        </div>
+        <button class="dest-nav next" id="destNext" type="button" aria-label="Next destinations">›</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Featured packages -->
+  <section class="section" id="packages">
+    <div class="wrap">
+      <div class="section-head-row">
+        <div class="section-head">
+          <p class="eyebrow">Holiday packages</p>
+          <h2>Trips we're proud to put our name on</h2>
+          <p>
+            Every package is customisable — dates, hotels, and pace are adjusted to you.
+            Tap any card for the full day-by-day itinerary.
+          </p>
+        </div>
+        <a class="btn btn-line" href="/packages/">See all packages →</a>
+      </div>
+      <div class="pkg-grid">
+        {featured.map((p) => <PackageCard pkg={p} />)}
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section" id="services">
+    <div class="wrap">
+      <div class="section-head-row">
+        <div class="section-head">
+          <p class="eyebrow">Our services</p>
+          <h2>One office for every kind of trip</h2>
+          <p>
+            Holidays are the headline, but groups are our backbone — schools, colleges,
+            housing societies and companies across Mumbai travel with us every month.
+          </p>
+        </div>
+        <a class="btn btn-line" href="/about/">More about us →</a>
+      </div>
+      <div class="svc-grid">
+        {SERVICES.map((s) => (
+          <div class="svc">
+            <b>{s.name}</b>
+            <p>{s.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section section-alt">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Traveller stories</p>
+        <h2>Word of mouth is our biggest channel</h2>
+      </div>
+      <div class="quote-row">
+        <div class="quote">
+          <div class="quote-mark" aria-hidden="true">“</div>
+          <p>Our Kashmir trip was planned to the last detail — the houseboat they picked was better than anything we shortlisted ourselves. Zero follow-up calls needed.</p>
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <div class="quote-who">Meera &amp; Arjun Sathe<span>Pune · Kashmir Paradise Circuit</span></div>
+        </div>
+        <div class="quote">
+          <div class="quote-mark" aria-hidden="true">“</div>
+          <p>Travelled solo through Ladakh on their itinerary. My trip coordinator checked in daily and reshuffled the plan when Khardung La closed. Felt looked after the whole way.</p>
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <div class="quote-who">Ritika Menon<span>Bengaluru · Ladakh</span></div>
+        </div>
+        <div class="quote">
+          <div class="quote-mark" aria-hidden="true">“</div>
+          <p>Third trip with Venus. They quoted the full price including taxes on day one — the final invoice matched to the rupee. That's why we keep coming back.</p>
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <div class="quote-who">The D'Souza family<span>Mumbai · Kerala &amp; Goa</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Good to know</p>
+        <h2>Questions we get every day</h2>
+      </div>
+      <div class="faq-list">
+        {faqs.map((f) => (
+          <details class="faq-item">
+            <summary>{f.q}</summary>
+            <p>{f.a}</p>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA band -->
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <div class="band">
+        <div>
+          <h2>Tell us where you're dreaming of.</h2>
+          <p>Share your dates and budget on WhatsApp — a destination specialist replies within 30 minutes, 9 am to 9 pm.</p>
+        </div>
+        <a class="btn btn-wa" href={waLink("Hi Venus Holidays! I'd like help planning a trip.")} target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>
+          Start planning on WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    import { waLink } from '../data/site.js';
+
+    function initHome() {
+      /* Hero video: deferred so it never competes with the page's first paint.
+         preload="none" + no autoplay attr = zero bytes downloaded up front; the
+         emerald gradient shows instantly, then the video fades in once ready.
+         Also re-runs after client-side navigations (swapped-in videos don't
+         load or autoplay on their own). */
+      const vid = document.querySelector('.hero-video') as HTMLVideoElement | null;
+      if (vid && !vid.dataset.bound) {
+        vid.dataset.bound = '1';
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+          vid.remove(); // gradient fallback shows instead
+        } else {
+          vid.addEventListener(
+            'error',
+            () => { if (!vid.currentSrc || vid.networkState === 3) vid.remove(); },
+            true
+          );
+          const start = () => {
+            const tryPlay = () => vid.play().catch(() => {});
+            vid.addEventListener('playing', () => vid.classList.add('ready'), { once: true });
+            vid.addEventListener('canplay', tryPlay, { once: true });
+            try { vid.load(); } catch {}
+            tryPlay();
+          };
+          // Wait for the page (images, css) to finish before touching the video.
+          if (document.readyState === 'complete') {
+            setTimeout(start, 50);
+          } else {
+            window.addEventListener('load', () => setTimeout(start, 50), { once: true });
+          }
+        }
+      }
+
+      /* Planner widget → WhatsApp brief */
+      const go = document.getElementById('plannerGo');
+      if (go && !go.dataset.bound) {
+        go.dataset.bound = '1';
+        document.querySelectorAll('.pax-chip').forEach((c) => {
+          c.addEventListener('click', () => {
+            document.querySelectorAll('.pax-chip').forEach((x) => x.classList.remove('active'));
+            c.classList.add('active');
+          });
+        });
+        go.addEventListener('click', () => {
+          const pax = document.querySelector('.pax-chip.active')?.textContent || 'Couple';
+          const dest = (document.getElementById('pl-dest') as HTMLSelectElement).value;
+          const when = (document.getElementById('pl-when') as HTMLInputElement).value.trim() || 'flexible';
+          window.open(
+            waLink('Hi Venus Holidays! Please plan my trip.\nWho: ' + pax + '\nDestination: ' + dest + '\nDates: ' + when),
+            '_blank',
+            'noopener'
+          );
+        });
+      }
+
+      /* Trending carousel: seamless continuous drift + arrow controls.
+         The tile set is rendered twice; when we pass the end of the first set
+         we silently jump back by one set-width, so the loop never ends. */
+      const track = document.getElementById('destTrack');
+      const prev = document.getElementById('destPrev');
+      const next = document.getElementById('destNext');
+      if (!track || !prev || !next || track.dataset.bound) return;
+      track.dataset.bound = '1';
+
+      const setWidth = () => {
+        // Exact width of one tile set = distance between tile 0 and its clone.
+        const tiles = track.querySelectorAll<HTMLElement>('.dest-tile');
+        if (tiles.length && tiles.length % 2 === 0) {
+          return tiles[tiles.length / 2].offsetLeft - tiles[0].offsetLeft;
+        }
+        return track.scrollWidth / 2;
+      };
+      const tileStep = () => {
+        const tile = track.querySelector('.dest-tile');
+        return tile ? tile.getBoundingClientRect().width + 14 : 214;
+      };
+      const wrap = () => {
+        const w = setWidth();
+        if (track.scrollLeft >= w) track.scrollLeft -= w;
+        else if (track.scrollLeft < 0) track.scrollLeft += w;
+      };
+
+      let idleTimer: ReturnType<typeof setTimeout> | null = null;
+      let hovering = false;
+      let manual = false;
+      const holdOff = () => {
+        manual = true;
+        if (idleTimer) clearTimeout(idleTimer);
+        idleTimer = setTimeout(() => { manual = false; }, 2500);
+      };
+
+      prev.addEventListener('click', () => { holdOff(); track.scrollBy({ left: -tileStep() * 2, behavior: 'smooth' }); });
+      next.addEventListener('click', () => { holdOff(); track.scrollBy({ left: tileStep() * 2, behavior: 'smooth' }); });
+      ['wheel', 'touchstart', 'pointerdown'].forEach((ev) => track.addEventListener(ev, holdOff, { passive: true }));
+      track.addEventListener('pointerenter', () => { hovering = true; });
+      track.addEventListener('pointerleave', () => { hovering = false; });
+      track.addEventListener('focusin', () => { hovering = true; });
+      track.addEventListener('focusout', () => { hovering = false; });
+      track.addEventListener('scroll', wrap, { passive: true });
+
+      // Continuous gentle drift (~25 px/s), frame-rate independent.
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      const SPEED = 25; // px per second
+      let last: number | null = null;
+      let carry = 0;
+      function drift(t: number) {
+        if (!track!.isConnected) return; // page was swapped away — end this loop
+        if (last === null) last = t;
+        const dt = Math.min(t - last, 100);
+        last = t;
+        if (!hovering && !manual && !document.hidden) {
+          carry += (SPEED * dt) / 1000;
+          const px = Math.floor(carry);
+          if (px > 0) {
+            carry -= px;
+            track!.scrollLeft += px;
+            wrap();
+          }
+        }
+        requestAnimationFrame(drift);
+      }
+      requestAnimationFrame(drift);
+    }
+
+    document.addEventListener('astro:page-load', initHome);
+  </script>
+</Base>

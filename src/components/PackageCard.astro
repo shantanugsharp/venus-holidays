@@ -1,0 +1,47 @@
+---
+import { ART } from '../data/art.js';
+import { formatINR } from '../data/site.js';
+import { statesFor } from '../data/state-tours.js';
+
+interface Props {
+  pkg: any;
+  eager?: boolean;
+}
+const { pkg, eager = false } = Astro.props;
+const svg = `<svg viewBox="0 0 400 150" preserveAspectRatio="none" aria-hidden="true">${ART[pkg.id] || ''}</svg>`;
+---
+
+<a
+  class="pkg"
+  href={`/packages/${pkg.slug}/`}
+  data-cat={pkg.cat.join(' ')}
+  data-nights={pkg.nights}
+  data-states={statesFor(pkg.id).join(' ')}
+  aria-label={`${pkg.name} — view details`}
+>
+  <div class="pkg-art">
+    {pkg.photo ? (
+      <img
+        src={pkg.photo}
+        alt={`${pkg.name} — ${pkg.route}`}
+        width="900"
+        height="520"
+        loading={eager ? 'eager' : 'lazy'}
+        fetchpriority={eager ? 'high' : undefined}
+        decoding="async"
+      />
+    ) : (
+      <Fragment set:html={svg} />
+    )}
+    <span class="pkg-tag">{pkg.tag}</span>
+  </div>
+  <div class="pkg-body">
+    <h3>{pkg.name}</h3>
+    <div class="pkg-meta"><span>{pkg.nights}N / {pkg.days}D</span><span>{pkg.route}</span></div>
+    <p class="pkg-desc">{pkg.desc}</p>
+    <div class="pkg-foot">
+      <div class="pkg-price"><span>From</span><b>{formatINR(pkg.priceINR)}</b></div>
+      <span class="pkg-open">View details <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    </div>
+  </div>
+</a>

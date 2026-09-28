@@ -1,0 +1,224 @@
+---
+import '../styles/global.css';
+import { ClientRouter } from 'astro:transitions';
+import { SITE, SERVICES, waLink } from '../data/site.js';
+
+interface Props {
+  title: string;
+  description: string;
+  ogImage?: string;
+  ogType?: string;
+  jsonLd?: object[];
+}
+
+const { title, description, ogImage = '/og/default.jpg', ogType = 'website', jsonLd = [] } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const ogImageUrl = new URL(ogImage, Astro.site);
+const path = Astro.url.pathname;
+const isActive = (href: string) =>
+  href === '/' ? path === '/' : path.startsWith(href);
+
+// Present on every page: the business itself.
+const orgLd = {
+  '@context': 'https://schema.org',
+  '@type': 'TravelAgency',
+  '@id': new URL('/#organization', Astro.site).href,
+  name: SITE.name,
+  url: Astro.site?.href,
+  logo: new URL('/img/logo.png', Astro.site).href,
+  image: new URL('/og/default.jpg', Astro.site).href,
+  telephone: SITE.phoneDisplay,
+  email: SITE.email,
+  foundingDate: String(SITE.foundingYear),
+  priceRange: '₹₹',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: SITE.address.street,
+    addressLocality: `${SITE.address.locality}, ${SITE.address.city}`,
+    postalCode: SITE.address.postalCode,
+    addressRegion: SITE.address.region,
+    addressCountry: SITE.address.country,
+  },
+  openingHoursSpecification: [
+    { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'], opens: '10:00', closes: '19:30' },
+    { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Sunday', opens: '11:00', closes: '16:00' },
+  ],
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: 'Travel services',
+    itemListElement: SERVICES.map((s) => ({
+      '@type': 'Offer',
+      itemOffered: { '@type': 'Service', name: s.name, description: s.desc },
+    })),
+  },
+};
+const allLd = [orgLd, ...jsonLd];
+
+const waHeader = waLink("Hi Venus Holidays! I'd like to plan a trip.");
+const waFloating = waLink('Hi Venus Holidays!');
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href="/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <meta name="theme-color" content="#052821" />
+    <meta name="generator" content={Astro.generator} />
+
+    <meta property="og:site_name" content={SITE.name} />
+    <meta property="og:type" content={ogType} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImageUrl} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="en_IN" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImageUrl} />
+
+    {allLd.map((ld) => <script type="application/ld+json" set:html={JSON.stringify(ld)} />)}
+
+    <ClientRouter />
+
+    {SITE.cfAnalyticsToken && (
+      <script
+        is:inline
+        defer
+        src="https://static.cloudflareinsights.com/beacon.min.js"
+        data-cf-beacon={JSON.stringify({ token: SITE.cfAnalyticsToken, spa: true })}
+      />
+    )}
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site">
+      <nav class="nav" aria-label="Main">
+        <a class="logo" href="/" aria-label="Venus Holidays home">
+          <img class="logo-mark" src="/img/logo-mark.png" alt="" width="380" height="252" />
+          <span>
+            <span class="logo-name">{SITE.name}</span>
+            <span class="logo-sub">{SITE.tagline}</span>
+          </span>
+        </a>
+        <div class="nav-links">
+          <a class:list={['nav-item', { active: isActive('/') }]} href="/" aria-current={isActive('/') ? 'page' : undefined}>Home</a>
+          <a class:list={['nav-item', { active: isActive('/packages') }]} href="/packages/" aria-current={isActive('/packages') ? 'page' : undefined}>Packages</a>
+          <a class:list={['nav-item', { active: isActive('/about') }]} href="/about/" aria-current={isActive('/about') ? 'page' : undefined}>About</a>
+          <a class:list={['nav-item', { active: isActive('/contact') }]} href="/contact/" aria-current={isActive('/contact') ? 'page' : undefined}>Contact Us</a>
+          <a class="nav-wa" href={waHeader} target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.1 8.1 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4 0-.5.2-.7l.5-.6c.1-.2.1-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.8 2.8 4.4 3.9.6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2l-.3-.2z"/></svg>
+            <span class="nav-wa-label">WhatsApp</span>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <div id="main">
+      <slot />
+    </div>
+
+    <footer class="site">
+      <div class="foot">
+        <div>
+          <img class="foot-logo" src="/img/logo.png" alt="Venus Holidays — Learn to Travel, Travel to Learn" width="974" height="656" loading="lazy" />
+          <p style="margin-top:12px;max-width:36ch">
+            Hand-crafted holidays since {SITE.foundingYear}. Named for the evening star; steered by people who travel.
+          </p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/packages/">All packages</a></li>
+            <li><a href="/about/">About us</a></li>
+            <li><a href="/contact/">Contact us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Popular trips</h4>
+          <ul>
+            <li><a href="/packages/kashmir-paradise-circuit/">Kashmir tour package</a></li>
+            <li><a href="/packages/kerala-hills-and-backwaters/">Kerala honeymoon package</a></li>
+            <li><a href="/packages/goa-sun-and-susegad/">Goa weekend package</a></li>
+            <li><a href="/packages/bali-island-of-temples/">Bali package from India</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Reach us</h4>
+          <ul>
+            <li><a href={`tel:${SITE.phoneHref}`}>{SITE.phoneDisplay}</a></li>
+            <li><a href={`mailto:${SITE.email}`}>{SITE.email}</a></li>
+            <li><a href={`https://wa.me/${SITE.waNumber}`} target="_blank" rel="noopener">WhatsApp us</a></li>
+            <li>{SITE.address.locality}, {SITE.address.city}</li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <span>© {new Date().getFullYear()} {SITE.name} Pvt. Ltd. · All rights reserved</span>
+        <span>IATA accredited · Recognised by Ministry of Tourism, GoI</span>
+      </div>
+    </footer>
+
+    <script>
+      // Scroll-reveal: elements fade/slide in as they enter the viewport.
+      // Classes are added by JS, so nothing is hidden for crawlers or no-JS visitors.
+      // Re-runs on every client-side navigation (astro:page-load).
+      function initReveal() {
+        const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (reduced || !('IntersectionObserver' in window)) return;
+        const els = document.querySelectorAll(
+          '.section-head, .section-head-row, .pkg, .point, .quote, .faq-item, .band, ' +
+          '.info-card, .form-card, .about-copy, .planner-card, .dest-tile, .svc, ' +
+          '.detail-main .block, .book-card, .pkg-more'
+        );
+        const io = new IntersectionObserver(
+          (entries) => {
+            for (const e of entries) {
+              if (e.isIntersecting) {
+                (e.target as HTMLElement).classList.add('in');
+                io.unobserve(e.target);
+              }
+            }
+          },
+          { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
+        );
+        els.forEach((el) => {
+          if ((el as HTMLElement).dataset.revealed) return;
+          (el as HTMLElement).dataset.revealed = '1';
+          // Anything already in the first viewport stays visible — no flash on load.
+          const rect = el.getBoundingClientRect();
+          if (rect.top < window.innerHeight && rect.bottom > 0) return;
+
+          // Stagger siblings that are also revealed (cards in a grid, chips, etc.)
+          const parent = el.parentElement;
+          let i = 0;
+          if (parent) {
+            for (const sib of Array.from(parent.children)) {
+              if (sib === el) break;
+              if (els.length && Array.prototype.includes.call(els, sib)) i++;
+            }
+          }
+          (el as HTMLElement).style.transitionDelay = Math.min(i * 70, 350) + 'ms';
+          el.classList.add('reveal');
+          io.observe(el);
+        });
+      }
+      document.addEventListener('astro:page-load', initReveal);
+    </script>
+
+    <a class="wa-float" href={waFloating} target="_blank" rel="noopener" aria-label="Chat with Venus Holidays on WhatsApp">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.1 8.1 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4 0-.5.2-.7l.5-.6c.1-.2.1-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.8 2.8 4.4 3.9.6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2l-.3-.2z"/></svg>
+    </a>
+  </body>
+</html>

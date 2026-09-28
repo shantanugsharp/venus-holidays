@@ -1,0 +1,20 @@
+---
+import Base from '../layouts/Base.astro';
+
+const title = 'Page not found | Venus Holidays';
+const description = 'That page seems to have wandered off the itinerary. Browse our tour packages or head back home.';
+---
+
+<Base title={title} description={description}>
+  <div class="page-hero">
+    <div class="wrap">
+      <p class="eyebrow">404 — off the map</p>
+      <h1>This page wandered off the itinerary.</h1>
+      <p>The link may be old or mistyped. The good stuff is still exactly where it should be:</p>
+      <div style="display:flex;gap:14px;margin-top:26px;flex-wrap:wrap">
+        <a class="btn btn-gold" href="/packages/">Browse all packages</a>
+        <a class="btn btn-line" style="border-color:rgba(255,255,255,.4);color:#fff" href="/">Back to home</a>
+      </div>
+    </div>
+  </div>
+</Base>

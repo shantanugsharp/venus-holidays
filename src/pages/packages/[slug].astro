@@ -1,0 +1,276 @@
+---
+import Base from '../../layouts/Base.astro';
+import packages from '../../data/packages.json';
+import { ART } from '../../data/art.js';
+import { SITE, waLink, formatINR } from '../../data/site.js';
+
+export async function getStaticPaths() {
+  return packages.map((pkg) => ({ params: { slug: pkg.slug }, props: { pkg } }));
+}
+
+const { pkg } = Astro.props;
+const nightsLabel = `${pkg.nights}N / ${pkg.days}D`;
+
+// ── Per-tour palette: from the tour's photo (stored at fetch time in
+// packages.json) or, as fallback, extracted from the SVG artwork. ──
+const artColors = [...(ART[pkg.id] || '').matchAll(/#([0-9A-Fa-f]{6})\b/g)].map((m) => m[1]);
+const toRgb = (hex) => [parseInt(hex.slice(0, 2), 16), parseInt(hex.slice(2, 4), 16), parseInt(hex.slice(4, 6), 16)];
+const lum = (rgb) => (0.2126 * rgb[0] + 0.7152 * rgb[1] + 0.0722 * rgb[2]) / 255;
+const sat = (rgb) => { const mx = Math.max(...rgb); return mx === 0 ? 0 : (mx - Math.min(...rgb)) / mx; };
+const rgba = (rgb, a, f = 1) => `rgba(${rgb.map((v) => Math.round(v * f)).join(',')},${a})`;
+
+const rgbs = artColors.map(toRgb);
+const deep =
+  pkg.colors?.deep ||
+  (rgbs.length ? rgbs.reduce((a, b) => (lum(b) < lum(a) ? b : a)) : [5, 40, 33]);
+const vivid =
+  pkg.colors?.vivid ||
+  rgbs.filter((c) => lum(c) > 0.18 && lum(c) < 0.72).sort((a, b) => sat(b) - sat(a))[0] ||
+  deep;
+
+// Banner slideshow images (photo carousel) with SVG art as fallback.
+const bannerImgs = pkg.photos?.length ? pkg.photos : pkg.photo ? [pkg.photo] : [];
+
+const tourStyle = [
+  `--ov-top:${rgba(deep, 0.18, 0.6)}`,
+  `--ov-mid:${rgba(deep, 0.4, 0.5)}`,
+  `--ov-bot:${rgba(deep, 0.95, 0.42)}`,
+  `--tour-wash:${rgba(vivid, 0.12)}`,
+  `--tour-ink:${rgba(vivid, 1, 0.62)}`,
+  `--tour-line:${rgba(vivid, 0.38)}`,
+].join(';');
+const title = `${pkg.name} — ${nightsLabel} Package from ${formatINR(pkg.priceINR)} | ${SITE.name}`;
+const description = `${pkg.desc} ${nightsLabel} covering ${pkg.route}. From ${formatINR(pkg.priceINR)} per person, taxes included. Customisable dates & hotels — book on WhatsApp.`;
+
+const bookHref = waLink(`Hi! I'd like to book the ${pkg.name} (${nightsLabel}). Please share dates and availability.`);
+const bannerSvg = `<svg viewBox="0 0 400 150" preserveAspectRatio="xMidYMid slice" aria-hidden="true">${ART[pkg.id] || ''}</svg>`;
+
+const tripLd = {
+  '@context': 'https://schema.org',
+  '@type': 'TouristTrip',
+  name: pkg.name,
+  description: pkg.lede,
+  url: new URL(`/packages/${pkg.slug}/`, Astro.site).href,
+  image: new URL(`/og/${pkg.slug}.jpg`, Astro.site).href,
+  touristType: pkg.cat.includes('honeymoon') ? 'Honeymoon couples' : 'Leisure travellers',
+  itinerary: {
+    '@type': 'ItemList',
+    numberOfItems: pkg.itin.length,
+    itemListElement: pkg.itin.map(([name, desc], i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      item: { '@type': 'TouristAttraction', name, description: desc },
+    })),
+  },
+  offers: {
+    '@type': 'Offer',
+    price: pkg.priceINR,
+    priceCurrency: 'INR',
+    availability: 'https://schema.org/InStock',
+    url: new URL(`/packages/${pkg.slug}/`, Astro.site).href,
+    description: `Per person on twin sharing, taxes included. ${pkg.nights} nights / ${pkg.days} days.`,
+    seller: { '@id': new URL('/#organization', Astro.site).href },
+  },
+  provider: { '@id': new URL('/#organization', Astro.site).href },
+};
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: new URL('/', Astro.site).href },
+    { '@type': 'ListItem', position: 2, name: 'Packages', item: new URL('/packages/', Astro.site).href },
+    { '@type': 'ListItem', position: 3, name: pkg.name, item: new URL(`/packages/${pkg.slug}/`, Astro.site).href },
+  ],
+};
+
+// Per-trip FAQs: generated from the package data, plus any hand-written
+// entries in an optional `faq: [[question, answer], …]` field in packages.json.
+const destName = pkg.name.split(' — ')[0];
+const faqs = [
+  [
+    `What is the best time to visit ${destName}?`,
+    `The best season for this itinerary is ${pkg.season}. Dates within and around this window can be arranged — tell us your preferred month and we will confirm conditions and availability.`,
+  ],
+  [
+    `How much does the ${pkg.name} package cost?`,
+    `Prices start at ${formatINR(pkg.priceINR)} per person on twin sharing, taxes included, for ${pkg.nights} nights / ${pkg.days} days covering ${pkg.route}. The final quote depends on your travel dates, hotel category and group size — we confirm an exact all-inclusive price before you pay anything.`,
+  ],
+  [
+    `Can I customise this ${destName} itinerary?`,
+    `Yes — this itinerary is a starting point. Hotels, number of nights, pace and activities are adjusted around your dates and budget at no extra planning cost.`,
+  ],
+  [
+    `How do I book the ${destName} package?`,
+    `Message us on WhatsApp or call ${SITE.phoneDisplay}. You reserve with a 25% advance and clear the balance up to 21 days before departure — no payment is taken online.`,
+  ],
+  ...(pkg.faq || []),
+];
+const faqLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map(([q, a]) => ({
+    '@type': 'Question',
+    name: q,
+    acceptedAnswer: { '@type': 'Answer', text: a },
+  })),
+};
+
+// Simple related-trips block: same category first, then the rest.
+const related = packages
+  .filter((p) => p.slug !== pkg.slug)
+  .sort((a, b) => {
+    const aShared = a.cat.some((c) => pkg.cat.includes(c)) ? 0 : 1;
+    const bShared = b.cat.some((c) => pkg.cat.includes(c)) ? 0 : 1;
+    return aShared - bShared;
+  })
+  .slice(0, 3);
+---
+
+<Base title={title} description={description} ogImage={`/og/${pkg.slug}.jpg`} ogType="article" jsonLd={[tripLd, breadcrumbLd, faqLd]}>
+  <div class="detail-banner" id="tourBanner" style={tourStyle}>
+    {bannerImgs.length > 0 ? (
+      bannerImgs.map((src, i) => (
+        <img
+          class:list={['db-img', { active: i === 0 }]}
+          src={src}
+          alt={i === 0 ? `${pkg.name} — ${pkg.route}` : ''}
+          width="900"
+          height="520"
+          loading={i === 0 ? 'eager' : 'lazy'}
+          fetchpriority={i === 0 ? 'high' : undefined}
+          decoding="async"
+        />
+      ))
+    ) : (
+      <Fragment set:html={bannerSvg} />
+    )}
+    <div class="detail-banner-inner">
+      <a class="back-link" href="/packages/">← All packages</a>
+      <h1>{pkg.name}</h1>
+      <div class="pkg-meta"><span>{nightsLabel}</span><span>{pkg.route}</span></div>
+    </div>
+  </div>
+
+  <section class="section detail-sec" style={`padding-top:56px;${tourStyle}`}>
+    <div class="wrap">
+      <div class="detail-grid">
+        <div class="detail-main">
+          <p class="detail-lede">{pkg.lede}</p>
+
+          <div class="block">
+            <h2>Highlights</h2>
+            <div class="hl-chips">
+              {pkg.highlights.map((h) => <span class="hl-chip">{h}</span>)}
+            </div>
+          </div>
+
+          <div class="block">
+            <h2>Day-by-day itinerary</h2>
+            <ul class="itin">
+              {pkg.itin.map(([t, d], i) => (
+                <li>
+                  <span class="itin-day">{i + 1}</span>
+                  <div><b>{t}</b><p>{d}</p></div>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div class="block">
+            <h2>What's covered</h2>
+            <div class="incl-cols">
+              <div class="incl-card inc">
+                <h3>Included</h3>
+                <ul>{pkg.inc.map((t) => <li>{t}</li>)}</ul>
+              </div>
+              <div class="incl-card exc">
+                <h3>Not included</h3>
+                <ul>{pkg.exc.map((t) => <li>{t}</li>)}</ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="block">
+            <h2>Frequently asked questions</h2>
+            <div class="faq-list">
+              {faqs.map(([q, a]) => (
+                <details class="faq-item">
+                  <summary>{q}</summary>
+                  <p>{a}</p>
+                </details>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <aside class="book-card">
+          <div class="pkg-price"><span>From, per person</span><b>{formatINR(pkg.priceINR)}</b></div>
+          <div class="book-rows">
+            <div class="book-row"><span>Duration</span><b>{nightsLabel}</b></div>
+            <div class="book-row"><span>Route</span><b>{pkg.route}</b></div>
+            <div class="book-row"><span>Best season</span><b>{pkg.season}</b></div>
+            <div class="book-row"><span>Reserve with</span><b>25% advance</b></div>
+          </div>
+          <a class="btn btn-wa" href={bookHref} target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>
+            Book on WhatsApp
+          </a>
+          <span class="book-alt">or call <a href={`tel:${SITE.phoneHref}`}>{SITE.phoneDisplay}</a></span>
+          <p class="book-note">Customisable — hotels, dates and pace adjusted to you. No payment taken online.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" style="padding:56px 0">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Keep exploring</p>
+        <h2 style="font-size:1.6rem">You might also like</h2>
+      </div>
+      <div class="pkg-grid">
+        {related.map((p) => (
+          <a class="pkg" href={`/packages/${p.slug}/`} aria-label={`${p.name} — view details`}>
+            <div class="pkg-art">
+              {p.photo ? (
+                <img src={p.photo} alt={`${p.name} — ${p.route}`} width="900" height="520" loading="lazy" decoding="async" />
+              ) : (
+                <Fragment set:html={`<svg viewBox="0 0 400 150" preserveAspectRatio="none" aria-hidden="true">${ART[p.id]}</svg>`} />
+              )}
+              <span class="pkg-tag">{p.tag}</span>
+            </div>
+            <div class="pkg-body">
+              <h3>{p.name}</h3>
+              <div class="pkg-meta"><span>{p.nights}N / {p.days}D</span><span>{p.route}</span></div>
+              <div class="pkg-foot">
+                <div class="pkg-price"><span>From</span><b>{formatINR(p.priceINR)}</b></div>
+                <span class="pkg-open">View details</span>
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <script>
+    /* Banner slideshow: crossfade to the next photo every 2s.
+       Skipped for reduced-motion users; stops itself after page navigation. */
+    function initBannerSlideshow() {
+      const banner = document.getElementById('tourBanner');
+      if (!banner || banner.dataset.bound) return;
+      banner.dataset.bound = '1';
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      const imgs = banner.querySelectorAll('.db-img');
+      if (imgs.length < 2) return;
+      let i = 0;
+      const timer = setInterval(() => {
+        if (!banner.isConnected) { clearInterval(timer); return; }
+        imgs[i].classList.remove('active');
+        i = (i + 1) % imgs.length;
+        imgs[i].classList.add('active');
+      }, 2000);
+    }
+    document.addEventListener('astro:page-load', initBannerSlideshow);
+  </script>
+</Base>

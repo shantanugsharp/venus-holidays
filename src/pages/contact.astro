@@ -1,0 +1,172 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE, waLink } from '../data/site.js';
+
+const title = 'Contact Venus Holidays — WhatsApp, Call or Visit | Mumbai Tour Operator';
+const description =
+  'Contact Venus Holidays at Target Mall, Borivali West, Mumbai. Send a trip enquiry on WhatsApp, call +91 98202 48186 or email manoj@venusholidays.co.in — enquiries answered within 30 minutes, 9 am to 9 pm IST.';
+
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: new URL('/', Astro.site).href },
+    { '@type': 'ListItem', position: 2, name: 'Contact', item: new URL('/contact/', Astro.site).href },
+  ],
+};
+
+const destOptions = [
+  'Kashmir', 'Kerala', 'Rajasthan', 'Himachal', 'Uttarakhand', 'Goa',
+  'Andaman', 'Northeast', 'Sikkim–Darjeeling', 'Ladakh', 'Char Dham Yatra',
+  'Golden Triangle (Delhi–Agra)', 'South India', 'Gujarat–Saurashtra', 'Pilgrimage / Yatra',
+  'Bali', 'Dubai', 'Thailand', 'Maldives', 'Somewhere else — surprise me',
+];
+---
+
+<Base title={title} description={description} jsonLd={[breadcrumbLd]}>
+  <div class="page-hero">
+    <div class="wrap">
+      <p class="eyebrow">Contact us</p>
+      <h1>We answer fast. Usually on WhatsApp.</h1>
+      <p>
+        Send an enquiry below and it opens straight into a WhatsApp chat with our team — or call,
+        email, or drop by the office. Chai's on us.
+      </p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="contact-grid">
+        <!-- Enquiry form → WhatsApp -->
+        <div class="form-card">
+          <h2>Plan my trip</h2>
+          <p class="form-hint">Fill this in and hit send — it opens WhatsApp with your enquiry pre-typed. No forms lost in an inbox.</p>
+          <form id="waForm">
+            <div class="field-row">
+              <div class="field">
+                <label for="f-name">Your name</label>
+                <input id="f-name" type="text" placeholder="e.g. Priya Sharma" required autocomplete="name" />
+              </div>
+              <div class="field">
+                <label for="f-city">Travelling from</label>
+                <input id="f-city" type="text" placeholder="e.g. Mumbai" />
+              </div>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="f-dest">Destination</label>
+                <select id="f-dest">
+                  {destOptions.map((d) => <option>{d}</option>)}
+                </select>
+              </div>
+              <div class="field">
+                <label for="f-when">Rough dates</label>
+                <input id="f-when" type="text" placeholder="e.g. mid-December, 6 nights" />
+              </div>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="f-pax">Travellers</label>
+                <select id="f-pax">
+                  <option>2 adults</option><option>2 adults + kids</option>
+                  <option>Solo</option><option>Group of 4–8</option><option>Group of 8+</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="f-budget">Budget per person</label>
+                <select id="f-budget">
+                  <option>Under ₹25,000</option><option>₹25,000 – ₹50,000</option>
+                  <option>₹50,000 – ₹1,00,000</option><option>Above ₹1,00,000</option>
+                </select>
+              </div>
+            </div>
+            <div class="field">
+              <label for="f-msg">Anything else?</label>
+              <textarea id="f-msg" placeholder="Honeymoon, anniversary, must-see places, dietary needs…"></textarea>
+            </div>
+            <button type="submit" class="btn btn-wa form-send">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>
+              Send enquiry on WhatsApp
+            </button>
+            <p class="form-note">Opens WhatsApp with your message drafted — nothing sends until you press send there.</p>
+          </form>
+        </div>
+
+        <!-- Contact info -->
+        <div class="info-stack">
+          <div class="info-card">
+            <div class="info-ico" aria-hidden="true">✆</div>
+            <div>
+              <b>Call or WhatsApp</b>
+              <p>
+                <a href={`tel:${SITE.phoneHref}`}>{SITE.phoneDisplay}</a> · <a href={`tel:${SITE.phone2Href}`}>{SITE.phone2Display}</a><br />
+                <a href={`https://wa.me/${SITE.waNumber}`} target="_blank" rel="noopener">Chat on WhatsApp</a> —
+                enquiries answered within 30 minutes, 9 am – 9 pm IST.
+              </p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-ico" aria-hidden="true">✉</div>
+            <div>
+              <b>Email</b>
+              <p>
+                <a href={`mailto:${SITE.email}`}>{SITE.email}</a><br />
+                <a href={`mailto:${SITE.emailAlt}`}>{SITE.emailAlt}</a><br />
+                For itineraries, invoices, and corporate bookings.
+              </p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-ico" aria-hidden="true">⚲</div>
+            <div>
+              <b>Visit the office</b>
+              <p>
+                {SITE.name}, {SITE.address.street},<br />
+                {SITE.address.locality}, {SITE.address.city} {SITE.address.postalCode}<br />
+                <a href="https://maps.google.com/?q=Target+Mall+Chandavarkar+Road+Borivali+West+Mumbai" target="_blank" rel="noopener">Get directions →</a>
+              </p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-ico" aria-hidden="true">◷</div>
+            <div style="flex:1">
+              <b>Office hours</b>
+              <table class="hours">
+                <tr><td>Monday – Saturday</td><td>10:00 – 19:30</td></tr>
+                <tr><td>Sunday</td><td>11:00 – 16:00</td></tr>
+                <tr><td>WhatsApp support</td><td>09:00 – 21:00 daily</td></tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    import { waLink } from '../data/site.js';
+
+    function initContactForm() {
+      const form = document.getElementById('waForm') as HTMLFormElement | null;
+      if (!form || form.dataset.bound) return;
+      form.dataset.bound = '1';
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const v = (id: string) => (document.getElementById(id) as HTMLInputElement).value.trim();
+        const lines = [
+          'Hi Venus Holidays! New trip enquiry:',
+          'Name: ' + (v('f-name') || '—'),
+          'From: ' + (v('f-city') || '—'),
+          'Destination: ' + v('f-dest'),
+          'Dates: ' + (v('f-when') || 'flexible'),
+          'Travellers: ' + v('f-pax'),
+          'Budget p.p.: ' + v('f-budget'),
+        ];
+        if (v('f-msg')) lines.push('Notes: ' + v('f-msg'));
+        window.open(waLink(lines.join('\n')), '_blank', 'noopener');
+      });
+    }
+    document.addEventListener('astro:page-load', initContactForm);
+  </script>
+</Base>

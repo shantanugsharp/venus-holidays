@@ -1,0 +1,206 @@
+---
+import Base from '../../layouts/Base.astro';
+import PackageCard from '../../components/PackageCard.astro';
+import IndiaMap from '../../components/IndiaMap.astro';
+import packages from '../../data/packages.json';
+import { waLink } from '../../data/site.js';
+
+const title = 'All Tour Packages & Prices — India + International | Venus Holidays';
+const description =
+  'Browse all Venus Holidays tour packages with per-person prices: Kashmir, Kerala, Rajasthan, Goa, Himachal, Sikkim, Ooty, Kashi–Ayodhya, Bali, Dubai, Thailand and Maldives. Every itinerary is customisable.';
+
+const count = (cat) => packages.filter((p) => p.cat.includes(cat)).length;
+const catFilters = [
+  { key: 'all', label: 'All', n: packages.length },
+  { key: 'domestic', label: 'India', n: count('domestic') },
+  { key: 'international', label: 'International', n: count('international') },
+  { key: 'pilgrimage', label: 'Pilgrimage', n: count('pilgrimage') },
+  { key: 'honeymoon', label: 'Honeymoon picks', n: count('honeymoon') },
+];
+
+const itemListLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'Venus Holidays tour packages',
+  numberOfItems: packages.length,
+  itemListElement: packages.map((p, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: p.name,
+    url: new URL(`/packages/${p.slug}/`, Astro.site).href,
+  })),
+};
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: new URL('/', Astro.site).href },
+    { '@type': 'ListItem', position: 2, name: 'Packages', item: new URL('/packages/', Astro.site).href },
+  ],
+};
+---
+
+<Base title={title} description={description} jsonLd={[itemListLd, breadcrumbLd]}>
+  <div class="page-hero">
+    <div class="wrap">
+      <p class="eyebrow">All holiday packages</p>
+      <h1>Pick a place. We'll do the rest.</h1>
+      <p>
+        Twelve signature itineraries below, plus 40+ more in the catalogue. Every trip is
+        customisable — prices are per person on twin sharing, taxes included. Tap a card for the
+        full itinerary.
+      </p>
+    </div>
+  </div>
+
+  <section class="section" style="padding-top:56px">
+    <div class="wrap">
+      <div class="section-head" style="text-align:center;max-width:none;margin-bottom:20px">
+        <p class="eyebrow">Explore by state</p>
+        <h2 style="font-size:clamp(1.5rem,3vw,2rem)">Where in India do you want to go?</h2>
+      </div>
+      <IndiaMap />
+
+      <div class="filters" role="group" aria-label="Filter packages">
+        {catFilters.map((f, i) => (
+          <button class:list={['chip', { active: i === 0 }]} data-filter={f.key}>
+            {f.label} <small>{f.n}</small>
+          </button>
+        ))}
+      </div>
+
+      <div class="filters" role="group" aria-label="Filter by duration">
+        <button class="chip active" data-dur="any">Any duration</button>
+        <button class="chip" data-dur="short">3–5 days</button>
+        <button class="chip" data-dur="mid">6–7 days</button>
+        <button class="chip" data-dur="long">8+ days</button>
+      </div>
+
+      <div class="pkg-grid" id="allGrid">
+        {packages.map((p, i) => <PackageCard pkg={p} eager={i < 3} />)}
+      </div>
+
+      <div class="pkg-more">
+        <div>
+          <b>40+ more itineraries in our catalogue</b>
+          <p>Leh–Ladakh, Meghalaya, Kaziranga, Singapore, Vietnam, Europe, Mauritius and more — tell us where, we'll send options today.</p>
+        </div>
+        <a class="btn btn-wa" href={waLink('Hi! Please share your full package catalogue.')} target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>
+          Get the full catalogue
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function initFilters() {
+      const grid = document.getElementById('allGrid');
+      if (!grid || grid.dataset.bound) return;
+      grid.dataset.bound = '1';
+
+      let curCat = 'all';
+      let curDur = 'any';
+      let curState = '';
+      function applyFilters() {
+        document.querySelectorAll('#allGrid .pkg').forEach((card) => {
+          const cats = (card.getAttribute('data-cat') || '').split(' ');
+          const n = parseInt(card.getAttribute('data-nights') || '0', 10);
+          const states = (card.getAttribute('data-states') || '').split(' ');
+          const okCat = curCat === 'all' || cats.indexOf(curCat) > -1;
+          const okDur =
+            curDur === 'any' ||
+            (curDur === 'short' && n <= 4) ||
+            (curDur === 'mid' && n >= 5 && n <= 6) ||
+            (curDur === 'long' && n >= 7);
+          const okState = !curState || states.indexOf(curState) > -1;
+          card.classList.toggle('hide', !(okCat && okDur && okState));
+        });
+      }
+      document.querySelectorAll('.chip[data-filter]').forEach((chip) => {
+        chip.addEventListener('click', () => {
+          document.querySelectorAll('.chip[data-filter]').forEach((c) => c.classList.remove('active'));
+          chip.classList.add('active');
+          curCat = chip.getAttribute('data-filter') || 'all';
+          applyFilters();
+        });
+      });
+      document.querySelectorAll('.chip[data-dur]').forEach((chip) => {
+        chip.addEventListener('click', () => {
+          document.querySelectorAll('.chip[data-dur]').forEach((c) => c.classList.remove('active'));
+          chip.classList.add('active');
+          curDur = chip.getAttribute('data-dur') || 'any';
+          applyFilters();
+        });
+      });
+
+      /* ── India map → state filter ── */
+      const status = document.getElementById('imapStatus');
+      const hint = status ? status.innerHTML : '';
+      function selectState(path) {
+        const code = path ? path.getAttribute('data-code') || '' : '';
+        document.querySelectorAll('.map-state.selected').forEach((p) => p.classList.remove('selected'));
+        if (!code || code === curState) {
+          curState = '';
+          if (status) status.innerHTML = hint;
+        } else {
+          curState = code;
+          path.classList.add('selected');
+          if (status) {
+            const name = path.getAttribute('data-name') || code;
+            const count = path.getAttribute('data-count') || '0';
+            status.innerHTML = '';
+            const pill = document.createElement('span');
+            pill.className = 'imap-pill';
+            pill.append(`Showing ${name} — ${count} trip${count === '1' ? '' : 's'}`);
+            const x = document.createElement('button');
+            x.type = 'button';
+            x.setAttribute('aria-label', 'Clear state filter');
+            x.textContent = '✕';
+            x.addEventListener('click', () => selectState(null));
+            pill.append(x);
+            status.append(pill);
+          }
+          grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+        applyFilters();
+      }
+      document.querySelectorAll('.map-state.has').forEach((path) => {
+        path.addEventListener('click', () => selectState(path));
+        path.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); selectState(path); }
+        });
+      });
+
+      /* Hover tooltip: state name (+ trip count) follows the cursor */
+      const tip = document.getElementById('imapTip');
+      if (tip) {
+        const showTip = (path, x, y) => {
+          const name = path.getAttribute('data-name') || '';
+          const count = parseInt(path.getAttribute('data-count') || '0', 10);
+          tip.innerHTML = '';
+          tip.append(name);
+          const sub = document.createElement('small');
+          sub.textContent = count > 0 ? `${count} trip${count === 1 ? '' : 's'} — click to view` : 'No set package yet — ask us';
+          tip.append(sub);
+          tip.style.left = x + 'px';
+          tip.style.top = y + 'px';
+          tip.classList.add('show');
+        };
+        document.querySelectorAll('.map-state').forEach((path) => {
+          path.addEventListener('pointermove', (e) => {
+            if (e.pointerType === 'touch') return;
+            showTip(path, e.clientX, e.clientY);
+          });
+          path.addEventListener('pointerleave', () => tip.classList.remove('show'));
+          path.addEventListener('focus', () => {
+            const r = path.getBoundingClientRect();
+            showTip(path, r.left + r.width / 2, r.top + r.height / 4);
+          });
+          path.addEventListener('blur', () => tip.classList.remove('show'));
+        });
+      }
+    }
+    document.addEventListener('astro:page-load', initFilters);
+  </script>
+</Base>

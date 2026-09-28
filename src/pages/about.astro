@@ -1,0 +1,117 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE, SERVICES, waLink } from '../data/site.js';
+
+const title = 'About Venus Holidays — Mumbai Tour Operator | Learn to Travel, Travel to Learn';
+const description =
+  'Venus Holidays is a Mumbai-based tour operator in Borivali West, planning custom holidays, group tours, study tours and industrial visits since 2009. Meet the team behind Learn to Travel · Travel to Learn.';
+
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: new URL('/', Astro.site).href },
+    { '@type': 'ListItem', position: 2, name: 'About', item: new URL('/about/', Astro.site).href },
+  ],
+};
+const aboutLd = {
+  '@context': 'https://schema.org',
+  '@type': 'AboutPage',
+  name: title,
+  url: new URL('/about/', Astro.site).href,
+  about: { '@id': new URL('/#organization', Astro.site).href },
+};
+---
+
+<Base title={title} description={description} jsonLd={[breadcrumbLd, aboutLd]}>
+  <div class="page-hero">
+    <div class="wrap">
+      <p class="eyebrow">About us</p>
+      <h1>Seventeen years of first-hand travel</h1>
+      <p>
+        Named for the evening star — the one travellers have navigated by for centuries —
+        because that's the job: point you somewhere worth going, and make sure you get there.
+      </p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="about-grid">
+        <div class="about-copy">
+          <p class="eyebrow">Our story</p>
+          <h2>From two desks to a full-service operator</h2>
+          <p>
+            <strong>Venus Holidays began in 2009 as a two-desk office</strong> booking rail
+            tickets and weekend Lonavala trips. Today we're a full-service tour operator — but we
+            still plan every itinerary the same way: someone from our team has been there,
+            recently, and liked it enough to recommend it.
+          </p>
+          <p>
+            We're not an aggregator and we don't resell third-party fixed itineraries. Our
+            destination specialists build every package around your dates, budget, and pace — not
+            the other way around.
+          </p>
+          <p>
+            Our motto is on the door: <strong>Learn to Travel · Travel to Learn.</strong> It's why
+            half our work is holidays — and the other half is study tours, industrial visits and
+            adventure camps that take students and teams somewhere worth learning from.
+          </p>
+        </div>
+        <div class="about-points">
+          <div class="point"><b>IATA-accredited &amp; MoT recognised</b><span>Registered tour operator; approved by the Ministry of Tourism, Govt. of India.</span></div>
+          <div class="point"><b>Real humans, 7 days a week</b><span>Your tour manager's personal number, not a call-centre queue.</span></div>
+          <div class="point"><b>Transparent pricing</b><span>Taxes included up front. No "mandatory optional" surprises at the hotel desk.</span></div>
+          <div class="point"><b>Pay in instalments</b><span>Reserve with 25%; clear the balance up to 21 days before departure.</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">What we do</p>
+        <h2>Everything on our card, under one roof</h2>
+      </div>
+      <div class="svc-grid">
+        {SERVICES.map((s) => (
+          <div class="svc">
+            <b>{s.name}</b>
+            <p>{s.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="about-grid">
+        <div class="about-copy">
+          <p class="eyebrow">Visit us</p>
+          <h2>Chai's on us in Borivali</h2>
+          <p>
+            You'll find us at <strong>{SITE.address.street}, {SITE.address.locality},
+            {SITE.address.city} {SITE.address.postalCode}</strong> — Monday to Saturday
+            10:00–19:30, Sunday 11:00–16:00.
+          </p>
+          <p>
+            Can't make it to the office? No problem — we plan most trips entirely over
+            <a href={waLink('Hi Venus Holidays!')} target="_blank" rel="noopener" style="color:var(--accent-deep);font-weight:600">WhatsApp</a> or a call:
+            <a href={`tel:${SITE.phoneHref}`} style="color:var(--accent-deep);font-weight:600">{SITE.phoneDisplay}</a>.
+          </p>
+          <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:8px">
+            <a class="btn btn-gold" href="/packages/">Browse our trips</a>
+            <a class="btn btn-line" href="/contact/">Contact details →</a>
+          </div>
+        </div>
+        <div class="about-points">
+          <div class="point"><b>Founder</b><span>Manoj Mahapadi — planning group travel out of Mumbai since 2009.</span></div>
+          <div class="point"><b>Office</b><span>{SITE.address.street}, {SITE.address.locality}, {SITE.address.city} {SITE.address.postalCode}</span></div>
+          <div class="point"><b>Talk to us</b><span>{SITE.phoneDisplay} · {SITE.phone2Display} · {SITE.email}</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Base>
