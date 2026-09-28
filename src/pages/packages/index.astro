@@ -53,14 +53,18 @@ const breadcrumbLd = {
     </div>
   </div>
 
-  <section class="section" style="padding-top:56px">
+  <section class="map-sec">
     <div class="wrap">
       <div class="section-head" style="text-align:center;max-width:none;margin-bottom:20px">
         <p class="eyebrow">Explore by state</p>
         <h2 style="font-size:clamp(1.5rem,3vw,2rem)">Where in India do you want to go?</h2>
       </div>
       <IndiaMap />
+    </div>
+  </section>
 
+  <section class="section" style="padding-top:48px">
+    <div class="wrap">
       <div class="filters" role="group" aria-label="Filter packages">
         {catFilters.map((f, i) => (
           <button class:list={['chip', { active: i === 0 }]} data-filter={f.key}>

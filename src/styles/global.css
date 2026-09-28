@@ -214,6 +214,24 @@ header.site {
 .breadcrumbs a:hover { color: #fff; text-decoration: underline; }
 
 /* ── India map filter (pseudo-3D) ───────── */
+.map-sec {
+  position: relative; overflow: hidden;
+  padding: 56px 0 40px;
+  border-bottom: 1px solid var(--line);
+  background:
+    radial-gradient(640px 340px at 12% 18%, rgba(14, 122, 95, 0.11), transparent 70%),
+    radial-gradient(520px 320px at 88% 26%, rgba(229, 181, 46, 0.14), transparent 70%),
+    radial-gradient(760px 420px at 50% 100%, rgba(14, 122, 95, 0.09), transparent 72%),
+    linear-gradient(180deg, #f2f8f3 0%, #fbfdfb 60%, #ffffff 100%);
+}
+.map-sec::before {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background-image: radial-gradient(rgba(5, 40, 33, 0.07) 1px, transparent 1.5px);
+  background-size: 26px 26px;
+  mask-image: radial-gradient(70% 70% at 50% 45%, #000 30%, transparent 100%);
+  -webkit-mask-image: radial-gradient(70% 70% at 50% 45%, #000 30%, transparent 100%);
+}
+.map-sec .wrap { position: relative; z-index: 1; }
 .imap-wrap { max-width: 470px; margin: 0 auto 34px; }
 .imap-scene { perspective: 1400px; }
 .imap {
