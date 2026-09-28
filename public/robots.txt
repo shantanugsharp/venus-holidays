@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.venusholidays.co.in/sitemap-index.xml
+Sitemap: https://venusholidays.co/sitemap-index.xml

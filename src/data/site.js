@@ -2,7 +2,7 @@
 export const SITE = {
   name: 'Venus Holidays',
   tagline: 'Learn to Travel · Travel to Learn',
-  url: 'https://www.venusholidays.co.in', // keep in sync with astro.config.mjs
+  url: 'https://venusholidays.co', // keep in sync with astro.config.mjs
   waNumber: '919820248186', // WhatsApp number, digits only with country code
   phoneDisplay: '+91 98202 48186',
   phoneHref: '+919820248186',

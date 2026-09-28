@@ -6,7 +6,7 @@ import cloudflare from "@astrojs/cloudflare";
 // IMPORTANT: change `site` to your real domain before going live —
 // it is used for the sitemap, canonical URLs and Open Graph tags.
 export default defineConfig({
-  site: 'https://www.venusholidays.co.in',
+  site: 'https://venusholidays.co',
   integrations: [sitemap()],
 
   build: {
