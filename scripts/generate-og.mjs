@@ -54,13 +54,30 @@ async function render(name, svg, photoPath) {
   console.log(`✓ og/${name}.jpg (${(png.length / 1024).toFixed(0)} kB)`);
 }
 
-// Default site-wide image (Kashmir art as the hero backdrop).
-await render('default', ogSvg({
-  art: ART.kashmir,
-  title: 'Custom holidays, planned by humans',
-  subtitle: 'Kashmir · Kerala · Char Dham · Andaman · Bali · Dubai · Maldives',
-  price: '',
-}));
+// Default site-wide image: the full logo, large and centred on the brand
+// emerald field — WhatsApp small previews crop to a square, so the logo
+// sits safely in the middle.
+{
+  const bgSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630">
+    <rect width="1200" height="630" fill="#052821"/>
+    <circle cx="140" cy="90" r="360" fill="rgba(14,122,95,0.35)"/>
+    <circle cx="1080" cy="560" r="420" fill="rgba(14,122,95,0.28)"/>
+    <circle cx="1060" cy="80" r="230" fill="rgba(229,181,46,0.10)"/>
+    <text x="600" y="575" text-anchor="middle" font-family="${fontStack}" font-size="27" fill="rgba(252,243,233,0.85)">Kashmir · Kerala · Char Dham · Andaman · Bali · Dubai · Maldives</text>
+    <rect x="0" y="620" width="1200" height="10" fill="#E5B52E"/>
+  </svg>`;
+  const bigLogo = await sharp(path.join(root, '../public/img/logo.png'))
+    .resize({ height: 400, withoutEnlargement: true })
+    .png()
+    .toBuffer();
+  const bl = await sharp(bigLogo).metadata();
+  const png = await sharp(Buffer.from(bgSvg))
+    .composite([{ input: bigLogo, left: Math.round((1200 - bl.width) / 2), top: 78 }])
+    .jpeg({ quality: 85, mozjpeg: true })
+    .toBuffer();
+  await writeFile(path.join(outDir, 'default.jpg'), png);
+  console.log(`✓ og/default.jpg (${(png.length / 1024).toFixed(0)} kB) — big logo layout`);
+}
 
 for (const p of packages) {
   const usePhoto = !ART[p.id] && (p.photos?.[0] || p.photo);
