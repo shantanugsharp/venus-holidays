@@ -9,6 +9,10 @@
   "observability": {
     "enabled": true
   },
+  "routes": [
+    { "pattern": "venusholidays.co", "custom_domain": true },
+    { "pattern": "www.venusholidays.co", "custom_domain": true }
+  ],
   "assets": {
     "binding": "ASSETS",
     "directory": "dist"
