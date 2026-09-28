@@ -476,7 +476,8 @@ a.pkg:hover .pkg-open { background: #11332b; border-color: #11332b; color: #fcf3
 .stars { color: var(--mustard); letter-spacing: 2px; font-size: 0.8rem; }
 
 /* FAQ */
-.faq-list { display: grid; gap: 14px; max-width: 780px; }
+.faq-list { display: grid; gap: 14px; max-width: 780px; margin: 0 auto; }
+.faq-item { box-shadow: 0 2px 10px -6px rgba(5, 40, 33, 0.15); }
 .faq-item { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 4px 22px; }
 .faq-item summary {
   cursor: pointer; font-weight: 700; color: var(--heading); font-size: 0.98rem;
