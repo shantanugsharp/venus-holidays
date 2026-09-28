@@ -363,6 +363,11 @@ a.pkg:hover .pkg-open { background: #11332b; border-color: #11332b; color: #fcf3
 .detail-main h2 { font-size: 1.5rem; color: var(--heading); margin: 0 0 16px; }
 .detail-main .block { margin-bottom: 44px; }
 .detail-lede { color: var(--text-soft); margin-bottom: 36px; max-width: 62ch; }
+.crumbs { display: flex; align-items: center; gap: 9px; font-size: 0.8rem; color: var(--text-soft); margin-bottom: 20px; flex-wrap: wrap; }
+.crumbs a { text-decoration: none; color: var(--text-soft); }
+.crumbs a:hover { color: var(--accent-deep); text-decoration: underline; }
+.crumbs b { color: var(--heading); font-weight: 600; }
+
 /* Tour-tinted zone: the detail page inherits its artwork's palette */
 .detail-sec { background: linear-gradient(180deg, var(--tour-wash, transparent), rgba(255, 255, 255, 0) 480px); }
 .hl-chips { display: flex; flex-wrap: wrap; gap: 10px; }

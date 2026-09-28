@@ -39,8 +39,12 @@ const tourStyle = [
   `--tour-ink:${rgba(vivid, 1, 0.62)}`,
   `--tour-line:${rgba(vivid, 0.38)}`,
 ].join(';');
-const title = `${pkg.name} — ${nightsLabel} Package from ${formatINR(pkg.priceINR)} | ${SITE.name}`;
-const description = `${pkg.desc} ${nightsLabel} covering ${pkg.route}. From ${formatINR(pkg.priceINR)} per person, taxes included. Customisable dates & hotels — book on WhatsApp.`;
+// Title targets the exact search phrase ("Kashmir Tour Package"), ≤60 chars.
+const baseName = pkg.name.split(' — ')[0];
+const isYatra = /yatra|darshan|dham/i.test(pkg.name);
+let title = `${baseName} ${isYatra ? '' : 'Tour '}Package | ${SITE.name}`;
+if (title.length > 65) title = `${baseName} Package | ${SITE.name}`;
+const description = `${baseName} ${isYatra ? 'yatra' : 'tour'} package: ${nightsLabel}, ${pkg.route}. From ${formatINR(pkg.priceINR)} per person, taxes included. Book on WhatsApp.`.slice(0, 160);
 
 const bookHref = waLink(`Hi! I'd like to book the ${pkg.name} (${nightsLabel}). Please share dates and availability.`);
 const bannerSvg = `<svg viewBox="0 0 400 150" preserveAspectRatio="xMidYMid slice" aria-hidden="true">${ART[pkg.id] || ''}</svg>`;
@@ -133,7 +137,7 @@ const related = packages
         <img
           class:list={['db-img', { active: i === 0 }]}
           src={src}
-          alt={i === 0 ? `${pkg.name} — ${pkg.route}` : ''}
+          alt={i === 0 ? `${pkg.name} — ${pkg.route}` : `${baseName} — photo ${i + 1}`}
           width="900"
           height="520"
           loading={i === 0 ? 'eager' : 'lazy'}
@@ -151,8 +155,13 @@ const related = packages
     </div>
   </div>
 
-  <section class="section detail-sec" style={`padding-top:56px;${tourStyle}`}>
+  <section class="section detail-sec" style={`padding-top:44px;${tourStyle}`}>
     <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="/">Home</a><span aria-hidden="true">›</span>
+        <a href="/packages/">Tour Packages</a><span aria-hidden="true">›</span>
+        <b>{baseName}</b>
+      </nav>
       <div class="detail-grid">
         <div class="detail-main">
           <p class="detail-lede">{pkg.lede}</p>
