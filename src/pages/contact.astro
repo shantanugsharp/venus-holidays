@@ -112,7 +112,7 @@ const destOptions = [
               <b>Email</b>
               <p>
                 <a href={`mailto:${SITE.email}`}>{SITE.email}</a><br />
-                <a href={`mailto:${SITE.emailAlt}`}>{SITE.emailAlt}</a><br />
+                {SITE.emailAlt && <Fragment><a href={`mailto:${SITE.emailAlt}`}>{SITE.emailAlt}</a><br /></Fragment>}
                 For itineraries, invoices, and corporate bookings.
               </p>
             </div>

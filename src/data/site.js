@@ -8,8 +8,8 @@ export const SITE = {
   phoneHref: '+919820248186',
   phone2Display: '+91 90040 05565',
   phone2Href: '+919004005565',
-  email: 'manoj@venusholidays.co.in',
-  emailAlt: 'venusmanoj@gmail.com',
+  email: 'venusmanoj@gmail.com',
+  emailAlt: '',
   address: {
     street: '39 Target Mall, Chandavarkar Road',
     locality: 'Borivali West',
