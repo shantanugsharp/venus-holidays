@@ -1,7 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import packages from '../data/packages.json';
-import { waLink } from '../data/site.js';
+import { waLink, formatINR } from '../data/site.js';
 import { DESTINATION_GROUPS } from '../data/destinations.js';
 
 const title = 'Destinations We Cover | Venus Holidays';
@@ -9,6 +9,8 @@ const description =
   'Everywhere Venus Holidays can take you — Kashmir to Kanyakumari, Char Dham to 12 Jyotirlinga, and Thailand to Europe. Set itineraries or fully customised trips from Mumbai.';
 
 const bySlug = Object.fromEntries(packages.map((p) => [p.slug, p]));
+const totalDest = DESTINATION_GROUPS.reduce((n, g) => n + g.items.length, 0);
+
 const breadcrumbLd = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
@@ -25,38 +27,57 @@ const breadcrumbLd = {
       <p class="eyebrow">Destinations</p>
       <h1>Where can we take you?</h1>
       <p>
-        These are the places Venus Holidays runs trips to — some with ready itineraries you can
-        book today, the rest planned custom around your dates. Don't see yours? We plan
-        anywhere in India; just ask.
+        Everywhere Venus Holidays runs trips — some with ready itineraries you can book today,
+        the rest planned custom around your dates.
       </p>
+      <div class="proof-row" style="margin-top:22px">
+        <span class="proof">{packages.length} ready itineraries</span>
+        <span class="proof">{totalDest} destinations</span>
+        <span class="proof">Anywhere in India on request</span>
+      </div>
     </div>
   </div>
 
-  {DESTINATION_GROUPS.map((g) => (
-    <section class="section" style="padding:44px 0">
-      <div class="wrap">
-        <div class="section-head" style="margin-bottom:20px">
-          <p class="eyebrow">{g.title}</p>
+  {DESTINATION_GROUPS.map((g, gi) => {
+    const withItin = g.items.filter((it) => it.slug && bySlug[it.slug]).length;
+    return (
+      <section class:list={['section', { 'section-alt': gi % 2 === 1 }]} style="padding:52px 0">
+        <div class="wrap">
+          <div class="section-head" style="margin-bottom:22px">
+            <p class="eyebrow">{g.title}</p>
+            <h2 style="font-size:clamp(1.4rem,2.6vw,1.9rem)">
+              {g.title === 'India Holidays' ? 'The country, corner to corner' :
+               g.title === 'Yatras & Pilgrimage' ? 'Darshan, planned properly' :
+               g.title === 'Popular Circuits' ? 'Routes our travellers love' :
+               'And the world beyond'}
+            </h2>
+            <p style="font-size:.9rem">{withItin} of {g.items.length} with ready itineraries — the rest planned custom on WhatsApp.</p>
+          </div>
+          <div class="dcard-grid">
+            {g.items.map((it) => {
+              const pkg = it.slug ? bySlug[it.slug] : null;
+              return pkg ? (
+                <a class="dcard" href={`/packages/${it.slug}/`}>
+                  {pkg.photo && <img src={pkg.photo} alt={it.label} width="900" height="520" loading="lazy" decoding="async" />}
+                  <span class="dcard-body">
+                    <b>{it.label}</b>
+                    <i>{pkg.nights}N/{pkg.days}D · from {formatINR(pkg.priceINR)}{pkg.per === 'couple' ? '/couple' : ''}</i>
+                  </span>
+                </a>
+              ) : (
+                <a class="dcard dcard-wa" href={waLink(`Hi Venus Holidays! I want a ${it.label} package. Please share details.`)} target="_blank" rel="noopener">
+                  <span class="dcard-body">
+                    <b>{it.label}</b>
+                    <i class="wa-i">Enquire on WhatsApp ↗</i>
+                  </span>
+                </a>
+              );
+            })}
+          </div>
         </div>
-        <div class="dest-cards">
-          {g.items.map((it) => {
-            const pkg = it.slug ? bySlug[it.slug] : null;
-            return pkg ? (
-              <a class="dest-card" href={`/packages/${it.slug}/`}>
-                {it.label}
-                <span>{pkg.nights}N/{pkg.days}D · view itinerary →</span>
-              </a>
-            ) : (
-              <a class="dest-card wa" href={waLink(`Hi Venus Holidays! I want a ${it.label} package. Please share details.`)} target="_blank" rel="noopener">
-                {it.label}
-                <span>enquire on WhatsApp ↗</span>
-              </a>
-            );
-          })}
-        </div>
-      </div>
-    </section>
-  ))}
+      </section>
+    );
+  })}
 
   <section class="section" style="padding-top:20px">
     <div class="wrap">
