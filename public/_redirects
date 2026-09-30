@@ -1,0 +1,29 @@
+# Renamed package slugs → new URLs
+/packages/kashmir-paradise-circuit/ /packages/kashmir-paradise/ 301
+/packages/kerala-hills-and-backwaters/ /packages/kerala-gods-own-country/ 301
+/packages/rajasthan-royal-trail/ /packages/rajasthan-royal/ 301
+/packages/goa-sun-and-susegad/ /packages/goa-holiday/ 301
+/packages/kashi-ayodhya-darshan/ /packages/ayodhya-varanasi-prayagraj/ 301
+/packages/bali-island-of-temples/ /packages/bali-tour/ 301
+/packages/dubai-gold-and-dunes/ /packages/dubai-tour/ 301
+/packages/thailand-bangkok-phuket/ /packages/thailand-bangkok-pattaya/ 301
+/packages/maldives-lagoon-escape/ /packages/maldives-holiday/ 301
+/packages/andaman-islands-and-reefs/ /packages/andaman-holiday/ 301
+/packages/dwarka-somnath-statue-of-unity/ /packages/dwarka-somnath-yatra/ 301
+/packages/murudeshwar-gokarna/ /packages/gokarna-murudeshwar/ 301
+# Removed placeholder packages → listing
+/packages/sikkim-darjeeling/ /packages/ 301
+/packages/ooty-kodaikanal/ /packages/ 301
+/packages/uttarakhand-lakes-and-ganga/ /packages/ 301
+/packages/northeast-meghalaya-kaziranga/ /packages/ 301
+/packages/saurashtra-gir-and-coast/ /packages/ 301
+/packages/ujjain-omkareshwar-darshan/ /packages/ 301
+/packages/vaishno-devi-amritsar/ /packages/ 301
+/packages/kamakhya-devi-darshan/ /packages/ 301
+/packages/jagannath-puri-konark/ /packages/ 301
+/packages/akkalkot-pandharpur-gangapur/ /packages/ 301
+/packages/delhi-agra-mathura/ /packages/ 301
+/packages/rameshwaram-madurai-kanyakumari/ /packages/ 301
+/packages/bangalore-mysore-ooty/ /packages/ 301
+/packages/hyderabad-ramoji/ /packages/ 301
+/packages/hampi-badami/ /packages/ 301

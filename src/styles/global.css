@@ -65,6 +65,32 @@ header.site {
 .nav-links a.nav-item:hover { color: #fff; background: rgba(255, 255, 255, 0.08); }
 .nav-links a.nav-item.active { color: #052821; font-weight: 600; background: #fcf3e9; }
 .nav-links a:focus-visible, .logo:focus-visible { outline: 2px solid var(--lime); outline-offset: 2px; }
+/* Destinations dropdown */
+.nav-dd { position: relative; }
+.dd-caret { font-size: 0.7em; opacity: 0.7; }
+.nav-panel {
+  position: absolute; top: calc(100% + 10px); left: 50%; transform: translateX(-38%);
+  width: min(880px, 92vw); z-index: 60;
+  background: #06281f; border: 1px solid rgba(152, 255, 83, 0.22); border-radius: 16px;
+  box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.6);
+  padding: 24px 28px; display: none;
+  grid-template-columns: repeat(4, 1fr); gap: 26px;
+}
+.nav-dd:hover .nav-panel, .nav-dd:focus-within .nav-panel { display: grid; }
+.nav-panel::before { content: ""; position: absolute; top: -12px; left: 0; right: 0; height: 12px; }
+.nav-panel b {
+  display: block; font-size: 0.7rem; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--lime); margin-bottom: 10px; font-weight: 600;
+}
+.nav-panel ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.nav-panel a {
+  font-size: 0.86rem; color: rgba(252, 243, 233, 0.8); text-decoration: none; display: block; padding: 2px 0;
+}
+.nav-panel a:hover { color: #fff; }
+.nav-panel a.wa-item { color: rgba(252, 243, 233, 0.55); }
+.nav-panel a.wa-item:hover { color: #5fd68b; }
+@media (max-width: 900px) { .nav-panel { display: none !important; } .dd-caret { display: none; } }
+
 .nav-wa {
   display: inline-flex; align-items: center; gap: 8px;
   background: var(--wa); color: #fff; text-decoration: none;
@@ -493,6 +519,47 @@ a.pkg:hover .pkg-open { background: #11332b; border-color: #11332b; color: #fcf3
 .faq-item summary::after { content: "+"; font-size: 1.3rem; color: var(--accent); font-weight: 400; flex: none; }
 .faq-item[open] summary::after { content: "–"; }
 .faq-item p { color: var(--text-soft); font-size: 0.92rem; padding: 0 0 18px; max-width: 65ch; }
+
+/* Destinations page cards */
+.dest-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+@media (max-width: 860px) { .dest-cards { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 520px) { .dest-cards { grid-template-columns: 1fr; } }
+a.dest-card {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  background: var(--surface); border: 1px solid var(--line); border-radius: 12px;
+  padding: 14px 18px; text-decoration: none; color: var(--heading); font-weight: 600; font-size: 0.95rem;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+a.dest-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+a.dest-card span { font-size: 0.74rem; font-weight: 600; color: var(--accent-deep); white-space: nowrap; }
+a.dest-card.wa { border-style: dashed; }
+a.dest-card.wa span { color: var(--wa-deep); }
+
+/* Honeymoon cards */
+.hm-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+@media (max-width: 900px) { .hm-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .hm-grid { grid-template-columns: 1fr; } }
+.hm-card {
+  background: var(--surface); border: 1px solid var(--line); border-radius: 16px; overflow: hidden;
+  display: flex; flex-direction: column; box-shadow: 0 4px 18px -8px rgba(5, 40, 33, 0.14);
+}
+.hm-art { position: relative; height: 150px; }
+.hm-art img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.hm-art .pkg-tag { background: #7a1f3d; }
+.hm-body { padding: 18px 18px 20px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+.hm-body h3 { font-size: 1.15rem; color: var(--heading); }
+.hm-inc { display: flex; flex-wrap: wrap; gap: 6px; }
+.hm-inc span {
+  font-size: 0.72rem; font-weight: 600; color: var(--accent-deep);
+  background: #eef6f1; border-radius: 99px; padding: 4px 10px;
+}
+.hm-foot { margin-top: auto; padding-top: 12px; border-top: 1px dashed var(--line-strong); display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.hm-links { display: flex; gap: 8px; }
+.hm-links a { font-size: 0.78rem; font-weight: 600; text-decoration: none; padding: 7px 13px; border-radius: 99px; }
+.hm-links a.wa { background: var(--wa); color: #fff; }
+.hm-links a.wa:hover { background: var(--wa-deep); }
+.hm-links a.itin-link { border: 1.5px solid rgba(14, 122, 95, 0.45); color: var(--accent-deep); }
+.hm-links a.itin-link:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
 
 /* CTA band */
 .band {

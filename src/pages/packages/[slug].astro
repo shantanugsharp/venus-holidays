@@ -10,6 +10,7 @@ export async function getStaticPaths() {
 
 const { pkg } = Astro.props;
 const nightsLabel = `${pkg.nights}N / ${pkg.days}D`;
+const perLabel = pkg.per === 'couple' ? 'per couple' : 'per person';
 
 // ── Per-tour palette: from the tour's photo (stored at fetch time in
 // packages.json) or, as fallback, extracted from the SVG artwork. ──
@@ -44,7 +45,7 @@ const baseName = pkg.name.split(' — ')[0];
 const isYatra = /yatra|darshan|dham/i.test(pkg.name);
 let title = `${baseName} ${isYatra ? '' : 'Tour '}Package | ${SITE.name}`;
 if (title.length > 65) title = `${baseName} Package | ${SITE.name}`;
-const description = `${baseName} ${isYatra ? 'yatra' : 'tour'} package: ${nightsLabel}, ${pkg.route}. From ${formatINR(pkg.priceINR)} per person, taxes included. Book on WhatsApp.`.slice(0, 160);
+const description = `${baseName} ${isYatra ? 'yatra' : 'tour'} package: ${nightsLabel}, ${pkg.route}. From ${formatINR(pkg.priceINR)} ${perLabel}, taxes included. Book on WhatsApp.`.slice(0, 160);
 
 const bookHref = waLink(`Hi! I'd like to book the ${pkg.name} (${nightsLabel}). Please share dates and availability.`);
 const bannerSvg = `<svg viewBox="0 0 400 150" preserveAspectRatio="xMidYMid slice" aria-hidden="true">${ART[pkg.id] || ''}</svg>`;
@@ -72,7 +73,7 @@ const tripLd = {
     priceCurrency: 'INR',
     availability: 'https://schema.org/InStock',
     url: new URL(`/packages/${pkg.slug}/`, Astro.site).href,
-    description: `Per person on twin sharing, taxes included. ${pkg.nights} nights / ${pkg.days} days.`,
+    description: `${pkg.per === 'couple' ? 'Per couple' : 'Per person on twin sharing'}, taxes included. ${pkg.nights} nights / ${pkg.days} days.`,
     seller: { '@id': new URL('/#organization', Astro.site).href },
   },
   provider: { '@id': new URL('/#organization', Astro.site).href },
@@ -97,7 +98,7 @@ const faqs = [
   ],
   [
     `How much does the ${pkg.name} package cost?`,
-    `Prices start at ${formatINR(pkg.priceINR)} per person on twin sharing, taxes included, for ${pkg.nights} nights / ${pkg.days} days covering ${pkg.route}. The final quote depends on your travel dates, hotel category and group size — we confirm an exact all-inclusive price before you pay anything.`,
+    `Prices start at ${formatINR(pkg.priceINR)} ${pkg.per === 'couple' ? 'per couple' : 'per person on twin sharing'}, taxes included, for ${pkg.nights} nights / ${pkg.days} days covering ${pkg.route}. The final quote depends on your travel dates, hotel category and group size — we confirm an exact all-inclusive price before you pay anything.`,
   ],
   [
     `Can I customise this ${destName} itinerary?`,
@@ -213,7 +214,7 @@ const related = packages
         </div>
 
         <aside class="book-card">
-          <div class="pkg-price"><span>From, per person</span><b>{formatINR(pkg.priceINR)}</b></div>
+          <div class="pkg-price"><span>From, {perLabel}</span><b>{formatINR(pkg.priceINR)}</b></div>
           <div class="book-rows">
             <div class="book-row"><span>Duration</span><b>{nightsLabel}</b></div>
             <div class="book-row"><span>Route</span><b>{pkg.route}</b></div>
@@ -252,7 +253,7 @@ const related = packages
               <h3>{p.name}</h3>
               <div class="pkg-meta"><span>{p.nights}N / {p.days}D</span><span>{p.route}</span></div>
               <div class="pkg-foot">
-                <div class="pkg-price"><span>From</span><b>{formatINR(p.priceINR)}</b></div>
+                <div class="pkg-price"><span>{p.per === 'couple' ? 'From · per couple' : 'From'}</span><b>{formatINR(p.priceINR)}</b></div>
                 <span class="pkg-open">View details</span>
               </div>
             </div>

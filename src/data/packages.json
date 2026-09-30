@@ -1,1798 +1,5 @@
 [
   {
-    "id": "kashmir",
-    "slug": "kashmir-paradise-circuit",
-    "name": "Kashmir — Paradise Circuit",
-    "cat": [
-      "domestic"
-    ],
-    "tag": "Bestseller",
-    "nights": 6,
-    "days": 7,
-    "route": "Srinagar · Gulmarg · Pahalgam",
-    "priceINR": 34999,
-    "season": "Apr – Oct",
-    "desc": "Houseboat night on Dal Lake, gondola to Apharwat, and a saffron-farm lunch in Pampore.",
-    "lede": "Seven days across the valley Mughal emperors called paradise — shikaras at sunset, alpine meadows at Gulmarg, and a night aboard a cedar houseboat on Dal Lake.",
-    "highlights": [
-      "Dal Lake shikara sunset",
-      "Gulmarg gondola (Phase 1)",
-      "Betaab & Aru valleys",
-      "Saffron-farm lunch, Pampore",
-      "Cedar houseboat night"
-    ],
-    "itin": [
-      [
-        "Arrive Srinagar",
-        "Airport pickup, check-in, and an evening shikara ride on Dal Lake as the lights come on."
-      ],
-      [
-        "Gulmarg day trip",
-        "Gondola to Kongdoori station; snow play in season, meadow walks in summer. Overnight Srinagar."
-      ],
-      [
-        "Srinagar → Pahalgam",
-        "Drive via Pampore saffron fields and Avantipora ruins. Evening by the Lidder river."
-      ],
-      [
-        "Betaab & Aru valleys",
-        "Full day in Pahalgam's film-famous valleys; optional pony trek to Baisaran."
-      ],
-      [
-        "Mughal gardens & old city",
-        "Nishat, Shalimar and Pari Mahal, then a wazwan dinner in the old city."
-      ],
-      [
-        "Houseboat night",
-        "Free morning, then check into a deluxe houseboat — kahwa on the deck at dusk."
-      ],
-      [
-        "Depart",
-        "Drop at Srinagar airport with saffron and dry fruits in the bag."
-      ]
-    ],
-    "inc": [
-      "6 nights' stay (4★ hotels + houseboat)",
-      "Daily breakfast & dinner",
-      "Private cab for all transfers & sightseeing",
-      "Shikara ride & gondola Phase 1 tickets",
-      "All tolls, parking and driver charges"
-    ],
-    "exc": [
-      "Flights to/from Srinagar",
-      "Lunches",
-      "Gondola Phase 2",
-      "Pony rides & sledging",
-      "Personal expenses"
-    ],
-    "photo": "/img/trips/kashmir.webp",
-    "photos": [
-      "/img/trips/kashmir.webp",
-      "/img/trips/kashmir-2.webp",
-      "/img/trips/kashmir-3.webp"
-    ],
-    "colors": {
-      "deep": [
-        45,
-        45,
-        45
-      ],
-      "vivid": [
-        104,
-        100,
-        94
-      ]
-    }
-  },
-  {
-    "id": "kerala",
-    "slug": "kerala-hills-and-backwaters",
-    "name": "Kerala — Hills & Backwaters",
-    "cat": [
-      "domestic",
-      "honeymoon"
-    ],
-    "tag": "Honeymoon pick",
-    "nights": 5,
-    "days": 6,
-    "route": "Munnar · Thekkady · Alleppey",
-    "priceINR": 27499,
-    "season": "Sep – Mar",
-    "desc": "Tea-estate stay in Munnar, spice-garden walk, and a private houseboat drifting through Alleppey.",
-    "lede": "Six days from mist-covered tea country down to the slow green canals of Alleppey — ending with a private houseboat and a candlelit dinner on deck.",
-    "highlights": [
-      "Tea-estate stay, Munnar",
-      "Eravikulam National Park",
-      "Periyar spice gardens",
-      "Private premium houseboat",
-      "Kathakali evening show"
-    ],
-    "itin": [
-      [
-        "Arrive Kochi → Munnar",
-        "Drive up through waterfalls and rubber plantations; check into a tea-estate stay."
-      ],
-      [
-        "Munnar",
-        "Eravikulam National Park, tea museum, and Top Station viewpoint."
-      ],
-      [
-        "Munnar → Thekkady",
-        "Spice-garden walk and an optional Periyar lake cruise; Kathakali show at night."
-      ],
-      [
-        "Thekkady → Alleppey",
-        "Board a private houseboat by noon — cruise, swim stops, and dinner on deck."
-      ],
-      [
-        "Alleppey → Kochi",
-        "Disembark after breakfast; Fort Kochi walk — Chinese nets, Jew Town, café stop."
-      ],
-      [
-        "Depart",
-        "Drop at Kochi airport."
-      ]
-    ],
-    "inc": [
-      "5 nights' stay (4★ + premium houseboat)",
-      "Daily breakfast; all meals on houseboat",
-      "Private AC cab throughout",
-      "Houseboat with dedicated crew",
-      "All permits and taxes"
-    ],
-    "exc": [
-      "Flights",
-      "Lunches & dinners off-boat",
-      "Periyar boat tickets",
-      "Ayurveda treatments",
-      "Personal expenses"
-    ],
-    "photo": "/img/trips/kerala.webp",
-    "photos": [
-      "/img/trips/kerala.webp",
-      "/img/trips/kerala-2.webp",
-      "/img/trips/kerala-3.webp"
-    ],
-    "colors": {
-      "deep": [
-        19,
-        22,
-        23
-      ],
-      "vivid": [
-        100,
-        91,
-        78
-      ]
-    }
-  },
-  {
-    "id": "rajasthan",
-    "slug": "rajasthan-royal-trail",
-    "name": "Rajasthan — Royal Trail",
-    "cat": [
-      "domestic"
-    ],
-    "tag": "Heritage",
-    "nights": 7,
-    "days": 8,
-    "route": "Jaipur · Jodhpur · Udaipur",
-    "priceINR": 38999,
-    "season": "Oct – Mar",
-    "desc": "Amber Fort at sunrise, blue-city walking tour, and dinner overlooking Lake Pichola.",
-    "lede": "Eight days through the three great royal cities — pink, blue and white — with heritage stays, stepwells, and one dinner you'll talk about for years, overlooking Lake Pichola.",
-    "highlights": [
-      "Amber Fort at sunrise",
-      "Blue-city walking tour",
-      "Mehrangarh ramparts",
-      "Lake Pichola dinner",
-      "Heritage haveli stays"
-    ],
-    "itin": [
-      [
-        "Arrive Jaipur",
-        "Check into a heritage haveli; evening at Nahargarh for the city-lights view."
-      ],
-      [
-        "Jaipur",
-        "Amber Fort early, then City Palace, Jantar Mantar and the bazaars of Johari."
-      ],
-      [
-        "Jaipur → Jodhpur",
-        "Drive via the stepwells of Toorji ka Jhalra; sunset from the clock-tower market."
-      ],
-      [
-        "Jodhpur",
-        "Mehrangarh Fort and the blue-city walking tour with a local guide."
-      ],
-      [
-        "Jodhpur → Udaipur",
-        "Via Ranakpur's 1,444-pillar Jain temple — no two carved alike."
-      ],
-      [
-        "Udaipur",
-        "City Palace, Saheliyon ki Bari, and an evening boat to Jag Mandir."
-      ],
-      [
-        "Udaipur at leisure",
-        "Free day — art walk, cooking class, or nothing at all. Farewell dinner over Pichola."
-      ],
-      [
-        "Depart",
-        "Drop at Udaipur airport."
-      ]
-    ],
-    "inc": [
-      "7 nights in heritage-style hotels",
-      "Daily breakfast & 3 dinners",
-      "Private cab, all intercity drives",
-      "Local guides in all 3 cities",
-      "Monument entry (Indian nationals)"
-    ],
-    "exc": [
-      "Flights",
-      "Most lunches & dinners",
-      "Camera fees at monuments",
-      "Boat ride upgrades",
-      "Personal expenses"
-    ],
-    "photo": "/img/trips/rajasthan.webp",
-    "photos": [
-      "/img/trips/rajasthan.webp",
-      "/img/trips/rajasthan-2.webp",
-      "/img/trips/rajasthan-3.webp"
-    ],
-    "colors": {
-      "deep": [
-        65,
-        49,
-        42
-      ],
-      "vivid": [
-        80,
-        58,
-        46
-      ]
-    }
-  },
-  {
-    "id": "goa",
-    "slug": "goa-sun-and-susegad",
-    "name": "Goa — Sun & Susegad",
-    "cat": [
-      "domestic"
-    ],
-    "tag": "Quick escape",
-    "nights": 3,
-    "days": 4,
-    "route": "North & South Goa",
-    "priceINR": 15999,
-    "season": "Nov – Feb",
-    "desc": "Beachfront stay, old-Goa heritage loop, and a sunset cruise on the Mandovi.",
-    "lede": "A long weekend done properly: beachfront stay, one lazy heritage day, one boat, and no alarm clocks.",
-    "highlights": [
-      "Beachfront resort stay",
-      "Old Goa & Fontainhas walk",
-      "Mandovi sunset cruise",
-      "Optional water sports"
-    ],
-    "itin": [
-      [
-        "Arrive",
-        "Airport pickup, resort check-in, shack lunch, sea."
-      ],
-      [
-        "North Goa",
-        "Aguada fort, Anjuna flea market (Wednesdays), sunset at Vagator."
-      ],
-      [
-        "Heritage day",
-        "Basilica of Bom Jesus, Sé Cathedral, Latin-quarter walk in Fontainhas; evening Mandovi cruise."
-      ],
-      [
-        "Depart",
-        "Late checkout where possible; airport drop."
-      ]
-    ],
-    "inc": [
-      "3 nights beachfront resort",
-      "Daily breakfast",
-      "Airport transfers",
-      "North Goa + heritage sightseeing by private cab",
-      "Mandovi cruise tickets"
-    ],
-    "exc": [
-      "Flights",
-      "Lunches & dinners",
-      "Water sports",
-      "Scooter hire",
-      "Personal expenses"
-    ],
-    "photo": "/img/trips/goa.webp",
-    "photos": [
-      "/img/trips/goa.webp",
-      "/img/trips/goa-2.webp",
-      "/img/trips/goa-3.webp"
-    ],
-    "colors": {
-      "deep": [
-        69,
-        68,
-        53
-      ],
-      "vivid": [
-        69,
-        74,
-        35
-      ]
-    }
-  },
-  {
-    "id": "himachal",
-    "slug": "himachal-shimla-manali",
-    "name": "Himachal — Shimla & Manali",
-    "cat": [
-      "domestic"
-    ],
-    "tag": "Hills",
-    "nights": 5,
-    "days": 6,
-    "route": "Shimla · Kufri · Manali · Solang",
-    "priceINR": 22999,
-    "season": "Mar – Jun · Oct – Feb",
-    "desc": "Toy-train ride to Shimla, Solang Valley ropeway, and riverside café evenings in Old Manali.",
-    "lede": "The classic hill double-bill — colonial Shimla by toy train, then over the hills to Manali for snow points, ropeways and riverside cafés.",
-    "highlights": [
-      "Kalka–Shimla toy train",
-      "Kufri & Mall Road",
-      "Solang Valley ropeway",
-      "Hadimba temple & Old Manali",
-      "Atal Tunnel excursion"
-    ],
-    "itin": [
-      [
-        "Arrive Shimla",
-        "Optional toy-train leg from Kalka; evening on the Ridge and Mall Road."
-      ],
-      [
-        "Kufri & around",
-        "Kufri viewpoint, Green Valley, and Jakhoo temple's giant Hanuman."
-      ],
-      [
-        "Shimla → Manali",
-        "Scenic drive along the Beas; riverside check-in."
-      ],
-      [
-        "Solang Valley",
-        "Ropeway, paragliding (optional), and the Atal Tunnel to Sissu in season."
-      ],
-      [
-        "Manali local",
-        "Hadimba temple, Vashisht hot springs, Old Manali cafés."
-      ],
-      [
-        "Depart",
-        "Drive down to Chandigarh / Delhi overnight Volvo option."
-      ]
-    ],
-    "inc": [
-      "5 nights' stay (3★/4★)",
-      "Daily breakfast & dinner",
-      "Private cab throughout",
-      "Toy-train tickets (subject to availability)",
-      "All tolls and parking"
-    ],
-    "exc": [
-      "Transport to Kalka/Chandigarh",
-      "Lunches",
-      "Adventure activities",
-      "Rohtang permits when open",
-      "Personal expenses"
-    ],
-    "photo": "/img/trips/himachal.webp",
-    "photos": [
-      "/img/trips/himachal.webp",
-      "/img/trips/himachal-2.webp",
-      "/img/trips/himachal-3.webp"
-    ],
-    "colors": {
-      "deep": [
-        20,
-        26,
-        17
-      ],
-      "vivid": [
-        50,
-        68,
-        26
-      ]
-    }
-  },
-  {
-    "id": "sikkim",
-    "slug": "sikkim-darjeeling",
-    "name": "Sikkim & Darjeeling",
-    "cat": [
-      "domestic"
-    ],
-    "tag": "Tea country",
-    "nights": 5,
-    "days": 6,
-    "route": "Gangtok · Tsomgo Lake · Darjeeling",
-    "priceINR": 26499,
-    "season": "Mar – May · Oct – Dec",
-    "desc": "Kanchenjunga sunrise from Tiger Hill, monastery mornings, and first-flush tastings at a working estate.",
-    "lede": "Six days in the eastern Himalaya — prayer flags over Gangtok, the high lake at Tsomgo, and a 4 am date with Kanchenjunga from Tiger Hill.",
-    "highlights": [
-      "Tsomgo Lake & Baba Mandir",
-      "Rumtek monastery",
-      "Tiger Hill sunrise",
-      "Darjeeling toy train joyride",
-      "Tea-estate tasting"
-    ],
-    "itin": [
-      [
-        "Arrive Gangtok",
-        "Pickup from Bagdogra; evening on MG Marg."
-      ],
-      [
-        "Tsomgo Lake",
-        "High-altitude lake and Baba Mandir (permits arranged); yak-side photos mandatory."
-      ],
-      [
-        "Gangtok → Darjeeling",
-        "Rumtek monastery en route; tea-estate check-in."
-      ],
-      [
-        "Tiger Hill sunrise",
-        "Kanchenjunga at dawn, Ghoom monastery, Batasia loop, toy-train joyride."
-      ],
-      [
-        "Darjeeling",
-        "Himalayan Mountaineering Institute, zoo, Mall Road, first-flush tasting."
-      ],
-      [
-        "Depart",
-        "Drive to Bagdogra airport."
-      ]
-    ],
-    "inc": [
-      "5 nights' stay",
-      "Daily breakfast & dinner",
-      "Private cab + shared permits vehicle for Tsomgo",
-      "All Sikkim permits",
-      "Toy-train joyride tickets"
-    ],
-    "exc": [
-      "Flights to Bagdogra",
-      "Lunches",
-      "Nathu La add-on",
-      "Ropeway tickets",
-      "Personal expenses"
-    ],
-    "photo": "/img/trips/sikkim.webp",
-    "photos": [
-      "/img/trips/sikkim.webp",
-      "/img/trips/sikkim-2.webp",
-      "/img/trips/sikkim-3.webp"
-    ],
-    "colors": {
-      "deep": [
-        39,
-        49,
-        21
-      ],
-      "vivid": [
-        60,
-        83,
-        60
-      ]
-    }
-  },
-  {
-    "id": "ooty",
-    "slug": "ooty-kodaikanal",
-    "name": "Ooty & Kodaikanal",
-    "cat": [
-      "domestic"
-    ],
-    "tag": "Family favourite",
-    "nights": 4,
-    "days": 5,
-    "route": "Ooty · Coonoor · Kodaikanal",
-    "priceINR": 18999,
-    "season": "Sep – May",
-    "desc": "Nilgiri mountain railway, boat house mornings on Kodai lake, and homemade chocolate trails.",
-    "lede": "The gentle south-Indian hills — heritage rail through the Nilgiris, botanical gardens, lake mornings, and enough homemade chocolate to justify the walks.",
-    "highlights": [
-      "Nilgiri mountain railway",
-      "Ooty botanical gardens",
-      "Coonoor tea gardens",
-      "Kodai lake boating",
-      "Coaker's Walk"
-    ],
-    "itin": [
-      [
-        "Arrive Ooty",
-        "Pickup from Coimbatore; botanical gardens and chocolate shopping."
-      ],
-      [
-        "Coonoor by rail",
-        "Heritage toy-train leg, Sim's Park, Dolphin's Nose viewpoint."
-      ],
-      [
-        "Ooty → Kodaikanal",
-        "Drive through the plains and back up; lakeside evening."
-      ],
-      [
-        "Kodaikanal",
-        "Coaker's Walk, pillar rocks, pine forest, cycle around the lake."
-      ],
-      [
-        "Depart",
-        "Drive down to Madurai / Coimbatore airport."
-      ]
-    ],
-    "inc": [
-      "4 nights' stay",
-      "Daily breakfast",
-      "Private cab throughout",
-      "Toy-train tickets (subject to availability)",
-      "All parking and tolls"
-    ],
-    "exc": [
-      "Transport to Coimbatore",
-      "Lunches & dinners",
-      "Boating charges",
-      "Horse rides & cycles",
-      "Personal expenses"
-    ],
-    "photo": "/img/trips/ooty.webp",
-    "photos": [
-      "/img/trips/ooty.webp",
-      "/img/trips/ooty-2.webp",
-      "/img/trips/ooty-3.webp"
-    ],
-    "colors": {
-      "deep": [
-        31,
-        33,
-        37
-      ],
-      "vivid": [
-        2,
-        85,
-        151
-      ]
-    }
-  },
-  {
-    "id": "kashi",
-    "slug": "kashi-ayodhya-darshan",
-    "name": "Kashi & Ayodhya Darshan",
-    "cat": [
-      "pilgrimage"
-    ],
-    "tag": "Pilgrimage",
-    "nights": 3,
-    "days": 4,
-    "route": "Varanasi · Ayodhya · Prayagraj",
-    "priceINR": 14999,
-    "season": "Oct – Mar",
-    "desc": "Dawn boat aarti on the Ganga, Ram Mandir darshan with priority passes, and Sangam snan.",
-    "lede": "Four unhurried days across the holiest triangle in the north — dawn on the Ganga, darshan at the new Ram Mandir, and a dip at the Sangam.",
-    "highlights": [
-      "Subah-e-Banaras boat ride",
-      "Kashi Vishwanath corridor",
-      "Ganga aarti at Dashashwamedh",
-      "Ram Mandir priority darshan",
-      "Sangam snan, Prayagraj"
-    ],
-    "itin": [
-      [
-        "Arrive Varanasi",
-        "Evening Ganga aarti at Dashashwamedh ghat from a reserved boat."
-      ],
-      [
-        "Kashi",
-        "Dawn boat ride, Kashi Vishwanath darshan via corridor, Sarnath in the afternoon."
-      ],
-      [
-        "Varanasi → Ayodhya",
-        "Ram Mandir darshan with assistance, Hanuman Garhi, Saryu aarti."
-      ],
-      [
-        "Prayagraj & depart",
-        "Sangam snan and Bade Hanuman ji; drop at Prayagraj / Varanasi."
-      ]
-    ],
-    "inc": [
-      "3 nights' stay near the ghats",
-      "Daily breakfast & pure-veg dinners",
-      "Private cab, all intercity drives",
-      "Reserved boat for aarti & dawn ride",
-      "Darshan assistance at both temples"
-    ],
-    "exc": [
-      "Train/flights",
-      "Lunches",
-      "VIP darshan tickets where applicable",
-      "Puja samagri",
-      "Personal expenses"
-    ],
-    "photo": "/img/trips/kashi.webp",
-    "photos": [
-      "/img/trips/kashi.webp",
-      "/img/trips/kashi-2.webp",
-      "/img/trips/kashi-3.webp"
-    ],
-    "colors": {
-      "deep": [
-        31,
-        31,
-        26
-      ],
-      "vivid": [
-        133,
-        118,
-        102
-      ]
-    }
-  },
-  {
-    "id": "bali",
-    "slug": "bali-island-of-temples",
-    "name": "Bali — Island of Temples",
-    "cat": [
-      "international",
-      "honeymoon"
-    ],
-    "tag": "International",
-    "nights": 5,
-    "days": 6,
-    "route": "Ubud · Kuta · Nusa Penida",
-    "priceINR": 58999,
-    "season": "Apr – Oct",
-    "desc": "Rice-terrace walks, Uluwatu sunset kecak dance, and a Nusa Penida day cruise. Visa on arrival.",
-    "lede": "Six days between jungle and reef — an Ubud villa among the rice terraces, the kecak fire dance at Uluwatu, and a fast-boat day on Nusa Penida.",
-    "highlights": [
-      "Ubud villa stay",
-      "Tegalalang rice terraces",
-      "Uluwatu kecak sunset",
-      "Nusa Penida day cruise",
-      "Floating breakfast"
-    ],
-    "itin": [
-      [
-        "Arrive Denpasar",
-        "Visa on arrival; transfer to an Ubud pool villa."
-      ],
-      [
-        "Ubud",
-        "Tegalalang terraces, sacred monkey forest, Tirta Empul water temple."
-      ],
-      [
-        "Ubud → Kuta",
-        "Via Tanah Lot sea temple; beach evening."
-      ],
-      [
-        "Nusa Penida",
-        "Fast-boat day trip — Kelingking, Angel's Billabong, snorkelling."
-      ],
-      [
-        "Uluwatu",
-        "Free morning, then clifftop temple and the kecak fire dance at sunset; seafood dinner at Jimbaran."
-      ],
-      [
-        "Depart",
-        "Transfer to Denpasar airport."
-      ]
-    ],
-    "inc": [
-      "5 nights (pool villa + 4★ resort)",
-      "Daily breakfast + 1 floating breakfast",
-      "Private car with English-speaking driver",
-      "Nusa Penida boat + snorkelling",
-      "Kecak dance tickets"
-    ],
-    "exc": [
-      "International flights",
-      "Visa-on-arrival fee (IDR 500k)",
-      "Lunches & dinners",
-      "Watersports at Tanjung Benoa",
-      "Travel insurance"
-    ],
-    "photo": "/img/trips/bali.webp",
-    "photos": [
-      "/img/trips/bali.webp",
-      "/img/trips/bali-2.webp",
-      "/img/trips/bali-3.webp"
-    ],
-    "colors": {
-      "deep": [
-        41,
-        51,
-        32
-      ],
-      "vivid": [
-        66,
-        105,
-        25
-      ]
-    }
-  },
-  {
-    "id": "dubai",
-    "slug": "dubai-gold-and-dunes",
-    "name": "Dubai — Gold & Dunes",
-    "cat": [
-      "international"
-    ],
-    "tag": "International",
-    "nights": 4,
-    "days": 5,
-    "route": "Dubai · Abu Dhabi day trip",
-    "priceINR": 64999,
-    "season": "Nov – Mar",
-    "desc": "Burj Khalifa at the top, desert safari with BBQ dinner, and a dhow cruise on the Marina.",
-    "lede": "Five days of the Gulf's greatest hits — the view from the 124th floor, dune-bashing at golden hour, and the Sheikh Zayed Grand Mosque in white marble.",
-    "highlights": [
-      "Burj Khalifa 'At the Top'",
-      "Desert safari + BBQ",
-      "Marina dhow cruise",
-      "Sheikh Zayed Grand Mosque",
-      "Gold & spice souks"
-    ],
-    "itin": [
-      [
-        "Arrive Dubai",
-        "Evening Marina dhow cruise with dinner."
-      ],
-      [
-        "City tour + Burj",
-        "Old Dubai, souks and abra ride; Burj Khalifa at sunset, fountain show."
-      ],
-      [
-        "Desert safari",
-        "Free morning (mall time); afternoon dune-bashing, camel rides, BBQ under the stars."
-      ],
-      [
-        "Abu Dhabi",
-        "Sheikh Zayed Grand Mosque, corniche drive, Ferrari World photo stop."
-      ],
-      [
-        "Depart",
-        "Souvenir run and airport transfer."
-      ]
-    ],
-    "inc": [
-      "4 nights 4★ hotel",
-      "Daily breakfast",
-      "Burj Khalifa (124F) tickets",
-      "Desert safari with dinner",
-      "All transfers on private basis"
-    ],
-    "exc": [
-      "International flights",
-      "UAE visa (we assist)",
-      "Lunches & most dinners",
-      "Theme-park entries",
-      "Travel insurance"
-    ],
-    "photo": "/img/trips/dubai.webp",
-    "photos": [
-      "/img/trips/dubai.webp",
-      "/img/trips/dubai-2.webp",
-      "/img/trips/dubai-3.webp"
-    ],
-    "colors": {
-      "deep": [
-        18,
-        16,
-        18
-      ],
-      "vivid": [
-        127,
-        83,
-        57
-      ]
-    }
-  },
-  {
-    "id": "thailand",
-    "slug": "thailand-bangkok-phuket",
-    "name": "Thailand — Twin Cities",
-    "cat": [
-      "international"
-    ],
-    "tag": "International",
-    "nights": 5,
-    "days": 6,
-    "route": "Bangkok · Phuket · Phi Phi",
-    "priceINR": 49999,
-    "season": "Nov – Apr",
-    "desc": "Grand Palace and floating markets, then island-hopping by speedboat from Phuket.",
-    "lede": "Temples and floating markets in Bangkok, then south to Phuket for a speedboat day around the Phi Phi islands — the classic first Thailand trip, done right.",
-    "highlights": [
-      "Grand Palace & Wat Pho",
-      "Damnoen Saduak floating market",
-      "Phi Phi speedboat day",
-      "Patong night market",
-      "Thai massage session"
-    ],
-    "itin": [
-      [
-        "Arrive Bangkok",
-        "Evening at Asiatique riverfront night market."
-      ],
-      [
-        "Bangkok temples",
-        "Grand Palace, Wat Pho's reclining Buddha, long-tail canal ride."
-      ],
-      [
-        "Floating market → fly to Phuket",
-        "Damnoen Saduak morning, afternoon flight south."
-      ],
-      [
-        "Phi Phi islands",
-        "Full-day speedboat — Maya Bay, Monkey Beach, snorkelling, island lunch."
-      ],
-      [
-        "Phuket",
-        "Free day — Big Buddha, old town, or a beach and a massage."
-      ],
-      [
-        "Depart",
-        "Transfer to Phuket airport."
-      ]
-    ],
-    "inc": [
-      "5 nights (4★ hotels)",
-      "Daily breakfast",
-      "Phi Phi speedboat tour with lunch",
-      "Bangkok city + floating-market tours",
-      "All transfers"
-    ],
-    "exc": [
-      "International & domestic flights",
-      "Thailand entry requirements",
-      "Lunches & dinners not listed",
-      "Shows and nightlife",
-      "Travel insurance"
-    ],
-    "photo": "/img/trips/thailand.webp",
-    "photos": [
-      "/img/trips/thailand.webp",
-      "/img/trips/thailand-2.webp",
-      "/img/trips/thailand-3.webp"
-    ],
-    "colors": {
-      "deep": [
-        30,
-        32,
-        25
-      ],
-      "vivid": [
-        63,
-        72,
-        30
-      ]
-    }
-  },
-  {
-    "id": "maldives",
-    "slug": "maldives-lagoon-escape",
-    "name": "Maldives — Lagoon Escape",
-    "cat": [
-      "international",
-      "honeymoon"
-    ],
-    "tag": "Honeymoon pick",
-    "nights": 3,
-    "days": 4,
-    "route": "Malé · water-villa resort",
-    "priceINR": 72999,
-    "season": "Nov – Apr",
-    "desc": "Overwater villa with all meals, sunset dolphin cruise, and a candlelit sandbank dinner.",
-    "lede": "Four days of exactly nothing — an overwater villa with steps into the lagoon, meals included, and one candlelit dinner on a private sandbank.",
-    "highlights": [
-      "Overwater villa",
-      "All-meals plan",
-      "Sunset dolphin cruise",
-      "House-reef snorkelling",
-      "Sandbank dinner"
-    ],
-    "itin": [
-      [
-        "Arrive Malé",
-        "Speedboat/seaplane to the resort; villa check-in and lagoon time."
-      ],
-      [
-        "Reef day",
-        "House-reef snorkelling, kayaks, spa hour; sunset dolphin cruise."
-      ],
-      [
-        "At leisure",
-        "Nothing scheduled on purpose; candlelit sandbank dinner at dusk."
-      ],
-      [
-        "Depart",
-        "Transfer back to Malé airport."
-      ]
-    ],
-    "inc": [
-      "3 nights overwater villa",
-      "All meals (full board)",
-      "Return speedboat transfers",
-      "Dolphin cruise & sandbank dinner",
-      "Snorkelling gear"
-    ],
-    "exc": [
-      "International flights",
-      "Seaplane upgrade",
-      "Alcohol & premium dining",
-      "Diving & motorised watersports",
-      "Travel insurance"
-    ],
-    "photo": "/img/trips/maldives.webp",
-    "photos": [
-      "/img/trips/maldives.webp",
-      "/img/trips/maldives-2.webp",
-      "/img/trips/maldives-3.webp"
-    ],
-    "colors": {
-      "deep": [
-        2,
-        42,
-        85
-      ],
-      "vivid": [
-        1,
-        66,
-        109
-      ]
-    }
-  },
-  {
-    "id": "uttarakhand",
-    "slug": "uttarakhand-lakes-and-ganga",
-    "name": "Uttarakhand — Lakes & Ganga",
-    "cat": [
-      "domestic"
-    ],
-    "tag": "Hills",
-    "nights": 5,
-    "days": 6,
-    "route": "Nainital · Mussoorie · Rishikesh · Haridwar",
-    "priceINR": 21999,
-    "season": "Mar – Jun · Sep – Nov",
-    "desc": "Boat mornings on Naini Lake, Mall Road evenings in Mussoorie, and Ganga aarti at Har Ki Pauri.",
-    "lede": "Six days through Dev Bhoomi — lake country in Nainital, colonial Mussoorie, and down to the Ganga for aarti at Rishikesh and Haridwar.",
-    "highlights": [
-      "Naini Lake boating",
-      "Snow View Point ropeway",
-      "Kempty Falls & Mall Road",
-      "Ganga aarti, Har Ki Pauri",
-      "Laxman Jhula & river cafés"
-    ],
-    "itin": [
-      [
-        "Arrive Nainital",
-        "Pickup from Kathgodam; lake boating and Mall Road at dusk."
-      ],
-      [
-        "Nainital",
-        "Snow View ropeway, Naina Devi temple, Bhimtal & Sattal lake loop."
-      ],
-      [
-        "Nainital → Mussoorie",
-        "Drive the Kumaon–Garhwal stretch; evening on Camel’s Back Road."
-      ],
-      [
-        "Mussoorie",
-        "Kempty Falls, Gun Hill ropeway, Company Garden and Landour bakeries."
-      ],
-      [
-        "Mussoorie → Rishikesh → Haridwar",
-        "Laxman Jhula walk and river cafés; grand Ganga aarti at Har Ki Pauri."
-      ],
-      [
-        "Depart",
-        "Morning dip at the ghats if you like; drop at Haridwar station / Dehradun airport."
-      ]
-    ],
-    "inc": [
-      "5 nights’ stay (3★/4★)",
-      "Daily breakfast & dinner",
-      "Private cab throughout",
-      "All hill permits, tolls and parking",
-      "Aarti seating assistance at Haridwar"
-    ],
-    "exc": [
-      "Train/flights",
-      "Lunches",
-      "Ropeway tickets",
-      "River rafting at Rishikesh",
-      "Personal expenses"
-    ],
-    "photos": [
-      "/img/trips/uttarakhand-1.webp",
-      "/img/trips/uttarakhand-2.webp",
-      "/img/trips/uttarakhand-3.webp"
-    ],
-    "photo": "/img/trips/uttarakhand-1.webp",
-    "colors": {
-      "deep": [
-        73,
-        77,
-        82
-      ],
-      "vivid": [
-        75,
-        81,
-        91
-      ]
-    }
-  },
-  {
-    "id": "northeast",
-    "slug": "northeast-meghalaya-kaziranga",
-    "name": "Northeast — Meghalaya & Kaziranga",
-    "cat": [
-      "domestic"
-    ],
-    "tag": "Offbeat",
-    "nights": 6,
-    "days": 7,
-    "route": "Guwahati · Shillong · Cherrapunji · Kaziranga",
-    "priceINR": 32999,
-    "season": "Oct – Apr",
-    "desc": "Living root bridges, the wettest cliffs on earth, and a jeep safari among one-horned rhinos.",
-    "lede": "Seven days in the green Northeast — Umiam Lake and Shillong’s cafés, the waterfalls of Cherrapunji, and dawn safaris in Kaziranga’s rhino country.",
-    "highlights": [
-      "Umiam Lake viewpoint",
-      "Nohkalikai & Seven Sisters falls",
-      "Living root bridge trek",
-      "Mawlynnong — Asia’s cleanest village",
-      "Kaziranga jeep safari"
-    ],
-    "itin": [
-      [
-        "Arrive Guwahati → Shillong",
-        "Drive past Umiam Lake; evening at Police Bazar."
-      ],
-      [
-        "Shillong",
-        "Elephant Falls, Shillong Peak, Ward’s Lake and café hopping."
-      ],
-      [
-        "Cherrapunji day",
-        "Nohkalikai Falls, Mawsmai caves, Seven Sisters viewpoint."
-      ],
-      [
-        "Root bridge & Mawlynnong",
-        "Short trek to a living root bridge; Mawlynnong village and the India–Bangladesh viewpoint."
-      ],
-      [
-        "Shillong → Kaziranga",
-        "Drive into Assam; evening cultural show at the resort."
-      ],
-      [
-        "Kaziranga safari",
-        "Early jeep safari in the central range — rhinos, wild buffalo, elephants; afternoon at leisure."
-      ],
-      [
-        "Depart",
-        "Drive back to Guwahati; Kamakhya darshan if time permits, airport drop."
-      ]
-    ],
-    "inc": [
-      "6 nights’ stay",
-      "Daily breakfast & dinner",
-      "Private cab (Innova/similar) throughout",
-      "Kaziranga jeep safari with entry",
-      "All Meghalaya permits"
-    ],
-    "exc": [
-      "Flights to/from Guwahati",
-      "Lunches",
-      "Camera fees at parks",
-      "Cave entry tickets",
-      "Personal expenses"
-    ],
-    "photos": [
-      "/img/trips/northeast-1.webp",
-      "/img/trips/northeast-2.webp",
-      "/img/trips/northeast-3.webp"
-    ],
-    "photo": "/img/trips/northeast-1.webp",
-    "colors": {
-      "deep": [
-        36,
-        82,
-        108
-      ],
-      "vivid": [
-        9,
-        89,
-        164
-      ]
-    }
-  },
-  {
-    "id": "saurashtra",
-    "slug": "saurashtra-gir-and-coast",
-    "name": "Saurashtra — Gir & the Coast",
-    "cat": [
-      "domestic"
-    ],
-    "tag": "Wildlife",
-    "nights": 5,
-    "days": 6,
-    "route": "Gir · Somnath · Diu · Dwarka",
-    "priceINR": 24999,
-    "season": "Oct – Mar",
-    "desc": "Asiatic lions at dawn, aarti by the Arabian Sea at Somnath, and Portuguese lanes in Diu.",
-    "lede": "Six days around the Kathiawar peninsula — the last wild lions of Asia at Gir, the sea-facing jyotirlinga at Somnath, lazy Diu, and Krishna’s Dwarka.",
-    "highlights": [
-      "Gir lion safari",
-      "Somnath aarti by the sea",
-      "Diu fort & beaches",
-      "Dwarkadhish darshan",
-      "Nageshwar jyotirlinga"
-    ],
-    "itin": [
-      [
-        "Arrive Rajkot → Gir",
-        "Drive to Sasan Gir; evening at the interpretation zone."
-      ],
-      [
-        "Gir safari",
-        "Dawn jeep safari for Asiatic lions; afternoon drive to Somnath, evening aarti."
-      ],
-      [
-        "Somnath → Diu",
-        "Temple corridor and light-and-sound show memories; on to Diu’s beaches."
-      ],
-      [
-        "Diu",
-        "Diu fort, St. Paul’s church, Nagoa beach — slow day."
-      ],
-      [
-        "Diu → Dwarka",
-        "Coastal drive; evening Dwarkadhish temple aarti."
-      ],
-      [
-        "Dwarka & depart",
-        "Nageshwar jyotirlinga and Bet Dwarka boat trip; drop at Jamnagar / Rajkot."
-      ]
-    ],
-    "inc": [
-      "5 nights’ stay",
-      "Daily breakfast & dinner",
-      "Gir safari permit & jeep",
-      "Private cab for the full circuit",
-      "All tolls and parking"
-    ],
-    "exc": [
-      "Train/flights",
-      "Lunches",
-      "Boat tickets at Bet Dwarka",
-      "Guide fees at monuments",
-      "Personal expenses"
-    ],
-    "photos": [
-      "/img/trips/saurashtra-1.webp",
-      "/img/trips/saurashtra-2.webp",
-      "/img/trips/saurashtra-3.webp"
-    ],
-    "photo": "/img/trips/saurashtra-1.webp",
-    "colors": {
-      "deep": [
-        42,
-        32,
-        32
-      ],
-      "vivid": [
-        98,
-        72,
-        43
-      ]
-    }
-  },
-  {
-    "id": "andaman",
-    "slug": "andaman-islands-and-reefs",
-    "name": "Andaman — Islands & Reefs",
-    "cat": [
-      "domestic",
-      "honeymoon"
-    ],
-    "tag": "Honeymoon pick",
-    "nights": 5,
-    "days": 6,
-    "route": "Port Blair · Havelock · Neil",
-    "priceINR": 36999,
-    "season": "Oct – May",
-    "desc": "Radhanagar sunsets, snorkelling over living coral, and the Cellular Jail light-and-sound show.",
-    "lede": "Six days across the Andamans — history at Cellular Jail, Asia’s best beach at Radhanagar, and the quiet reefs of Neil Island.",
-    "highlights": [
-      "Cellular Jail light & sound",
-      "Radhanagar Beach sunset",
-      "Elephant Beach snorkelling",
-      "Neil Island cycling",
-      "Natural Bridge coral walk"
-    ],
-    "itin": [
-      [
-        "Arrive Port Blair",
-        "Airport pickup; Cellular Jail visit and the evening light-and-sound show."
-      ],
-      [
-        "Port Blair → Havelock",
-        "Morning cruise; check in and sunset at Radhanagar Beach."
-      ],
-      [
-        "Havelock",
-        "Boat to Elephant Beach — snorkelling over the reef; free afternoon."
-      ],
-      [
-        "Havelock → Neil",
-        "Short ferry; Bharatpur and Laxmanpur beaches, Natural Bridge at low tide."
-      ],
-      [
-        "Neil → Port Blair",
-        "Return cruise; Corbyn’s Cove and local markets."
-      ],
-      [
-        "Depart",
-        "Airport drop with island time firmly installed."
-      ]
-    ],
-    "inc": [
-      "5 nights’ stay (beach resorts + Port Blair hotel)",
-      "Daily breakfast",
-      "All inter-island ferry tickets (AC catamaran)",
-      "All transfers and sightseeing by private cab",
-      "Cellular Jail show tickets"
-    ],
-    "exc": [
-      "Flights to/from Port Blair",
-      "Lunches & dinners",
-      "Water sports & scuba",
-      "Snorkelling gear hire beyond Elephant Beach trip",
-      "Personal expenses"
-    ],
-    "photos": [
-      "/img/trips/andaman-1.webp",
-      "/img/trips/andaman-2.webp",
-      "/img/trips/andaman-3.webp"
-    ],
-    "photo": "/img/trips/andaman-1.webp",
-    "colors": {
-      "deep": [
-        32,
-        32,
-        21
-      ],
-      "vivid": [
-        74,
-        72,
-        51
-      ]
-    }
-  },
-  {
-    "id": "indore-ujjain",
-    "slug": "ujjain-omkareshwar-darshan",
-    "name": "Ujjain & Omkareshwar Darshan",
-    "cat": [
-      "pilgrimage"
-    ],
-    "tag": "Jyotirlinga",
-    "nights": 3,
-    "days": 4,
-    "route": "Indore · Ujjain · Omkareshwar",
-    "priceINR": 13999,
-    "season": "Oct – Mar",
-    "desc": "Bhasma aarti at Mahakaleshwar, the island jyotirlinga at Omkareshwar, and Indore’s Sarafa night market.",
-    "lede": "Four days, two jyotirlingas — the pre-dawn bhasma aarti at Mahakaleshwar in Ujjain, the Narmada island shrine of Omkareshwar, and Indore’s famous street food in between.",
-    "highlights": [
-      "Mahakaleshwar bhasma aarti",
-      "Mahakal Lok corridor",
-      "Omkareshwar jyotirlinga",
-      "Sarafa night food market",
-      "Rajwada & Lal Bagh palace"
-    ],
-    "itin": [
-      [
-        "Arrive Indore",
-        "Pickup, Rajwada and Lal Bagh palace; eat your way through Sarafa after dark."
-      ],
-      [
-        "Indore → Ujjain",
-        "Mahakal Lok corridor and Mahakaleshwar darshan; Ram Ghat aarti on the Shipra."
-      ],
-      [
-        "Bhasma aarti → Omkareshwar",
-        "Pre-dawn bhasma aarti (slots arranged), then drive to Omkareshwar for darshan and the parikrama."
-      ],
-      [
-        "Depart",
-        "Return to Indore; airport / station drop."
-      ]
-    ],
-    "inc": [
-      "3 nights’ stay near the temples",
-      "Daily breakfast & pure-veg dinners",
-      "Private cab throughout",
-      "Bhasma aarti booking assistance",
-      "Darshan queue assistance"
-    ],
-    "exc": [
-      "Train/flights",
-      "Lunches",
-      "VIP darshan tickets",
-      "Puja samagri",
-      "Personal expenses"
-    ],
-    "photos": [
-      "/img/trips/indore-ujjain-1.webp",
-      "/img/trips/indore-ujjain-2.webp",
-      "/img/trips/indore-ujjain-3.webp"
-    ],
-    "photo": "/img/trips/indore-ujjain-1.webp",
-    "colors": {
-      "deep": [
-        14,
-        14,
-        17
-      ],
-      "vivid": [
-        92,
-        105,
-        26
-      ]
-    }
-  },
-  {
-    "id": "vaishno-devi",
-    "slug": "vaishno-devi-amritsar",
-    "name": "Vaishno Devi & Amritsar",
-    "cat": [
-      "pilgrimage"
-    ],
-    "tag": "Yatra",
-    "nights": 4,
-    "days": 5,
-    "route": "Katra · Vaishno Devi · Amritsar",
-    "priceINR": 17999,
-    "season": "All year · best Sep – Mar",
-    "desc": "The Bhawan climb from Katra, langar at the Golden Temple, and the Wagah border ceremony.",
-    "lede": "Five days of the north’s two great shrines — the 13-km yatra to Vaishno Devi’s Bhawan, and Amritsar’s Golden Temple with langar, kada prasad and the Wagah retreat.",
-    "highlights": [
-      "Vaishno Devi Bhawan darshan",
-      "Ardhkuwari cave",
-      "Golden Temple & langar",
-      "Wagah border ceremony",
-      "Jallianwala Bagh"
-    ],
-    "itin": [
-      [
-        "Arrive Jammu → Katra",
-        "Pickup and drive to Katra; yatra parchi and early night."
-      ],
-      [
-        "Vaishno Devi yatra",
-        "Begin the climb early — Ardhkuwari, Bhawan darshan, Bhairon temple; ponies/helicopter optional."
-      ],
-      [
-        "Katra → Amritsar",
-        "Rest the legs on the drive; evening palki sahib at the Golden Temple."
-      ],
-      [
-        "Amritsar",
-        "Morning darshan and langar, Jallianwala Bagh, Partition Museum; Wagah border retreat at sunset."
-      ],
-      [
-        "Depart",
-        "Hall Bazaar juttis and papad-warian to pack; airport / station drop."
-      ]
-    ],
-    "inc": [
-      "4 nights’ stay (Katra + Amritsar)",
-      "Daily breakfast & dinner",
-      "Private cab including Jammu transfers",
-      "Yatra parchi assistance",
-      "Wagah border seating assistance"
-    ],
-    "exc": [
-      "Train/flights",
-      "Lunches",
-      "Helicopter / pony / palki charges",
-      "VIP darshan",
-      "Personal expenses"
-    ],
-    "photos": [
-      "/img/trips/vaishno-devi-1.webp",
-      "/img/trips/vaishno-devi-2.webp",
-      "/img/trips/vaishno-devi-3.webp"
-    ],
-    "photo": "/img/trips/vaishno-devi-1.webp",
-    "colors": {
-      "deep": [
-        31,
-        34,
-        37
-      ],
-      "vivid": [
-        5,
-        133,
-        222
-      ]
-    }
-  },
-  {
-    "id": "kamakhya",
-    "slug": "kamakhya-devi-darshan",
-    "name": "Kamakhya Devi Darshan",
-    "cat": [
-      "pilgrimage"
-    ],
-    "tag": "Shakti Peeth",
-    "nights": 2,
-    "days": 3,
-    "route": "Guwahati · Kamakhya · Umananda",
-    "priceINR": 12999,
-    "season": "Oct – Apr",
-    "desc": "Darshan at the great Shakti Peeth on Nilachal Hill and a ferry to the island temple of Umananda.",
-    "lede": "A compact three-day yatra to the most revered Shakti Peeth — Kamakhya atop Nilachal Hill, the river island shrine of Umananda, and sunset on the Brahmaputra.",
-    "highlights": [
-      "Kamakhya Devi darshan",
-      "Nilachal Hill temples",
-      "Umananda island ferry",
-      "Brahmaputra sunset cruise",
-      "Basistha ashram"
-    ],
-    "itin": [
-      [
-        "Arrive Guwahati",
-        "Pickup; Basistha ashram and Kalakshetra; evening Brahmaputra cruise."
-      ],
-      [
-        "Kamakhya darshan",
-        "Early darshan at Kamakhya (queue assistance), the ten Mahavidya temples on the hill; ferry to Umananda."
-      ],
-      [
-        "Depart",
-        "Second darshan for those who wish; airport / station drop."
-      ]
-    ],
-    "inc": [
-      "2 nights’ stay",
-      "Daily breakfast & dinner",
-      "Private cab",
-      "Darshan queue assistance",
-      "River cruise tickets"
-    ],
-    "exc": [
-      "Flights/train",
-      "Lunches",
-      "VIP/special darshan tickets",
-      "Puja samagri",
-      "Personal expenses"
-    ],
-    "photos": [
-      "/img/trips/kamakhya-1.webp",
-      "/img/trips/kamakhya-2.webp",
-      "/img/trips/kamakhya-3.webp"
-    ],
-    "photo": "/img/trips/kamakhya-1.webp",
-    "colors": {
-      "deep": [
-        40,
-        44,
-        39
-      ],
-      "vivid": [
-        89,
-        76,
-        63
-      ]
-    }
-  },
-  {
-    "id": "puri-konark",
-    "slug": "jagannath-puri-konark",
-    "name": "Jagannath Puri & Konark",
-    "cat": [
-      "pilgrimage"
-    ],
-    "tag": "Char Dham (East)",
-    "nights": 3,
-    "days": 4,
-    "route": "Bhubaneswar · Puri · Konark",
-    "priceINR": 14999,
-    "season": "Oct – Mar",
-    "desc": "Mahaprasad at Jagannath temple, the Sun Temple’s stone chariot, and golden-sand evenings on Puri beach.",
-    "lede": "Four days on Odisha’s golden triangle — Lord Jagannath’s Puri, the World-Heritage Sun Temple at Konark, and the ancient temples of Bhubaneswar.",
-    "highlights": [
-      "Jagannath temple darshan",
-      "Mahaprasad at Ananda Bazar",
-      "Konark Sun Temple",
-      "Chandrabhaga beach",
-      "Lingaraj & Mukteshwar temples"
-    ],
-    "itin": [
-      [
-        "Arrive Bhubaneswar → Puri",
-        "Lingaraj temple en route; evening on Puri beach."
-      ],
-      [
-        "Puri",
-        "Early Jagannath darshan with panda assistance; Mahaprasad; Swargadwar and the beach market."
-      ],
-      [
-        "Konark day",
-        "Sun Temple with guide, Chandrabhaga beach, Pipili appliqué village on return."
-      ],
-      [
-        "Depart",
-        "Gundicha temple parikrama; drop at Bhubaneswar airport / station."
-      ]
-    ],
-    "inc": [
-      "3 nights’ stay near Swargadwar",
-      "Daily breakfast & dinners",
-      "Private cab",
-      "Darshan assistance at Puri",
-      "Guide at Konark"
-    ],
-    "exc": [
-      "Train/flights",
-      "Lunches",
-      "Special darshan / paid queues",
-      "Camera fees",
-      "Personal expenses"
-    ],
-    "photos": [
-      "/img/trips/puri-konark-1.webp",
-      "/img/trips/puri-konark-2.webp",
-      "/img/trips/puri-konark-3.webp"
-    ],
-    "photo": "/img/trips/puri-konark-1.webp",
-    "colors": {
-      "deep": [
-        43,
-        38,
-        36
-      ],
-      "vivid": [
-        92,
-        78,
-        69
-      ]
-    }
-  },
-  {
-    "id": "ashtavinayak",
-    "slug": "ashtavinayak-yatra",
-    "name": "Ashtavinayak Yatra",
-    "cat": [
-      "pilgrimage"
-    ],
-    "tag": "Maharashtra",
-    "nights": 2,
-    "days": 3,
-    "route": "All 8 Ganpati kshetras, ex-Mumbai/Pune",
-    "priceINR": 9999,
-    "season": "All year",
-    "desc": "All eight swayambhu Ganpati temples of Maharashtra in one smooth, well-sequenced circuit.",
-    "lede": "The classic three-day parikrama of Maharashtra’s eight self-manifested Ganpatis — Morgaon to Ranjangaon — sequenced the traditional way, with clean stays and no rushing.",
-    "highlights": [
-      "Mayureshwar, Morgaon",
-      "Siddhivinayak, Siddhatek",
-      "Ballaleshwar, Pali",
-      "Varadvinayak, Mahad",
-      "Girijatmaj cave temple, Lenyadri"
-    ],
-    "itin": [
-      [
-        "Ex-Pune: Morgaon → Siddhatek → Theur",
-        "Mayureshwar first as tradition asks; Siddhivinayak at Siddhatek and Chintamani at Theur; night halt."
-      ],
-      [
-        "Lenyadri → Ozar → Ranjangaon",
-        "Climb to the Girijatmaj cave shrine, Vigneshwar at Ozar, Mahaganpati at Ranjangaon; night halt."
-      ],
-      [
-        "Pali → Mahad → return",
-        "Ballaleshwar at Pali and Varadvinayak at Mahad; back to Pune/Mumbai by evening."
-      ]
-    ],
-    "inc": [
-      "2 nights’ stay",
-      "Daily breakfast & pure-veg dinners",
-      "AC vehicle for the full circuit",
-      "All tolls and parking",
-      "Yatra sequencing per tradition"
-    ],
-    "exc": [
-      "Travel to Pune/Mumbai start point",
-      "Lunches",
-      "Abhishek / puja charges",
-      "Personal expenses"
-    ],
-    "photos": [
-      "/img/trips/ashtavinayak-1.webp",
-      "/img/trips/ashtavinayak-2.webp",
-      "/img/trips/ashtavinayak-3.webp"
-    ],
-    "photo": "/img/trips/ashtavinayak-1.webp",
-    "colors": {
-      "deep": [
-        31,
-        24,
-        21
-      ],
-      "vivid": [
-        98,
-        52,
-        33
-      ]
-    }
-  },
-  {
-    "id": "dwarka-somnath",
-    "slug": "dwarka-somnath-statue-of-unity",
-    "name": "Dwarka–Somnath & Statue of Unity",
-    "cat": [
-      "pilgrimage"
-    ],
-    "tag": "Gujarat yatra",
-    "nights": 5,
-    "days": 6,
-    "route": "Statue of Unity · Dwarka · Somnath · Girnar",
-    "priceINR": 22999,
-    "season": "Oct – Mar",
-    "desc": "Two jyotirlingas, Krishna’s capital, the Girnar hill shrines — and the world’s tallest statue.",
-    "lede": "Six days across Gujarat’s sacred west — the Statue of Unity at Kevadia, Dwarkadhish and Nageshwar, sunset aarti at Somnath, and the stairway pilgrimage up Girnar.",
-    "highlights": [
-      "Statue of Unity & valley of flowers",
-      "Dwarkadhish temple",
-      "Nageshwar jyotirlinga",
-      "Somnath sandhya aarti",
-      "Girnar ropeway & Ambaji shrine"
-    ],
-    "itin": [
-      [
-        "Arrive Vadodara → Kevadia",
-        "Statue of Unity viewing gallery, Sardar Sarovar dam, laser show."
-      ],
-      [
-        "Kevadia → Dwarka",
-        "Long scenic drive with breaks; evening at Gomti ghat."
-      ],
-      [
-        "Dwarka",
-        "Dwarkadhish darshan, Nageshwar jyotirlinga, Bet Dwarka boat visit, Rukmini temple."
-      ],
-      [
-        "Dwarka → Somnath",
-        "Coastal drive via Porbandar (Kirti Mandir); Somnath darshan and sandhya aarti."
-      ],
-      [
-        "Somnath → Junagadh",
-        "Bhalka Tirth and Triveni Sangam; Girnar ropeway to Ambaji, Uparkot fort."
-      ],
-      [
-        "Depart",
-        "Drop at Rajkot airport / station."
-      ]
-    ],
-    "inc": [
-      "5 nights’ stay",
-      "Daily breakfast & dinner",
-      "Private cab for the full circuit",
-      "Statue of Unity entry tickets",
-      "Darshan assistance"
-    ],
-    "exc": [
-      "Train/flights",
-      "Lunches",
-      "Girnar ropeway tickets",
-      "Boat at Bet Dwarka",
-      "Personal expenses"
-    ],
-    "photos": [
-      "/img/trips/dwarka-somnath-1.webp",
-      "/img/trips/dwarka-somnath-2.webp",
-      "/img/trips/dwarka-somnath-3.webp"
-    ],
-    "photo": "/img/trips/dwarka-somnath-1.webp",
-    "colors": {
-      "deep": [
-        88,
-        89,
-        88
-      ],
-      "vivid": [
-        184,
-        145,
-        113
-      ]
-    }
-  },
-  {
-    "id": "akkalkot",
-    "slug": "akkalkot-pandharpur-gangapur",
-    "name": "Akkalkot, Pandharpur & Gangapur",
-    "cat": [
-      "pilgrimage"
-    ],
-    "tag": "Datta circuit",
-    "nights": 2,
-    "days": 3,
-    "route": "Akkalkot · Pandharpur · Gangapur · Tuljapur",
-    "priceINR": 8999,
-    "season": "All year",
-    "desc": "Swami Samarth’s Akkalkot, Vitthal’s Pandharpur and the Datta kshetra at Gangapur in one circuit.",
-    "lede": "Three unhurried days through southern Maharashtra’s beloved shrines — Akkalkot, Pandharpur, Tuljapur and Gangapur — the circuit our group yatris ask for most.",
-    "highlights": [
-      "Swami Samarth Maharaj math, Akkalkot",
-      "Vitthal-Rukmini darshan, Pandharpur",
-      "Chandrabhaga snan",
-      "Tulja Bhavani darshan",
-      "Nirgun Padukas, Gangapur"
-    ],
-    "itin": [
-      [
-        "Ex-Solapur: Akkalkot → Tuljapur",
-        "Swami Samarth darshan and math; Tulja Bhavani in the afternoon; night halt."
-      ],
-      [
-        "Pandharpur",
-        "Chandrabhaga snan and Vitthal-Rukmini darshan with queue assistance; Pundalik temple."
-      ],
-      [
-        "Gangapur & return",
-        "Datta darshan and Nirgun Padukas, Bhima-Amarja sangam; return to Solapur by evening."
-      ]
-    ],
-    "inc": [
-      "2 nights’ stay",
-      "Daily breakfast & pure-veg dinners",
-      "AC vehicle throughout",
-      "Darshan queue assistance",
-      "All tolls and parking"
-    ],
-    "exc": [
-      "Travel to Solapur",
-      "Lunches",
-      "Special darshan tickets",
-      "Puja samagri",
-      "Personal expenses"
-    ],
-    "photos": [
-      "/img/trips/akkalkot-1.webp",
-      "/img/trips/akkalkot-2.webp",
-      "/img/trips/akkalkot-3.webp"
-    ],
-    "photo": "/img/trips/akkalkot-1.webp",
-    "colors": {
-      "deep": [
-        61,
-        42,
-        40
-      ],
-      "vivid": [
-        139,
-        56,
-        55
-      ]
-    }
-  },
-  {
     "id": "char-dham",
     "slug": "char-dham-yatra",
     "name": "Char Dham Yatra",
@@ -1800,71 +7,91 @@
       "pilgrimage"
     ],
     "tag": "Signature yatra",
-    "nights": 9,
-    "days": 10,
-    "route": "Yamunotri · Gangotri · Kedarnath · Badrinath",
+    "nights": 16,
+    "days": 17,
+    "route": "Mumbai · Yamunotri · Gangotri · Kedarnath · Badrinath",
     "priceINR": 42999,
     "season": "May – Jun · Sep – Oct",
-    "desc": "The complete Uttarakhand Char Dham with acclimatised pacing, fixed hotels and yatra registration handled.",
-    "lede": "Ten days to the four Himalayan dhams — Yamunotri, Gangotri, Kedarnath and Badrinath — paced sensibly, registered properly, and supported the whole way.",
+    "desc": "The complete Mumbai-to-Mumbai Char Dham — all four dhams with hotels, meals and darshan support.",
+    "lede": "Seventeen days from Mumbai and back — Yamunotri, Gangotri, Kedarnath and Badrinath with sensible pacing, yatra registration handled, and support the whole way.",
     "highlights": [
-      "Yamunotri trek via Janki Chatti",
+      "Yamunotri via Janki Chatti",
       "Gangotri & Harsil valley",
       "Kedarnath darshan",
       "Badrinath & Mana village",
-      "Devprayag sangam"
+      "Haridwar Ganga aarti"
     ],
     "itin": [
       [
-        "Haridwar arrival",
-        "Yatra registration check, Ganga aarti at Har Ki Pauri."
+        "Mumbai → Haridwar",
+        "Depart Mumbai by train; overnight journey."
+      ],
+      [
+        "Arrive Haridwar",
+        "Check-in and Ganga aarti at Har Ki Pauri."
       ],
       [
         "Haridwar → Barkot",
         "Via Mussoorie and Kempty Falls; acclimatisation evening."
       ],
       [
-        "Yamunotri",
-        "Janki Chatti trek (6 km; ponies available), darshan, back to Barkot."
+        "Yamunotri darshan",
+        "Janki Chatti trek (ponies available), darshan, back to Barkot."
       ],
       [
         "Barkot → Uttarkashi",
         "Vishwanath temple; rest and prepare."
       ],
       [
-        "Gangotri",
+        "Gangotri darshan",
         "Darshan on the Bhagirathi; Harsil valley stop; return Uttarkashi."
       ],
       [
-        "Uttarkashi → Sitapur/Sonprayag",
+        "Uttarkashi → Guptkashi",
         "Long mountain drive via Tehri lake views."
       ],
       [
-        "Kedarnath",
-        "Early start for the 16-km trek (ponies/heli optional), darshan, night near the dham or Sitapur."
+        "Kedarnath yatra",
+        "Early start for the trek (ponies/heli optional); darshan."
       ],
       [
-        "Sitapur → Badrinath",
-        "Via Ukhimath and Chopta’s meadows; evening Tapt Kund and darshan."
+        "Kedarnath → Guptkashi",
+        "Descend and rest."
       ],
       [
-        "Badrinath → Rudraprayag",
-        "Mana village — the last village of India; drive down via Karnaprayag."
+        "Guptkashi → Badrinath",
+        "Via Ukhimath and Chopta meadows."
       ],
       [
-        "Return Haridwar & depart",
-        "Devprayag sangam view; drop at Haridwar / Dehradun."
+        "Badrinath darshan",
+        "Tapt Kund, darshan, Mana village — the last village of India."
+      ],
+      [
+        "Badrinath → Joshimath",
+        "Drive down; evening at leisure."
+      ],
+      [
+        "Joshimath → Rishikesh",
+        "Devprayag sangam en route; Laxman Jhula evening."
+      ],
+      [
+        "Haridwar",
+        "Free morning, closing Ganga aarti."
+      ],
+      [
+        "Return journey (Day 15–17)",
+        "Haridwar → Mumbai by train; all four dhams complete."
       ]
     ],
     "inc": [
-      "9 nights’ stay (best-available yatra hotels)",
+      "16 nights — hotels + train nights",
       "Breakfast & dinner daily (pure veg)",
-      "Private cab for the entire yatra",
+      "Private vehicle for the entire hill circuit",
       "Yatra e-pass registration assistance",
-      "Oxygen cylinder & basic first aid in vehicle"
+      "Darshan assistance at all four dhams"
     ],
     "exc": [
-      "Train/flights to Haridwar",
+      "Train/flight fare (booked at actuals)",
       "Lunches",
       "Pony / palki / helicopter charges",
       "VIP darshan",
@@ -1890,367 +117,698 @@
     }
   },
   {
-    "id": "delhi-agra",
-    "slug": "delhi-agra-mathura",
-    "name": "Delhi, Agra & Mathura",
+    "id": "jyotirlinga-12",
+    "slug": "12-jyotirlinga-yatra",
+    "name": "12 Jyotirlinga Yatra",
     "cat": [
-      "domestic"
+      "pilgrimage"
     ],
-    "tag": "Golden Triangle",
-    "nights": 4,
-    "days": 5,
-    "route": "Delhi · Agra · Mathura · Vrindavan",
-    "priceINR": 18999,
-    "season": "Oct – Mar",
-    "desc": "Taj Mahal at sunrise, Old Delhi by rickshaw, and Janmabhoomi darshan with Vrindavan’s evening aarti.",
-    "lede": "Five days on the classic northern arc — imperial Delhi, the Taj at first light, Agra Fort, and the Krishna heartland of Mathura and Vrindavan.",
+    "tag": "Grand yatra",
+    "nights": 29,
+    "days": 30,
+    "route": "All 12 jyotirlingas · Mumbai to Mumbai",
+    "priceINR": 109999,
+    "season": "Sep – Mar",
+    "desc": "All twelve jyotirlingas in one epic month — 3AC train, hotels, meals and darshan assistance throughout.",
+    "lede": "The yatra of a lifetime: thirty days, Mumbai to Mumbai, covering all twelve jyotirlingas — Somnath to Rameshwaram — with travel, stays, meals and darshan support handled end to end.",
     "highlights": [
-      "Taj Mahal at sunrise",
-      "Agra Fort",
-      "Old Delhi rickshaw & Jama Masjid",
-      "Krishna Janmabhoomi",
-      "Prem Mandir evening lights"
+      "Somnath & Nageshwar",
+      "Mahakaleshwar bhasma aarti",
+      "Kashi Vishwanath",
+      "Mallikarjuna, Srisailam",
+      "Rameshwaram teerthams"
     ],
     "itin": [
       [
-        "Arrive Delhi",
-        "India Gate drive, Humayun’s Tomb, Qutub Minar."
+        "Somnath & Nageshwar (Gujarat)",
+        "The western coast pair — sunrise aarti by the sea."
       ],
       [
-        "Old & New Delhi",
-        "Red Fort, Chandni Chowk rickshaw ride, Raj Ghat, Akshardham evening show."
+        "Bhimashankar & Trimbakeshwar (Maharashtra)",
+        "Sahyadri forest shrine and the source of the Godavari."
       ],
       [
-        "Delhi → Agra",
-        "Via Yamuna Expressway; Agra Fort and Mehtab Bagh sunset view of the Taj."
+        "Grishneshwar & Aundha Nagnath",
+        "Ellora’s jyotirlinga and the ancient Nagnath temple."
       ],
       [
-        "Taj sunrise → Mathura → Vrindavan",
-        "Taj Mahal at dawn; Krishna Janmabhoomi, Banke Bihari and Prem Mandir lights."
+        "Parli Vaijnath",
+        "Completing the Maharashtra circuit."
       ],
       [
-        "Depart",
-        "Drop at Delhi airport / station via Mathura."
+        "Mahakaleshwar & Omkareshwar (MP)",
+        "Bhasma aarti at Ujjain and the Narmada island shrine."
+      ],
+      [
+        "Mallikarjuna, Srisailam (AP)",
+        "The southern hill shrine above the Krishna gorge."
+      ],
+      [
+        "Kashi Vishwanath (UP)",
+        "Darshan via the corridor; Ganga aarti at Dashashwamedh."
+      ],
+      [
+        "Baidyanath, Deoghar (Jharkhand)",
+        "The eastern jyotirlinga with Basukinath."
+      ],
+      [
+        "Rameshwaram (TN)",
+        "Ramanathaswamy darshan and the 22 teerthams — yatra complete."
+      ],
+      [
+        "Return to Mumbai",
+        "Homeward with all twelve darshans done."
       ]
     ],
     "inc": [
-      "4 nights’ stay (4★)",
-      "Daily breakfast",
-      "Private cab for the full circuit",
-      "Taj Mahal & Agra Fort entry (Indian nationals)",
-      "Local guide in Delhi and Agra"
+      "3AC train travel throughout",
+      "Hotels & stays (29 nights)",
+      "All meals (pure veg)",
+      "Local transport at every kshetra",
+      "Darshan assistance throughout"
     ],
     "exc": [
-      "Flights/train",
-      "Lunches & dinners",
-      "Monument entries not listed",
-      "Camera fees",
-      "Personal expenses"
+      "VIP/special darshan tickets",
+      "Puja samagri & personal puja charges",
+      "Personal expenses",
+      "Anything not listed in inclusions"
     ],
     "photos": [
-      "/img/trips/delhi-agra-1.webp",
-      "/img/trips/delhi-agra-2.webp",
-      "/img/trips/delhi-agra-3.webp"
+      "/img/trips/jyotirlinga-12-1.webp",
+      "/img/trips/jyotirlinga-12-2.webp",
+      "/img/trips/jyotirlinga-12-3.webp"
     ],
-    "photo": "/img/trips/delhi-agra-1.webp",
+    "photo": "/img/trips/jyotirlinga-12-1.webp",
     "colors": {
       "deep": [
-        67,
-        69,
-        57
+        32,
+        24,
+        6
       ],
       "vivid": [
-        80,
-        116,
-        150
+        112,
+        70,
+        12
       ]
     }
   },
   {
-    "id": "rameshwaram",
-    "slug": "rameshwaram-madurai-kanyakumari",
-    "name": "Rameshwaram, Madurai & Kanyakumari",
+    "id": "ashtavinayak",
+    "slug": "ashtavinayak-yatra",
+    "name": "Ashtavinayak Yatra",
     "cat": [
-      "domestic",
       "pilgrimage"
     ],
-    "tag": "Southern darshan",
-    "nights": 4,
-    "days": 5,
-    "route": "Madurai · Rameshwaram · Kanyakumari",
-    "priceINR": 19999,
-    "season": "Oct – Mar",
-    "desc": "Meenakshi’s towering gopurams, the Pamban bridge crossing, and sunrise at land’s end.",
-    "lede": "Five days at the tip of India — Madurai’s Meenakshi temple, the island jyotirlinga of Rameshwaram across the Pamban bridge, and the three-sea sunrise at Kanyakumari.",
+    "tag": "Maharashtra",
+    "nights": 2,
+    "days": 3,
+    "route": "All 8 Ganpati kshetras, ex-Mumbai",
+    "priceINR": 6999,
+    "season": "All year",
+    "desc": "All eight swayambhu Ganpati temples in one smooth Mumbai-to-Mumbai circuit — special rates for 20+ groups.",
+    "lede": "The classic three-day parikrama of Maharashtra’s eight self-manifested Ganpatis — Morgaon to Pali — sequenced the traditional way, with clean stays and no rushing.",
     "highlights": [
-      "Meenakshi temple, Madurai",
-      "Pamban bridge crossing",
-      "Ramanathaswamy corridor & teerthams",
-      "Dhanushkodi ghost town",
-      "Vivekananda Rock sunrise"
+      "Mayureshwar, Morgaon",
+      "Siddhivinayak, Siddhatek",
+      "Girijatmaj cave temple, Lenyadri",
+      "Ballaleshwar, Pali",
+      "Group departures for 20+"
     ],
     "itin": [
       [
-        "Arrive Madurai",
-        "Meenakshi darshan and the evening night ceremony; Thirumalai Nayak palace."
+        "Morgaon → Siddhatek → Theur",
+        "Mayureshwar first as tradition asks, then Siddhivinayak and Chintamani; night halt."
       ],
       [
-        "Madurai → Rameshwaram",
-        "Across Pamban bridge; Ramanathaswamy darshan and the 22 teerthams."
+        "Ranjangaon → Ozar → Lenyadri",
+        "Mahaganpati, Vigneshwar and the Girijatmaj cave shrine; night halt."
       ],
       [
-        "Dhanushkodi → Kanyakumari",
-        "Land’s-end drive to Dhanushkodi; on to Kanyakumari for sunset."
+        "Mahad → Pali → Mumbai",
+        "Varadvinayak and Ballaleshwar; return to Mumbai by evening."
+      ]
+    ],
+    "inc": [
+      "2 nights’ stay",
+      "Breakfast & dinner (pure veg)",
+      "AC vehicle for the full circuit",
+      "All tolls and parking",
+      "Traditional yatra sequencing"
+    ],
+    "exc": [
+      "Lunches",
+      "Abhishek / puja charges",
+      "Personal expenses"
+    ],
+    "photos": [
+      "/img/trips/ashtavinayak-1.webp",
+      "/img/trips/ashtavinayak-2.webp",
+      "/img/trips/ashtavinayak-3.webp"
+    ],
+    "photo": "/img/trips/ashtavinayak-1.webp",
+    "colors": {
+      "deep": [
+        31,
+        24,
+        21
+      ],
+      "vivid": [
+        98,
+        52,
+        33
+      ]
+    }
+  },
+  {
+    "id": "vaidyanath",
+    "slug": "vaidyanath-jyotirlinga-yatra",
+    "name": "Vaidyanath Jyotirlinga Yatra",
+    "cat": [
+      "pilgrimage"
+    ],
+    "tag": "Jyotirlinga",
+    "nights": 4,
+    "days": 5,
+    "route": "Deoghar · Baidyanath · Basukinath",
+    "priceINR": 14999,
+    "season": "Oct – Mar",
+    "desc": "Baidyanath jyotirlinga at Deoghar and Basukinath darshan — 3AC train, hotel and meals included.",
+    "lede": "Five days to Jharkhand’s great jyotirlinga — the Baidyanath dham at Deoghar and Basukinath, travelling comfortably by 3AC train from Mumbai.",
+    "highlights": [
+      "Baidyanath jyotirlinga darshan",
+      "Basukinath temple",
+      "Naulakha Mandir",
+      "3AC train travel",
+      "All meals included"
+    ],
+    "itin": [
+      [
+        "Mumbai departure",
+        "Board the train from Mumbai; overnight journey."
       ],
       [
-        "Kanyakumari",
-        "Sunrise where three seas meet; Vivekananda Rock ferry, Thiruvalluvar statue, Suchindram temple."
+        "On the rails",
+        "Cross India — meals on board."
       ],
       [
-        "Depart",
-        "Drop at Trivandrum / Madurai airport."
+        "Deoghar arrival",
+        "Check in and Baidyanath jyotirlinga darshan."
+      ],
+      [
+        "Basukinath",
+        "Basukinath darshan and Deoghar local temples."
+      ],
+      [
+        "Return Mumbai",
+        "Homeward journey."
+      ]
+    ],
+    "inc": [
+      "3AC train Mumbai–Deoghar–Mumbai",
+      "Hotel stay at Deoghar",
+      "All meals (pure veg)",
+      "Local transport",
+      "Darshan assistance"
+    ],
+    "exc": [
+      "VIP darshan tickets",
+      "Puja samagri",
+      "Personal expenses"
+    ],
+    "photos": [
+      "/img/trips/vaidyanath-1.webp",
+      "/img/trips/vaidyanath-2.webp",
+      "/img/trips/vaidyanath-3.webp"
+    ],
+    "photo": "/img/trips/vaidyanath-1.webp",
+    "colors": {
+      "deep": [
+        57,
+        55,
+        63
+      ],
+      "vivid": [
+        126,
+        115,
+        107
+      ]
+    }
+  },
+  {
+    "id": "tirupati-kolhapur",
+    "slug": "tirupati-kolhapur-yatra",
+    "name": "Tirupati – Kolhapur Yatra",
+    "cat": [
+      "pilgrimage"
+    ],
+    "tag": "Darshan duo",
+    "nights": 3,
+    "days": 4,
+    "route": "Tirupati Balaji · Kolhapur Mahalakshmi",
+    "priceINR": 12999,
+    "season": "All year",
+    "desc": "Balaji darshan at Tirumala and Mahalakshmi at Kolhapur in one well-sequenced circuit from Mumbai.",
+    "lede": "Four days, two of India’s most loved shrines — Lord Venkateswara at Tirumala and Ambabai at Kolhapur — planned as one smooth circuit from Mumbai.",
+    "highlights": [
+      "Tirupati Balaji darshan",
+      "Tirumala hills",
+      "Kolhapur Mahalakshmi darshan",
+      "Darshan queue assistance",
+      "Mumbai-to-Mumbai planning"
+    ],
+    "itin": [
+      [
+        "Mumbai → Tirupati",
+        "Travel to Tirupati; evening in the temple town."
+      ],
+      [
+        "Balaji darshan",
+        "Tirumala darshan with queue assistance; Padmavathi temple."
+      ],
+      [
+        "Tirupati → Kolhapur",
+        "Cross to Maharashtra; evening arrival."
+      ],
+      [
+        "Mahalakshmi & return",
+        "Ambabai darshan at Kolhapur, then home to Mumbai."
+      ]
+    ],
+    "inc": [
+      "3 nights’ stay",
+      "Breakfast & dinner (pure veg)",
+      "Travel & local transport",
+      "Darshan assistance at both shrines",
+      "All tolls and parking"
+    ],
+    "exc": [
+      "Special-entry darshan tickets",
+      "Lunches",
+      "Personal expenses"
+    ],
+    "photos": [
+      "/img/trips/tirupati-kolhapur-1.webp",
+      "/img/trips/tirupati-kolhapur-2.webp",
+      "/img/trips/tirupati-kolhapur-3.webp"
+    ],
+    "photo": "/img/trips/tirupati-kolhapur-1.webp",
+    "colors": {
+      "deep": [
+        42,
+        51,
+        49
+      ],
+      "vivid": [
+        61,
+        95,
+        109
+      ]
+    }
+  },
+  {
+    "id": "dwarka-somnath",
+    "slug": "dwarka-somnath-yatra",
+    "name": "Dwarka–Somnath Yatra",
+    "cat": [
+      "pilgrimage"
+    ],
+    "tag": "Gujarat yatra",
+    "nights": 4,
+    "days": 5,
+    "route": "Dwarka · Bet Dwarka · Nageshwar · Somnath",
+    "priceINR": 17999,
+    "season": "Oct – Mar",
+    "desc": "Dwarkadhish, Bet Dwarka, Nageshwar jyotirlinga and sunset aarti at Somnath — Statue of Unity add-on available.",
+    "lede": "Five days across Gujarat’s sacred coast — Krishna’s Dwarka with Bet Dwarka and Nageshwar, then the sea-facing jyotirlinga at Somnath and Bhalka Tirth.",
+    "highlights": [
+      "Dwarkadhish temple",
+      "Bet Dwarka boat visit",
+      "Nageshwar jyotirlinga",
+      "Somnath sandhya aarti",
+      "Bhalka Tirth"
+    ],
+    "itin": [
+      [
+        "Mumbai → Dwarka",
+        "Arrive Ahmedabad/Rajkot and drive to Dwarka; evening at Gomti ghat."
+      ],
+      [
+        "Dwarka darshan",
+        "Dwarkadhish temple, Nageshwar jyotirlinga and the Bet Dwarka boat visit."
+      ],
+      [
+        "Dwarka → Somnath",
+        "Coastal drive via Porbandar; Somnath darshan and sandhya aarti."
+      ],
+      [
+        "Somnath → Ahmedabad",
+        "Bhalka Tirth and Triveni Sangam, then drive back."
+      ],
+      [
+        "Return Mumbai",
+        "Train/flight home."
       ]
     ],
     "inc": [
       "4 nights’ stay",
       "Daily breakfast & dinner",
-      "Private cab throughout",
-      "Darshan assistance at Rameshwaram",
-      "Ferry tickets at Kanyakumari"
+      "Private vehicle for the full circuit",
+      "Darshan assistance",
+      "All tolls and parking"
     ],
     "exc": [
-      "Flights/train",
+      "Train/flight fare (booked at actuals)",
       "Lunches",
-      "Special darshan tickets",
-      "Teertham snan assistance charges",
+      "Boat at Bet Dwarka",
+      "Statue of Unity / Girnar add-on",
       "Personal expenses"
     ],
     "photos": [
-      "/img/trips/rameshwaram-1.webp",
-      "/img/trips/rameshwaram-2.webp",
-      "/img/trips/rameshwaram-3.webp"
+      "/img/trips/dwarka-somnath-1.webp",
+      "/img/trips/dwarka-somnath-2.webp",
+      "/img/trips/dwarka-somnath-3.webp"
     ],
-    "photo": "/img/trips/rameshwaram-1.webp",
+    "photo": "/img/trips/dwarka-somnath-1.webp",
     "colors": {
       "deep": [
-        21,
-        19,
-        5
+        88,
+        89,
+        88
       ],
       "vivid": [
-        119,
-        103,
-        0
+        184,
+        145,
+        113
       ]
     }
   },
   {
-    "id": "mysore-ooty",
-    "slug": "bangalore-mysore-ooty",
-    "name": "Bangalore, Mysore & Ooty",
+    "id": "kashi",
+    "slug": "ayodhya-varanasi-prayagraj",
+    "name": "Ayodhya – Varanasi – Prayagraj",
     "cat": [
-      "domestic"
+      "pilgrimage"
     ],
-    "tag": "Family favourite",
+    "tag": "Ram Mandir special",
     "nights": 5,
     "days": 6,
-    "route": "Bangalore · Mysore · Ooty",
-    "priceINR": 20999,
-    "season": "Sep – May",
-    "desc": "The illuminated Mysore Palace, Brindavan’s dancing fountains, and the Nilgiri toy train.",
-    "lede": "Six easy days through the classic south — Bangalore’s gardens, Mysore’s palace lit by a hundred thousand bulbs, and up the Nilgiris to Ooty.",
-    "highlights": [
-      "Mysore Palace illumination",
-      "Brindavan Gardens fountains",
-      "Chamundi Hill",
-      "Nilgiri Mountain Railway",
-      "Ooty botanical gardens"
-    ],
-    "itin": [
-      [
-        "Arrive Bangalore",
-        "Lalbagh, Vidhana Soudha drive-past, Cubbon Park; brigade-road evening."
-      ],
-      [
-        "Bangalore → Mysore",
-        "Srirangapatna en route; Mysore Palace and the Sunday-style illumination; Brindavan Gardens."
-      ],
-      [
-        "Mysore",
-        "Chamundi Hill, Mysore zoo or Jaganmohan gallery; silk and sandal shopping."
-      ],
-      [
-        "Mysore → Ooty",
-        "Up through Bandipur’s forest road (wildlife sightings common); Ooty lake evening."
-      ],
-      [
-        "Ooty",
-        "Toy-train joyride to Coonoor, Doddabetta peak, botanical gardens, tea factory."
-      ],
-      [
-        "Depart",
-        "Drive down to Coimbatore / back to Bangalore."
-      ]
-    ],
-    "inc": [
-      "5 nights’ stay",
-      "Daily breakfast",
-      "Private cab throughout",
-      "Toy-train tickets (subject to availability)",
-      "All parking, tolls and forest fees"
-    ],
-    "exc": [
-      "Flights/train",
-      "Lunches & dinners",
-      "Palace & garden entries",
-      "Boating charges",
-      "Personal expenses"
-    ],
-    "photos": [
-      "/img/trips/mysore-ooty-1.webp",
-      "/img/trips/mysore-ooty-2.webp",
-      "/img/trips/mysore-ooty-3.webp"
-    ],
-    "photo": "/img/trips/mysore-ooty-1.webp",
-    "colors": {
-      "deep": [
-        9,
-        4,
-        5
-      ],
-      "vivid": [
-        186,
-        73,
-        0
-      ]
-    }
-  },
-  {
-    "id": "hyderabad",
-    "slug": "hyderabad-ramoji",
-    "name": "Hyderabad & Ramoji Film City",
-    "cat": [
-      "domestic"
-    ],
-    "tag": "City break",
-    "nights": 3,
-    "days": 4,
-    "route": "Hyderabad · Ramoji Film City",
-    "priceINR": 15999,
+    "route": "Ayodhya · Prayagraj · Varanasi",
+    "priceINR": 21999,
     "season": "Oct – Mar",
-    "desc": "Charminar and biryani in the old city, Golconda’s acoustics, and a full day on the world’s largest film set.",
-    "lede": "Four days in the City of Pearls — Charminar’s bazaars, Golconda fort, the Nizam’s treasures, and a full-day pass to Ramoji Film City.",
+    "desc": "Ram Mandir and Hanuman Garhi, the Sangam at Prayagraj, and Kashi Vishwanath with the grand Ganga aarti.",
+    "lede": "Six days across the holiest triangle in the north — Ram Mandir and Hanuman Garhi in Ayodhya, the Sangam at Prayagraj, and Kashi Vishwanath with the great Ganga aarti.",
     "highlights": [
-      "Ramoji Film City full day",
-      "Charminar & Laad Bazaar",
-      "Golconda fort sound show",
-      "Salar Jung Museum",
-      "Hussain Sagar & Lumbini park"
+      "Ram Mandir darshan",
+      "Hanuman Garhi",
+      "Sangam snan, Prayagraj",
+      "Kashi Vishwanath corridor",
+      "Ganga aarti from a reserved boat"
     ],
     "itin": [
       [
-        "Arrive Hyderabad",
-        "Hussain Sagar promenade, Buddha statue ferry, Lumbini park evening."
+        "Mumbai → Ayodhya",
+        "Arrive and check in; Saryu ghat evening."
       ],
       [
-        "Old city day",
-        "Charminar, Mecca Masjid, Laad Bazaar bangles, Salar Jung Museum; Golconda light-and-sound show."
+        "Ayodhya",
+        "Ram Mandir darshan and Hanuman Garhi; Saryu aarti."
       ],
       [
-        "Ramoji Film City",
-        "Full-day entry with shows, sets and the studio tour; evening at leisure."
+        "Ayodhya → Prayagraj",
+        "Drive to Prayagraj; evening at the ghats."
+      ],
+      [
+        "Prayagraj → Varanasi",
+        "Sangam snan and Bade Hanuman ji, then on to Kashi."
+      ],
+      [
+        "Varanasi",
+        "Kashi Vishwanath corridor darshan; evening Ganga aarti at Dashashwamedh."
       ],
       [
         "Depart",
-        "Shilparamam crafts village if time permits; airport drop."
+        "Dawn boat ride for early risers; return to Mumbai."
       ]
     ],
     "inc": [
-      "3 nights’ stay (4★)",
-      "Daily breakfast",
-      "Ramoji Film City entry with transfers",
-      "Private cab for city sightseeing",
-      "All parking and tolls"
+      "5 nights’ stay near the ghats/temples",
+      "Breakfast & pure-veg dinners",
+      "Private vehicle for all intercity drives",
+      "Reserved boat for the aarti",
+      "Darshan assistance at all shrines"
     ],
     "exc": [
-      "Flights/train",
-      "Lunches & dinners",
-      "Golconda show tickets",
-      "Museum entries",
+      "Train/flights",
+      "Lunches",
+      "VIP darshan tickets",
+      "Puja samagri",
       "Personal expenses"
     ],
     "photos": [
-      "/img/trips/hyderabad-1.webp",
-      "/img/trips/hyderabad-2.webp",
-      "/img/trips/hyderabad-3.webp"
+      "/img/trips/kashi.webp",
+      "/img/trips/kashi-2.webp",
+      "/img/trips/kashi-3.webp"
     ],
-    "photo": "/img/trips/hyderabad-1.webp",
+    "photo": "/img/trips/kashi.webp",
     "colors": {
       "deep": [
         31,
-        15,
-        8
+        31,
+        26
       ],
       "vivid": [
-        82,
+        133,
+        118,
+        102
+      ]
+    }
+  },
+  {
+    "id": "kashmir",
+    "slug": "kashmir-paradise",
+    "name": "Kashmir Paradise",
+    "cat": [
+      "domestic",
+      "honeymoon"
+    ],
+    "tag": "Bestseller",
+    "nights": 6,
+    "days": 7,
+    "route": "Srinagar · Gulmarg · Pahalgam · Sonmarg",
+    "priceINR": 34999,
+    "season": "Apr – Oct",
+    "desc": "Shikara on Dal Lake, the Gulmarg gondola, Pahalgam’s valleys and the Meadow of Gold at Sonmarg.",
+    "lede": "Seven days across the valley — shikara evenings on Dal Lake, alpine Gulmarg, Pahalgam’s film-famous valleys and a Sonmarg day trip.",
+    "highlights": [
+      "Dal Lake shikara ride",
+      "Gulmarg gondola",
+      "Betaab & Aru valleys",
+      "Sonmarg day trip",
+      "Mughal gardens"
+    ],
+    "itin": [
+      [
+        "Arrive Srinagar",
+        "Airport pickup and an evening shikara ride on Dal Lake."
+      ],
+      [
+        "Gulmarg",
+        "Gondola to Kongdoori; snow play in season, meadow walks in summer."
+      ],
+      [
+        "Srinagar → Pahalgam",
+        "Via Pampore saffron fields; evening by the Lidder river."
+      ],
+      [
+        "Pahalgam",
+        "Betaab and Aru valleys; optional pony trek to Baisaran."
+      ],
+      [
+        "Sonmarg day trip",
+        "The Meadow of Gold — Thajiwas glacier viewpoints."
+      ],
+      [
+        "Srinagar local",
+        "Mughal gardens, Shankaracharya temple, old-city evening."
+      ],
+      [
+        "Depart",
+        "Drop at Srinagar airport."
+      ]
+    ],
+    "inc": [
+      "6 nights (3★ hotels)",
+      "Breakfast & dinner",
+      "Airport/hotel transfers",
+      "Local sightseeing by private vehicle",
+      "Shikara ride"
+    ],
+    "exc": [
+      "Mumbai–Srinagar–Mumbai airfare",
+      "Lunches",
+      "Gondola tickets",
+      "Pony rides & sledging",
+      "Personal expenses"
+    ],
+    "photos": [
+      "/img/trips/kashmir.webp",
+      "/img/trips/kashmir-2.webp",
+      "/img/trips/kashmir-3.webp"
+    ],
+    "photo": "/img/trips/kashmir.webp",
+    "colors": {
+      "deep": [
+        45,
+        45,
+        45
+      ],
+      "vivid": [
+        104,
+        100,
+        94
+      ]
+    }
+  },
+  {
+    "id": "rajasthan",
+    "slug": "rajasthan-royal",
+    "name": "Rajasthan Royal",
+    "cat": [
+      "domestic"
+    ],
+    "tag": "Heritage",
+    "nights": 7,
+    "days": 8,
+    "route": "Jaipur · Jodhpur · Jaisalmer · Udaipur",
+    "priceINR": 29999,
+    "season": "Oct – Mar",
+    "desc": "Amber Fort, the blue city, Sam sand dunes desert camp, and Udaipur’s lakes — the full royal circuit.",
+    "lede": "Eight days through pink, blue and golden Rajasthan — Jaipur’s forts, Jodhpur’s ramparts, a desert-camp night at the Sam dunes of Jaisalmer, and Udaipur to finish.",
+    "highlights": [
+      "Amber Fort",
+      "Mehrangarh ramparts",
+      "Jaisalmer Fort",
+      "Sam sand dunes desert camp",
+      "Lake Pichola, Udaipur"
+    ],
+    "itin": [
+      [
+        "Arrive Jaipur",
+        "Check in; evening at Nahargarh for the city-lights view."
+      ],
+      [
+        "Jaipur",
+        "Amber Fort early, City Palace, Jantar Mantar and the bazaars."
+      ],
+      [
+        "Jaipur → Jodhpur",
+        "Drive west; sunset from the clock-tower market."
+      ],
+      [
+        "Jodhpur",
+        "Mehrangarh Fort and the blue-city walking tour."
+      ],
+      [
+        "Jodhpur → Jaisalmer",
+        "Into the Thar; golden fort at dusk."
+      ],
+      [
+        "Jaisalmer & Sam dunes",
+        "Havelis and fort by day; camel ride, cultural night and desert camp."
+      ],
+      [
+        "Jaisalmer → Udaipur",
+        "Long scenic drive; lakeside evening."
+      ],
+      [
+        "Udaipur & depart",
+        "City Palace and Lake Pichola; departure."
+      ]
+    ],
+    "inc": [
+      "7 nights incl. Sam desert camp",
+      "Breakfast & dinner",
+      "Private vehicle throughout",
+      "Desert camp cultural evening",
+      "Local transfers"
+    ],
+    "exc": [
+      "Mumbai airfare/train fare",
+      "Lunches",
+      "Monument entries",
+      "Camel-cart upgrades",
+      "Personal expenses"
+    ],
+    "photos": [
+      "/img/trips/rajasthan.webp",
+      "/img/trips/rajasthan-2.webp",
+      "/img/trips/rajasthan-3.webp"
+    ],
+    "photo": "/img/trips/rajasthan.webp",
+    "colors": {
+      "deep": [
         65,
-        17
+        49,
+        42
+      ],
+      "vivid": [
+        80,
+        58,
+        46
       ]
     }
   },
   {
     "id": "gokarna",
-    "slug": "murudeshwar-gokarna",
-    "name": "Murudeshwar & Gokarna",
+    "slug": "gokarna-murudeshwar",
+    "name": "Gokarna – Murudeshwar",
     "cat": [
       "domestic",
       "pilgrimage"
     ],
-    "tag": "Coastal",
+    "tag": "Temple & beach",
     "nights": 3,
     "days": 4,
-    "route": "Murudeshwar · Gokarna · Om Beach",
-    "priceINR": 14499,
+    "route": "Gokarna · Murudeshwar",
+    "priceINR": 14999,
     "season": "Oct – Mar",
-    "desc": "The towering seaside Shiva of Murudeshwar and Gokarna’s Mahabaleshwar darshan with beach-hop evenings.",
-    "lede": "Four days on the Karavali coast — darshan under Murudeshwar’s colossal seaside Shiva, the Atmalinga at Gokarna, and golden evenings on Om and Kudle beaches.",
+    "desc": "Mahabaleshwar temple at Gokarna and the towering seaside Shiva of Murudeshwar — by 3AC train from Mumbai.",
+    "lede": "Four days on the Karavali coast — the Atmalinga at Gokarna, golden beach evenings, and darshan beneath Murudeshwar’s colossal seaside Shiva.",
     "highlights": [
-      "Murudeshwar Shiva statue & gopura view",
-      "Netrani viewpoint",
       "Mahabaleshwar temple, Gokarna",
-      "Om Beach sunset",
-      "Half-moon beach boat hop"
+      "Gokarna beaches",
+      "Murudeshwar Shiva statue",
+      "Gopura viewing gallery",
+      "3AC train travel"
     ],
     "itin": [
       [
-        "Arrive Murudeshwar",
-        "Pickup from Bhatkal/Mangalore; temple darshan and the 20-storey gopura viewing gallery."
+        "Mumbai → Gokarna",
+        "Overnight 3AC train down the Konkan coast."
       ],
       [
-        "Murudeshwar → Gokarna",
-        "Coastal drive; Mahabaleshwar temple and Koti Teertha; Gokarna main beach evening."
+        "Gokarna",
+        "Mahabaleshwar temple and Koti Teertha; beach evening."
       ],
       [
-        "Gokarna beaches",
-        "Boat-hop Om, Half-moon and Paradise beaches; sunset at Om viewpoint."
+        "Murudeshwar",
+        "Temple darshan, the 20-storey gopura gallery and the beach."
       ],
       [
-        "Depart",
-        "Mirjan fort en route; drop at Gokarna Road / Ankola station."
+        "Return Mumbai",
+        "Train home."
       ]
     ],
     "inc": [
-      "3 nights’ stay (sea-view where possible)",
-      "Daily breakfast",
-      "Private cab",
-      "Beach boat-hop tickets",
+      "3AC train Mumbai–Gokarna–Mumbai",
+      "3 nights’ stay",
+      "Breakfast & dinner",
+      "Local transport & sightseeing",
       "Darshan assistance"
     ],
     "exc": [
-      "Train/flights",
-      "Lunches & dinners",
+      "Lunches",
       "Water sports",
-      "Netrani scuba trips",
       "Personal expenses"
     ],
     "photos": [
@@ -2273,75 +831,1355 @@
     }
   },
   {
-    "id": "hampi",
-    "slug": "hampi-badami",
-    "name": "Hampi & Badami",
+    "id": "goa",
+    "slug": "goa-holiday",
+    "name": "Goa Holiday",
     "cat": [
-      "domestic"
+      "domestic",
+      "honeymoon"
     ],
-    "tag": "Heritage",
+    "tag": "Quick escape",
     "nights": 3,
     "days": 4,
-    "route": "Hampi · Badami · Pattadakal · Aihole",
-    "priceINR": 15499,
-    "season": "Oct – Feb",
-    "desc": "The boulder-strewn ruins of Vijayanagara and the rock-cut cave temples of the Chalukyas.",
-    "lede": "Four days in Karnataka’s open-air museum — the stone chariot and bazaars of Hampi, then the Chalukyan cave temples of Badami, Pattadakal and Aihole.",
+    "route": "North Goa · South Goa",
+    "priceINR": 12999,
+    "season": "Nov – Feb",
+    "desc": "Beaches, churches and sightseeing across North and South Goa — for families, friends and honeymooners.",
+    "lede": "A long weekend done properly — North Goa’s beaches and forts one day, South Goa’s churches and quiet sands the next.",
     "highlights": [
-      "Virupaksha temple",
-      "Vittala temple & stone chariot",
-      "Matanga Hill sunrise",
-      "Badami cave temples",
-      "Pattadakal World Heritage site"
+      "North Goa beaches",
+      "Aguada fort",
+      "Old Goa churches",
+      "South Goa sands",
+      "Sunset cruise (optional)"
     ],
     "itin": [
       [
-        "Arrive Hospet → Hampi",
-        "Virupaksha temple, Hampi bazaar, Hemakuta hill sunset."
+        "Mumbai → Goa",
+        "Arrive, hotel check-in, beach sunset."
       ],
       [
-        "Hampi",
-        "Vittala temple and the stone chariot, Royal Enclosure, Lotus Mahal, elephant stables; coracle ride."
+        "North Goa",
+        "Aguada, Baga, Anjuna and Vagator."
       ],
       [
-        "Hampi → Badami",
-        "Morning at Matanga Hill; drive to Badami, cave temples at golden hour."
+        "South Goa",
+        "Old Goa churches, Miramar, Colva; leisure evening."
       ],
       [
-        "Pattadakal, Aihole & depart",
-        "The Chalukyan trail; drop at Hubli / Hospet."
+        "Goa → Mumbai",
+        "Departure after breakfast."
       ]
     ],
     "inc": [
-      "3 nights’ stay",
+      "3 nights hotel",
       "Daily breakfast",
-      "Private cab",
-      "Local guide at Hampi",
-      "Monument entries (Indian nationals)"
+      "Airport/station transfers",
+      "North & South Goa sightseeing",
+      "Private/shared vehicle options"
     ],
     "exc": [
-      "Train/flights",
+      "Travel to Goa",
       "Lunches & dinners",
-      "Coracle ride",
-      "Camera fees",
+      "Water sports",
+      "Cruise tickets",
       "Personal expenses"
     ],
     "photos": [
-      "/img/trips/hampi-1.webp",
-      "/img/trips/hampi-2.webp",
-      "/img/trips/hampi-3.webp"
+      "/img/trips/goa.webp",
+      "/img/trips/goa-2.webp",
+      "/img/trips/goa-3.webp"
     ],
-    "photo": "/img/trips/hampi-1.webp",
+    "photo": "/img/trips/goa.webp",
     "colors": {
       "deep": [
-        79,
-        58,
-        36
+        69,
+        68,
+        53
       ],
       "vivid": [
-        141,
-        93,
-        31
+        69,
+        74,
+        35
+      ]
+    }
+  },
+  {
+    "id": "kerala",
+    "slug": "kerala-gods-own-country",
+    "name": "Kerala — God’s Own Country",
+    "cat": [
+      "domestic",
+      "honeymoon"
+    ],
+    "tag": "Honeymoon pick",
+    "nights": 5,
+    "days": 6,
+    "route": "Cochin · Munnar · Thekkady · Alleppey",
+    "priceINR": 22999,
+    "season": "Sep – Mar",
+    "desc": "Tea gardens of Munnar, Thekkady’s spice hills and the Alleppey houseboat experience.",
+    "lede": "Six days from Cochin through mist-covered tea country to the slow green canals of Alleppey — ending with the classic houseboat experience.",
+    "highlights": [
+      "Munnar tea gardens",
+      "Eravikulam National Park",
+      "Thekkady spice hills",
+      "Alleppey houseboat",
+      "Fort Kochi"
+    ],
+    "itin": [
+      [
+        "Cochin → Munnar",
+        "Drive up through waterfalls and rubber plantations."
+      ],
+      [
+        "Munnar",
+        "Tea museum, Eravikulam National Park, Top Station viewpoint."
+      ],
+      [
+        "Munnar → Thekkady",
+        "Spice-garden walk; optional Periyar boat ride."
+      ],
+      [
+        "Thekkady → Alleppey",
+        "To the backwaters; sunset by the canals."
+      ],
+      [
+        "Houseboat / Alleppey",
+        "The famous backwater cruise experience."
+      ],
+      [
+        "Cochin departure",
+        "Fort Kochi if time permits; fly home."
+      ]
+    ],
+    "inc": [
+      "5 nights’ stay",
+      "Breakfast & dinner",
+      "Private vehicle throughout",
+      "Houseboat experience",
+      "All sightseeing per itinerary"
+    ],
+    "exc": [
+      "Mumbai airfare",
+      "Lunches",
+      "Periyar boat tickets",
+      "Ayurveda treatments",
+      "Personal expenses"
+    ],
+    "photos": [
+      "/img/trips/kerala.webp",
+      "/img/trips/kerala-2.webp",
+      "/img/trips/kerala-3.webp"
+    ],
+    "photo": "/img/trips/kerala.webp",
+    "colors": {
+      "deep": [
+        19,
+        22,
+        23
+      ],
+      "vivid": [
+        100,
+        91,
+        78
+      ]
+    }
+  },
+  {
+    "id": "andaman",
+    "slug": "andaman-holiday",
+    "name": "Andaman Holiday",
+    "cat": [
+      "domestic",
+      "honeymoon"
+    ],
+    "tag": "Islands",
+    "nights": 5,
+    "days": 6,
+    "route": "Port Blair · Havelock · Neil Island",
+    "priceINR": 32999,
+    "season": "Oct – May",
+    "desc": "Cellular Jail’s light-and-sound show, Radhanagar Beach and island hopping to Neil.",
+    "lede": "Six days across the Andamans — history at Cellular Jail, Asia’s best beach at Radhanagar, and the quiet reefs of Neil Island.",
+    "highlights": [
+      "Cellular Jail light & sound",
+      "Radhanagar Beach",
+      "Havelock island",
+      "Neil Island",
+      "Ferry island-hopping"
+    ],
+    "itin": [
+      [
+        "Port Blair arrival",
+        "Airport pickup; Corbyn’s Cove evening."
+      ],
+      [
+        "Cellular Jail",
+        "Jail visit and the evening light-and-sound show."
+      ],
+      [
+        "Havelock",
+        "Morning ferry; sunset at Radhanagar Beach."
+      ],
+      [
+        "Havelock sightseeing",
+        "Elephant Beach / Kalapathar; beach day."
+      ],
+      [
+        "Neil Island",
+        "Bharatpur, Laxmanpur and the Natural Bridge."
+      ],
+      [
+        "Port Blair → Mumbai",
+        "Return ferry and fly home."
+      ]
+    ],
+    "inc": [
+      "5 nights’ stay",
+      "Daily breakfast",
+      "All ferry tickets",
+      "Island transfers & sightseeing",
+      "Local transfers"
+    ],
+    "exc": [
+      "Mumbai airfare",
+      "Lunches & dinners",
+      "Water sports & scuba",
+      "Personal expenses"
+    ],
+    "photos": [
+      "/img/trips/andaman-1.webp",
+      "/img/trips/andaman-2.webp",
+      "/img/trips/andaman-3.webp"
+    ],
+    "photo": "/img/trips/andaman-1.webp",
+    "colors": {
+      "deep": [
+        32,
+        32,
+        21
+      ],
+      "vivid": [
+        74,
+        72,
+        51
+      ]
+    }
+  },
+  {
+    "id": "kutch",
+    "slug": "fabulous-kutch",
+    "name": "Fabulous Kutch",
+    "cat": [
+      "domestic"
+    ],
+    "tag": "White Rann",
+    "nights": 2,
+    "days": 3,
+    "route": "Bhuj · Dhordo · White Rann · Kalo Dungar",
+    "priceINR": 12999,
+    "season": "Nov – Feb (Rann Utsav)",
+    "desc": "The White Rann at sunset, Kalo Dungar’s panorama, and Bhuj’s palaces and craft villages.",
+    "lede": "Three days in India’s white desert — Bhuj’s Aina Mahal and Prag Mahal, the craft villages of Banni, Kalo Dungar, and the endless White Rann glowing at sunset.",
+    "highlights": [
+      "White Rann sunset",
+      "Kalo Dungar viewpoint",
+      "Aina Mahal & Prag Mahal",
+      "Banni craft villages",
+      "Rann Utsav (in season)"
+    ],
+    "itin": [
+      [
+        "Arrive Bhuj",
+        "Swaminarayan temple, Aina Mahal, Prag Mahal and the royal cenotaphs."
+      ],
+      [
+        "Bhuj → Dhordo",
+        "Bhirandiyara and Ludiya craft villages, Khavda, Kalo Dungar — then the White Rann for sunset."
+      ],
+      [
+        "Depart",
+        "Dhordo → Bhuj; drop at the railway station or airport."
+      ]
+    ],
+    "inc": [
+      "2 nights’ stay",
+      "Breakfast & dinner",
+      "Private transportation",
+      "White Rann visit & permits",
+      "Local assistance"
+    ],
+    "exc": [
+      "Train/flights to Bhuj",
+      "Lunches",
+      "Camel/ATV rides",
+      "Rann Utsav tent upgrade",
+      "Personal expenses"
+    ],
+    "photos": [
+      "/img/trips/kutch-1.webp",
+      "/img/trips/kutch-2.webp",
+      "/img/trips/kutch-3.webp"
+    ],
+    "photo": "/img/trips/kutch-1.webp",
+    "colors": {
+      "deep": [
+        56,
+        57,
+        48
+      ],
+      "vivid": [
+        96,
+        103,
+        109
+      ]
+    }
+  },
+  {
+    "id": "himachal",
+    "slug": "himachal-shimla-manali",
+    "name": "Himachal — Shimla & Manali",
+    "cat": [
+      "domestic",
+      "honeymoon"
+    ],
+    "tag": "Hills",
+    "nights": 5,
+    "days": 6,
+    "route": "Shimla · Manali · Solang · Atal Tunnel",
+    "priceINR": 24999,
+    "season": "Mar – Jun · Oct – Feb",
+    "desc": "Shimla’s Mall Road, Solang Valley, the Atal Tunnel and Old Manali — the classic hill double-bill.",
+    "lede": "Six days in the hills — colonial Shimla, the drive along the Beas to Manali, Solang Valley’s ropeway and through the Atal Tunnel in season.",
+    "highlights": [
+      "Shimla Ridge & Mall Road",
+      "Kufri",
+      "Solang Valley",
+      "Atal Tunnel",
+      "Hadimba temple & Old Manali"
+    ],
+    "itin": [
+      [
+        "Chandigarh → Shimla",
+        "Arrive Chandigarh and drive up; evening on the Ridge and Mall Road."
+      ],
+      [
+        "Shimla",
+        "Kufri, Green Valley and Jakhoo temple."
+      ],
+      [
+        "Shimla → Manali",
+        "Scenic drive along the Beas; riverside check-in."
+      ],
+      [
+        "Solang Valley & Atal Tunnel",
+        "Ropeway, optional paragliding, through the tunnel to Sissu in season."
+      ],
+      [
+        "Manali local",
+        "Hadimba temple, Vashisht hot springs, Old Manali cafés."
+      ],
+      [
+        "Manali → Chandigarh",
+        "Drive down for departure."
+      ]
+    ],
+    "inc": [
+      "5 nights’ stay",
+      "Breakfast & dinner",
+      "Private vehicle throughout",
+      "All transfers & sightseeing",
+      "Tolls and parking"
+    ],
+    "exc": [
+      "Mumbai–Chandigarh airfare/train",
+      "Lunches",
+      "Adventure activities",
+      "Rohtang permits when open",
+      "Personal expenses"
+    ],
+    "photos": [
+      "/img/trips/himachal.webp",
+      "/img/trips/himachal-2.webp",
+      "/img/trips/himachal-3.webp"
+    ],
+    "photo": "/img/trips/himachal.webp",
+    "colors": {
+      "deep": [
+        20,
+        26,
+        17
+      ],
+      "vivid": [
+        50,
+        68,
+        26
+      ]
+    }
+  },
+  {
+    "id": "thailand",
+    "slug": "thailand-bangkok-pattaya",
+    "name": "Thailand — Bangkok & Pattaya",
+    "cat": [
+      "international"
+    ],
+    "tag": "International",
+    "nights": 4,
+    "days": 5,
+    "route": "Bangkok · Pattaya · Coral Island",
+    "priceINR": 34999,
+    "season": "Nov – Apr",
+    "desc": "Coral Island speedboat day, Pattaya’s beaches, and Bangkok’s temples, markets and malls.",
+    "lede": "The classic first Thailand trip — Pattaya’s Coral Island and beachfront, then Bangkok’s temples, street food and shopping.",
+    "highlights": [
+      "Coral Island speedboat trip",
+      "Pattaya beachfront",
+      "Bangkok city tour",
+      "Temple circuit",
+      "Pratunam shopping"
+    ],
+    "itin": [
+      [
+        "Mumbai → Bangkok → Pattaya",
+        "Arrive and transfer straight to Pattaya; beachfront evening."
+      ],
+      [
+        "Coral Island",
+        "Speedboat to Koh Larn; Pattaya sightseeing."
+      ],
+      [
+        "Pattaya → Bangkok",
+        "Sanctuary of Truth photo stop; drive to Bangkok."
+      ],
+      [
+        "Bangkok",
+        "City and temple tour, then shopping time."
+      ],
+      [
+        "Depart",
+        "Fly home to Mumbai."
+      ]
+    ],
+    "inc": [
+      "4 nights (Pattaya + Bangkok)",
+      "Daily breakfast",
+      "Coral Island trip",
+      "Bangkok city tour",
+      "All transfers"
+    ],
+    "exc": [
+      "International flights",
+      "Lunches & dinners",
+      "Water sports",
+      "Travel insurance"
+    ],
+    "photos": [
+      "/img/trips/thailand.webp",
+      "/img/trips/thailand-2.webp",
+      "/img/trips/thailand-3.webp"
+    ],
+    "photo": "/img/trips/thailand.webp",
+    "colors": {
+      "deep": [
+        30,
+        32,
+        25
+      ],
+      "vivid": [
+        63,
+        72,
+        30
+      ]
+    }
+  },
+  {
+    "id": "dubai",
+    "slug": "dubai-tour",
+    "name": "Dubai",
+    "cat": [
+      "international",
+      "honeymoon"
+    ],
+    "tag": "International",
+    "nights": 4,
+    "days": 5,
+    "route": "Dubai · Desert Safari · Burj Khalifa",
+    "priceINR": 49999,
+    "season": "Nov – Mar",
+    "desc": "Burj Khalifa, dune-bashing with BBQ dinner, and a day for Abu Dhabi or the malls.",
+    "lede": "Five days of the Gulf’s greatest hits — the view from the Burj, golden-hour dune bashing, and Abu Dhabi or shopping to finish.",
+    "highlights": [
+      "Burj Khalifa",
+      "Desert safari + BBQ dinner",
+      "Dubai city tour",
+      "Abu Dhabi option",
+      "Gold & spice souks"
+    ],
+    "itin": [
+      [
+        "Dubai arrival",
+        "Transfer and Marina evening."
+      ],
+      [
+        "City tour + Burj Khalifa",
+        "Old Dubai, souks, and the world’s tallest tower."
+      ],
+      [
+        "Desert safari",
+        "Dune-bashing, camel rides, BBQ dinner under the stars."
+      ],
+      [
+        "Abu Dhabi / shopping",
+        "Sheikh Zayed Grand Mosque day trip or mall day."
+      ],
+      [
+        "Dubai → Mumbai",
+        "Fly home."
+      ]
+    ],
+    "inc": [
+      "4 nights hotel",
+      "Daily breakfast",
+      "City tour & Burj Khalifa visit",
+      "Desert safari with dinner",
+      "All transfers"
+    ],
+    "exc": [
+      "International flights",
+      "UAE visa (we assist)",
+      "Lunches & most dinners",
+      "Theme-park entries",
+      "Travel insurance"
+    ],
+    "photos": [
+      "/img/trips/dubai.webp",
+      "/img/trips/dubai-2.webp",
+      "/img/trips/dubai-3.webp"
+    ],
+    "photo": "/img/trips/dubai.webp",
+    "colors": {
+      "deep": [
+        18,
+        16,
+        18
+      ],
+      "vivid": [
+        127,
+        83,
+        57
+      ]
+    }
+  },
+  {
+    "id": "singapore",
+    "slug": "singapore-tour",
+    "name": "Singapore",
+    "cat": [
+      "international",
+      "honeymoon"
+    ],
+    "tag": "International",
+    "nights": 4,
+    "days": 5,
+    "route": "City · Marina Bay · Sentosa",
+    "priceINR": 59999,
+    "season": "All year",
+    "desc": "Marina Bay, Sentosa Island and a Universal Studios day in Asia’s cleanest city.",
+    "lede": "Five days in the Lion City — the Marina Bay skyline, a full Sentosa day, and Universal Studios or leisure to finish.",
+    "highlights": [
+      "Marina Bay & Merlion",
+      "Gardens by the Bay",
+      "Sentosa Island",
+      "Universal Studios (optional)",
+      "Orchard Road shopping"
+    ],
+    "itin": [
+      [
+        "Singapore arrival",
+        "Transfer; Marina Bay / Clarke Quay evening."
+      ],
+      [
+        "City tour + Marina Bay",
+        "Merlion, Gardens by the Bay, Chinatown."
+      ],
+      [
+        "Sentosa Island",
+        "Cable car, beaches, Wings of Time show."
+      ],
+      [
+        "Universal Studios / leisure",
+        "Theme-park day or shopping."
+      ],
+      [
+        "Singapore → Mumbai",
+        "Fly home."
+      ]
+    ],
+    "inc": [
+      "4 nights hotel",
+      "Daily breakfast",
+      "City tour & Sentosa with transfers",
+      "Airport transfers",
+      "Visa assistance"
+    ],
+    "exc": [
+      "International flights",
+      "Visa fee",
+      "Universal tickets",
+      "Lunches & dinners",
+      "Travel insurance"
+    ],
+    "photos": [
+      "/img/trips/singapore-1.webp",
+      "/img/trips/singapore-2.webp",
+      "/img/trips/singapore-3.webp"
+    ],
+    "photo": "/img/trips/singapore-1.webp",
+    "colors": {
+      "deep": [
+        54,
+        64,
+        61
+      ],
+      "vivid": [
+        58,
+        76,
+        69
+      ]
+    }
+  },
+  {
+    "id": "malaysia",
+    "slug": "malaysia-tour",
+    "name": "Malaysia",
+    "cat": [
+      "international",
+      "honeymoon"
+    ],
+    "tag": "International",
+    "nights": 4,
+    "days": 5,
+    "route": "Kuala Lumpur · Genting Highlands",
+    "priceINR": 44999,
+    "season": "All year",
+    "desc": "Petronas Towers, Batu Caves and the Genting Highlands cable car — KL done right.",
+    "lede": "Five days across Kuala Lumpur and the cool Genting Highlands — twin towers, cave temples and serious shopping.",
+    "highlights": [
+      "Petronas Twin Towers",
+      "Batu Caves",
+      "Genting cable car",
+      "KL city tour",
+      "Bukit Bintang shopping"
+    ],
+    "itin": [
+      [
+        "Kuala Lumpur arrival",
+        "Transfer and KLCC evening."
+      ],
+      [
+        "KL city tour",
+        "Petronas photo stop, Batu Caves, Merdeka Square."
+      ],
+      [
+        "Genting Highlands",
+        "Awana Skyway cable car; hilltop entertainment."
+      ],
+      [
+        "Shopping + leisure",
+        "Bukit Bintang and Central Market."
+      ],
+      [
+        "KL → Mumbai",
+        "Fly home."
+      ]
+    ],
+    "inc": [
+      "4 nights hotel",
+      "Daily breakfast",
+      "City tour & Genting excursion",
+      "All transfers",
+      "Visa assistance"
+    ],
+    "exc": [
+      "International flights",
+      "Theme-park tickets",
+      "Lunches & dinners",
+      "Travel insurance"
+    ],
+    "photos": [
+      "/img/trips/malaysia-1.webp",
+      "/img/trips/malaysia-2.webp",
+      "/img/trips/malaysia-3.webp"
+    ],
+    "photo": "/img/trips/malaysia-1.webp",
+    "colors": {
+      "deep": [
+        57,
+        66,
+        70
+      ],
+      "vivid": [
+        69,
+        116,
+        167
+      ]
+    }
+  },
+  {
+    "id": "singapore-malaysia",
+    "slug": "singapore-malaysia-tour",
+    "name": "Singapore – Malaysia",
+    "cat": [
+      "international"
+    ],
+    "tag": "Twin country",
+    "nights": 5,
+    "days": 6,
+    "route": "Kuala Lumpur · Genting · Singapore",
+    "priceINR": 69999,
+    "season": "All year",
+    "desc": "Two countries, one trip — KL and Genting, then across to Singapore and Sentosa.",
+    "lede": "Six days, two nations — Kuala Lumpur’s towers and Genting’s highlands, then Singapore’s skyline and Sentosa.",
+    "highlights": [
+      "Petronas Twin Towers",
+      "Genting Highlands",
+      "Singapore city tour",
+      "Sentosa Island",
+      "Two countries, one trip"
+    ],
+    "itin": [
+      [
+        "Kuala Lumpur arrival",
+        "Transfer and KLCC evening."
+      ],
+      [
+        "KL city tour",
+        "Batu Caves, Merdeka Square, Petronas photo stop."
+      ],
+      [
+        "Genting Highlands",
+        "Cable car and hilltop entertainment."
+      ],
+      [
+        "KL → Singapore",
+        "Cross over; Marina Bay evening."
+      ],
+      [
+        "Singapore + Sentosa",
+        "City tour and Sentosa with Wings of Time."
+      ],
+      [
+        "Singapore → Mumbai",
+        "Fly home."
+      ]
+    ],
+    "inc": [
+      "5 nights (KL + Singapore)",
+      "Daily breakfast",
+      "City tours in both countries",
+      "Genting & Sentosa excursions",
+      "Transfers + visa assistance"
+    ],
+    "exc": [
+      "International flights",
+      "Visa fees",
+      "Theme-park tickets",
+      "Lunches & dinners",
+      "Travel insurance"
+    ],
+    "photos": [
+      "/img/trips/singapore-malaysia-1.webp",
+      "/img/trips/singapore-malaysia-2.webp",
+      "/img/trips/singapore-malaysia-3.webp"
+    ],
+    "photo": "/img/trips/singapore-malaysia-1.webp",
+    "colors": {
+      "deep": [
+        2,
+        32,
+        79
+      ],
+      "vivid": [
+        144,
+        108,
+        85
+      ]
+    }
+  },
+  {
+    "id": "srilanka",
+    "slug": "sri-lanka-tour",
+    "name": "Sri Lanka",
+    "cat": [
+      "international",
+      "honeymoon"
+    ],
+    "tag": "International",
+    "nights": 5,
+    "days": 6,
+    "route": "Colombo · Kandy · Nuwara Eliya · Bentota",
+    "priceINR": 39999,
+    "season": "Dec – Apr",
+    "desc": "Temple of the Tooth, misty tea country and Bentota’s golden beaches.",
+    "lede": "Six days around Sri Lanka — Kandy’s sacred Temple of the Tooth, the tea hills of Nuwara Eliya, and beach time at Bentota.",
+    "highlights": [
+      "Temple of the Tooth, Kandy",
+      "Nuwara Eliya tea country",
+      "Bentota beach",
+      "Pinnawala elephants",
+      "Colombo city tour"
+    ],
+    "itin": [
+      [
+        "Colombo arrival",
+        "Transfer; Galle Face Green evening."
+      ],
+      [
+        "Colombo → Kandy",
+        "Via Pinnawala; Temple of the Tooth ritual."
+      ],
+      [
+        "Kandy → Nuwara Eliya",
+        "Tea plantation and factory visit."
+      ],
+      [
+        "Nuwara Eliya → Bentota",
+        "Down through the hills to the coast."
+      ],
+      [
+        "Bentota + Colombo",
+        "Beach morning; Colombo shopping."
+      ],
+      [
+        "Colombo → Mumbai",
+        "Fly home."
+      ]
+    ],
+    "inc": [
+      "5 nights hotels",
+      "Breakfast & dinner",
+      "Private vehicle with driver-guide",
+      "Sightseeing per itinerary",
+      "Visa assistance"
+    ],
+    "exc": [
+      "International flights",
+      "ETA visa fee",
+      "Entrance tickets",
+      "Lunches",
+      "Travel insurance"
+    ],
+    "photos": [
+      "/img/trips/srilanka-1.webp",
+      "/img/trips/srilanka-2.webp",
+      "/img/trips/srilanka-3.webp"
+    ],
+    "photo": "/img/trips/srilanka-1.webp",
+    "colors": {
+      "deep": [
+        67,
+        72,
+        54
+      ],
+      "vivid": [
+        80,
+        128,
+        162
+      ]
+    }
+  },
+  {
+    "id": "nepal",
+    "slug": "nepal-tour",
+    "name": "Nepal",
+    "cat": [
+      "international",
+      "pilgrimage"
+    ],
+    "tag": "No visa needed",
+    "nights": 4,
+    "days": 5,
+    "route": "Kathmandu · Pokhara",
+    "priceINR": 29999,
+    "season": "Sep – Apr",
+    "desc": "Pashupatinath darshan, Kathmandu’s stupas and Pokhara’s lakeside — no visa for Indians.",
+    "lede": "Five days in the Himalayan kingdom — Pashupatinath and Boudhanath in Kathmandu, then Pokhara’s Phewa Lake under the Annapurnas.",
+    "highlights": [
+      "Pashupatinath darshan",
+      "Boudhanath & Swayambhunath",
+      "Phewa Lake boating",
+      "Sarangkot sunrise (optional)",
+      "No visa for Indians"
+    ],
+    "itin": [
+      [
+        "Kathmandu arrival",
+        "Transfer; Thamel evening."
+      ],
+      [
+        "Kathmandu sightseeing",
+        "Pashupatinath, Boudhanath and Swayambhunath."
+      ],
+      [
+        "Kathmandu → Pokhara",
+        "Scenic drive along the Trishuli."
+      ],
+      [
+        "Pokhara sightseeing",
+        "Phewa Lake boating, Davis Falls; optional Sarangkot sunrise."
+      ],
+      [
+        "Pokhara → Kathmandu → Mumbai",
+        "Fly home."
+      ]
+    ],
+    "inc": [
+      "4 nights hotels",
+      "Breakfast & dinner",
+      "Private vehicle throughout",
+      "Sightseeing per itinerary",
+      "Darshan assistance"
+    ],
+    "exc": [
+      "Flights",
+      "Lunches",
+      "Boating & cable-car tickets",
+      "Personal expenses"
+    ],
+    "photos": [
+      "/img/trips/nepal-1.webp",
+      "/img/trips/nepal-2.webp",
+      "/img/trips/nepal-3.webp"
+    ],
+    "photo": "/img/trips/nepal-1.webp",
+    "colors": {
+      "deep": [
+        135,
+        108,
+        97
+      ],
+      "vivid": [
+        167,
+        110,
+        78
+      ]
+    }
+  },
+  {
+    "id": "vietnam",
+    "slug": "vietnam-tour",
+    "name": "Vietnam",
+    "cat": [
+      "international"
+    ],
+    "tag": "Trending",
+    "nights": 5,
+    "days": 6,
+    "route": "Hanoi · Halong Bay · Ho Chi Minh",
+    "priceINR": 54999,
+    "season": "Oct – Apr",
+    "desc": "A Halong Bay cruise between limestone islands, Hanoi’s old quarter, and buzzing Ho Chi Minh City.",
+    "lede": "Six days across Vietnam — Hanoi’s lakes and old quarter, a day cruising Halong Bay, then south to Ho Chi Minh City.",
+    "highlights": [
+      "Halong Bay cruise",
+      "Hanoi old quarter",
+      "Ho Chi Minh City tour",
+      "Cu Chi tunnels (optional)",
+      "Street food & coffee"
+    ],
+    "itin": [
+      [
+        "Hanoi arrival",
+        "Transfer; Hoan Kiem lake evening."
+      ],
+      [
+        "Hanoi city tour",
+        "Mausoleum, Temple of Literature, old quarter."
+      ],
+      [
+        "Halong Bay cruise",
+        "Full-day cruise with cave visit and lunch."
+      ],
+      [
+        "Hanoi → Ho Chi Minh",
+        "Fly south; Ben Thanh market evening."
+      ],
+      [
+        "Ho Chi Minh city tour",
+        "Notre Dame, post office, war museum."
+      ],
+      [
+        "Mumbai return",
+        "Fly home."
+      ]
+    ],
+    "inc": [
+      "5 nights hotels",
+      "Daily breakfast",
+      "Halong Bay cruise with lunch",
+      "City tours both cities",
+      "Transfers + visa assistance"
+    ],
+    "exc": [
+      "International & internal flights",
+      "Visa fee",
+      "Lunches & dinners not listed",
+      "Travel insurance"
+    ],
+    "photos": [
+      "/img/trips/vietnam-1.webp",
+      "/img/trips/vietnam-2.webp",
+      "/img/trips/vietnam-3.webp"
+    ],
+    "photo": "/img/trips/vietnam-1.webp",
+    "colors": {
+      "deep": [
+        24,
+        31,
+        32
+      ],
+      "vivid": [
+        35,
+        60,
+        83
+      ]
+    }
+  },
+  {
+    "id": "bhutan",
+    "slug": "bhutan-tour",
+    "name": "Bhutan",
+    "cat": [
+      "international"
+    ],
+    "tag": "Happiness kingdom",
+    "nights": 5,
+    "days": 6,
+    "route": "Paro · Thimphu · Punakha",
+    "priceINR": 49999,
+    "season": "Mar – May · Sep – Nov",
+    "desc": "Dzongs, prayer flags and mountain passes — Thimphu, Punakha and Paro in the last Himalayan kingdom.",
+    "lede": "Six days in the kingdom of happiness — Thimphu’s giant Buddha, Punakha’s river-junction dzong, and Paro’s valley beneath the Tiger’s Nest.",
+    "highlights": [
+      "Punakha Dzong",
+      "Buddha Dordenma, Thimphu",
+      "Dochula Pass",
+      "Paro valley",
+      "Tiger’s Nest (optional hike)"
+    ],
+    "itin": [
+      [
+        "Paro arrival → Thimphu",
+        "Land at Paro and drive to the capital."
+      ],
+      [
+        "Thimphu sightseeing",
+        "Buddha Dordenma, Memorial Chorten, Tashichho Dzong."
+      ],
+      [
+        "Thimphu → Punakha",
+        "Over Dochula Pass; Punakha Dzong."
+      ],
+      [
+        "Punakha → Paro",
+        "Chimi Lhakhang walk, back over the pass."
+      ],
+      [
+        "Paro sightseeing",
+        "Rinpung Dzong, National Museum; optional Tiger’s Nest hike."
+      ],
+      [
+        "Departure",
+        "Fly out of Paro."
+      ]
+    ],
+    "inc": [
+      "5 nights hotels",
+      "All meals",
+      "Private vehicle + licensed guide",
+      "All permits",
+      "SDF guidance"
+    ],
+    "exc": [
+      "Flights to/from Paro",
+      "SDF where applicable",
+      "Tiger’s Nest entry/horse",
+      "Personal expenses",
+      "Travel insurance"
+    ],
+    "photos": [
+      "/img/trips/bhutan-1.webp",
+      "/img/trips/bhutan-2.webp",
+      "/img/trips/bhutan-3.webp"
+    ],
+    "photo": "/img/trips/bhutan-1.webp",
+    "colors": {
+      "deep": [
+        43,
+        46,
+        40
+      ],
+      "vivid": [
+        78,
+        107,
+        44
+      ]
+    }
+  },
+  {
+    "id": "bali",
+    "slug": "bali-tour",
+    "name": "Bali",
+    "cat": [
+      "international",
+      "honeymoon"
+    ],
+    "tag": "Honeymoon pick",
+    "nights": 5,
+    "days": 6,
+    "route": "Ubud · Kuta · Nusa Penida",
+    "priceINR": 49999,
+    "season": "Apr – Oct",
+    "desc": "Ubud’s rice terraces, a Nusa Penida day trip, Kuta water sports and temple sunsets.",
+    "lede": "Six days between jungle and reef — Ubud’s terraces and temples, the cliffs of Nusa Penida, and Kuta’s beach with a temple sunset to finish.",
+    "highlights": [
+      "Ubud sightseeing",
+      "Nusa Penida day trip",
+      "Kuta + water sports",
+      "Temple sunset",
+      "Visa on arrival"
+    ],
+    "itin": [
+      [
+        "Bali arrival",
+        "Visa on arrival; transfer to the hotel."
+      ],
+      [
+        "Ubud sightseeing",
+        "Rice terraces, monkey forest, water temple."
+      ],
+      [
+        "Nusa Penida",
+        "Fast-boat day trip — Kelingking and snorkelling."
+      ],
+      [
+        "Kuta + water sports",
+        "Beach day; optional parasailing and jet ski."
+      ],
+      [
+        "Bali temple & sunset",
+        "Tanah Lot / Uluwatu at golden hour."
+      ],
+      [
+        "Mumbai return",
+        "Fly home."
+      ]
+    ],
+    "inc": [
+      "5 nights hotel",
+      "Daily breakfast",
+      "Private car with driver",
+      "Nusa Penida trip",
+      "All transfers"
+    ],
+    "exc": [
+      "International flights",
+      "Visa-on-arrival fee",
+      "Lunches & dinners",
+      "Water sports",
+      "Travel insurance"
+    ],
+    "photos": [
+      "/img/trips/bali.webp",
+      "/img/trips/bali-2.webp",
+      "/img/trips/bali-3.webp"
+    ],
+    "photo": "/img/trips/bali.webp",
+    "colors": {
+      "deep": [
+        41,
+        51,
+        32
+      ],
+      "vivid": [
+        66,
+        105,
+        25
+      ]
+    }
+  },
+  {
+    "id": "maldives",
+    "slug": "maldives-holiday",
+    "name": "Maldives",
+    "cat": [
+      "international",
+      "honeymoon"
+    ],
+    "tag": "Honeymoon pick",
+    "nights": 3,
+    "days": 4,
+    "per": "couple",
+    "route": "Malé · Island resort",
+    "priceINR": 59999,
+    "season": "Nov – Apr",
+    "desc": "Island resort, lagoon days and water activities — priced per couple.",
+    "lede": "Four days of exactly nothing — an island resort with lagoon time, water activities and beach evenings, priced for two.",
+    "highlights": [
+      "Island resort stay",
+      "Lagoon & beach time",
+      "Water activities",
+      "Speedboat transfers",
+      "Per-couple pricing"
+    ],
+    "itin": [
+      [
+        "Malé arrival → resort",
+        "Speedboat to the island; check-in and lagoon time."
+      ],
+      [
+        "Leisure + water activities",
+        "Snorkelling, kayaks, beach."
+      ],
+      [
+        "Island experience",
+        "Free day on the island; sunset walk."
+      ],
+      [
+        "Malé → Mumbai",
+        "Transfer back and fly home."
+      ]
+    ],
+    "inc": [
+      "3 nights island resort",
+      "Daily breakfast",
+      "Return speedboat transfers",
+      "Beach & lagoon access",
+      "Airport assistance"
+    ],
+    "exc": [
+      "International flights",
+      "Seaplane upgrade",
+      "Lunches & dinners (plans available)",
+      "Motorised watersports",
+      "Travel insurance"
+    ],
+    "photos": [
+      "/img/trips/maldives.webp",
+      "/img/trips/maldives-2.webp",
+      "/img/trips/maldives-3.webp"
+    ],
+    "photo": "/img/trips/maldives.webp",
+    "colors": {
+      "deep": [
+        2,
+        42,
+        85
+      ],
+      "vivid": [
+        1,
+        66,
+        109
+      ]
+    }
+  },
+  {
+    "id": "europe",
+    "slug": "europe-tour",
+    "name": "Europe — Paris, Switzerland & Italy",
+    "cat": [
+      "international",
+      "honeymoon"
+    ],
+    "tag": "Grand tour",
+    "nights": 9,
+    "days": 10,
+    "route": "Paris · Swiss Alps · Venice · Rome",
+    "priceINR": 149999,
+    "season": "Apr – Oct",
+    "desc": "Eiffel Tower, the Swiss Alps, Venice’s canals and Rome — the classic first Europe circuit.",
+    "lede": "Ten days across three countries — Paris and the Eiffel Tower, the alpine lakes of Interlaken and Lucerne, then Italy for Venice and Rome.",
+    "highlights": [
+      "Eiffel Tower & Seine",
+      "Swiss Alps excursion",
+      "Interlaken & Lucerne",
+      "Venice gondolas",
+      "Rome — Colosseum & Vatican"
+    ],
+    "itin": [
+      [
+        "Paris arrival",
+        "Transfer and evening city lights."
+      ],
+      [
+        "Paris city tour",
+        "Eiffel Tower, Seine cruise, city sights."
+      ],
+      [
+        "Paris → Switzerland",
+        "Into the Alps."
+      ],
+      [
+        "Swiss Alps",
+        "Jungfrau/Titlis excursion (per package)."
+      ],
+      [
+        "Interlaken / Lucerne",
+        "Lakes, Chapel Bridge, Swiss chocolate."
+      ],
+      [
+        "Switzerland → Italy",
+        "Through the Alps to Milan."
+      ],
+      [
+        "Milan / Venice",
+        "Duomo stop, then the floating city."
+      ],
+      [
+        "Venice",
+        "St. Mark’s, gondola ride, island lanes."
+      ],
+      [
+        "Rome",
+        "Colosseum, Trevi fountain, Vatican outer visit."
+      ],
+      [
+        "Return",
+        "Fly home from Rome."
+      ]
+    ],
+    "inc": [
+      "9 nights (3★/4★)",
+      "Daily breakfast",
+      "Intercity travel per itinerary",
+      "Listed city tours",
+      "Schengen visa assistance"
+    ],
+    "exc": [
+      "International flights",
+      "Schengen visa fee",
+      "Lunches & dinners",
+      "Optional excursions",
+      "Travel insurance"
+    ],
+    "photos": [
+      "/img/trips/europe-1.webp",
+      "/img/trips/europe-2.webp",
+      "/img/trips/europe-3.webp"
+    ],
+    "photo": "/img/trips/europe-1.webp",
+    "colors": {
+      "deep": [
+        73,
+        68,
+        56
+      ],
+      "vivid": [
+        126,
+        136,
+        44
       ]
     }
   }

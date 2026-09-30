@@ -1,0 +1,65 @@
+// The destinations Venus Holidays covers — exactly as provided by the business.
+// `slug` links to a package page; entries without one open a WhatsApp enquiry.
+export const DESTINATION_GROUPS = [
+  {
+    title: 'India Holidays',
+    items: [
+      { label: 'Kashmir', slug: 'kashmir-paradise' },
+      { label: 'Himachal', slug: 'himachal-shimla-manali' },
+      { label: 'Rajasthan', slug: 'rajasthan-royal' },
+      { label: 'Kerala', slug: 'kerala-gods-own-country' },
+      { label: 'Andaman', slug: 'andaman-holiday' },
+      { label: 'Goa', slug: 'goa-holiday' },
+      { label: 'Kutch', slug: 'fabulous-kutch' },
+      { label: 'Uttaranchal' },
+      { label: 'Northeast' },
+      { label: 'Saurashtra' },
+    ],
+  },
+  {
+    title: 'Yatras & Pilgrimage',
+    items: [
+      { label: 'Char Dham Yatra', slug: 'char-dham-yatra' },
+      { label: '12 Jyotirlinga Yatra', slug: '12-jyotirlinga-yatra' },
+      { label: 'Ashtavinayak', slug: 'ashtavinayak-yatra' },
+      { label: 'Ayodhya · Kashi · Prayagraj', slug: 'ayodhya-varanasi-prayagraj' },
+      { label: 'Dwarka · Somnath · Statue of Unity', slug: 'dwarka-somnath-yatra' },
+      { label: 'Vaidyanath Jyotirlinga', slug: 'vaidyanath-jyotirlinga-yatra' },
+      { label: 'Tirupati · Kolhapur', slug: 'tirupati-kolhapur-yatra' },
+      { label: 'Indore · Ujjain' },
+      { label: 'Vaishno Devi · Amritsar' },
+      { label: 'Kamakhya Devi' },
+      { label: 'Jagannath Puri · Konark' },
+      { label: 'Akkalkot · Pandharpur · Gangapur' },
+    ],
+  },
+  {
+    title: 'Popular Circuits',
+    items: [
+      { label: 'Shimla · Manali', slug: 'himachal-shimla-manali' },
+      { label: 'Murudeshwar · Gokarna', slug: 'gokarna-murudeshwar' },
+      { label: 'Delhi · Agra · Mathura' },
+      { label: 'Rameshwaram · Madurai · Kanyakumari' },
+      { label: 'Bangalore · Mysore · Ooty' },
+      { label: 'Hyderabad · Ramoji' },
+      { label: 'Hampi · Badami' },
+    ],
+  },
+  {
+    title: 'International',
+    items: [
+      { label: 'Thailand', slug: 'thailand-bangkok-pattaya' },
+      { label: 'Dubai', slug: 'dubai-tour' },
+      { label: 'Singapore', slug: 'singapore-tour' },
+      { label: 'Malaysia', slug: 'malaysia-tour' },
+      { label: 'Singapore – Malaysia', slug: 'singapore-malaysia-tour' },
+      { label: 'Sri Lanka', slug: 'sri-lanka-tour' },
+      { label: 'Nepal', slug: 'nepal-tour' },
+      { label: 'Vietnam', slug: 'vietnam-tour' },
+      { label: 'Bhutan', slug: 'bhutan-tour' },
+      { label: 'Bali', slug: 'bali-tour' },
+      { label: 'Maldives', slug: 'maldives-holiday' },
+      { label: 'Europe', slug: 'europe-tour' },
+    ],
+  },
+];

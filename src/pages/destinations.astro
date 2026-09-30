@@ -1,0 +1,75 @@
+---
+import Base from '../layouts/Base.astro';
+import packages from '../data/packages.json';
+import { waLink } from '../data/site.js';
+import { DESTINATION_GROUPS } from '../data/destinations.js';
+
+const title = 'Destinations We Cover | Venus Holidays';
+const description =
+  'Everywhere Venus Holidays can take you — Kashmir to Kanyakumari, Char Dham to 12 Jyotirlinga, and Thailand to Europe. Set itineraries or fully customised trips from Mumbai.';
+
+const bySlug = Object.fromEntries(packages.map((p) => [p.slug, p]));
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: new URL('/', Astro.site).href },
+    { '@type': 'ListItem', position: 2, name: 'Destinations', item: new URL('/destinations/', Astro.site).href },
+  ],
+};
+---
+
+<Base title={title} description={description} jsonLd={[breadcrumbLd]}>
+  <div class="page-hero">
+    <div class="wrap">
+      <p class="eyebrow">Destinations</p>
+      <h1>Where can we take you?</h1>
+      <p>
+        These are the places Venus Holidays runs trips to — some with ready itineraries you can
+        book today, the rest planned custom around your dates. Don't see yours? We plan
+        anywhere in India; just ask.
+      </p>
+    </div>
+  </div>
+
+  {DESTINATION_GROUPS.map((g) => (
+    <section class="section" style="padding:44px 0">
+      <div class="wrap">
+        <div class="section-head" style="margin-bottom:20px">
+          <p class="eyebrow">{g.title}</p>
+        </div>
+        <div class="dest-cards">
+          {g.items.map((it) => {
+            const pkg = it.slug ? bySlug[it.slug] : null;
+            return pkg ? (
+              <a class="dest-card" href={`/packages/${it.slug}/`}>
+                {it.label}
+                <span>{pkg.nights}N/{pkg.days}D · view itinerary →</span>
+              </a>
+            ) : (
+              <a class="dest-card wa" href={waLink(`Hi Venus Holidays! I want a ${it.label} package. Please share details.`)} target="_blank" rel="noopener">
+                {it.label}
+                <span>enquire on WhatsApp ↗</span>
+              </a>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  ))}
+
+  <section class="section" style="padding-top:20px">
+    <div class="wrap">
+      <div class="band">
+        <div>
+          <h2>Somewhere else in mind?</h2>
+          <p>We build custom trips for any destination — tell us where and when, we'll plan the rest.</p>
+        </div>
+        <a class="btn btn-wa" href={waLink('Hi Venus Holidays! I want a custom trip. Destination: ')} target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>
+          Ask on WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+</Base>

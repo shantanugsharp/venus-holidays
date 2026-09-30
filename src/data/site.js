@@ -32,21 +32,23 @@ export function formatINR(n) {
   return '₹' + n.toLocaleString('en-IN');
 }
 
-// Services from the business card — shown on the home page and in schema.org markup.
+// Services — from the business's own flyer ("Everything You Need For A Perfect Journey").
 export const SERVICES = [
-  { name: 'Package Tours', desc: 'Custom itineraries across India and abroad, built around your dates, budget and pace.' },
-  { name: 'Hotel Booking', desc: 'Handpicked stays at negotiated rates — from budget rooms to 5★ resorts and houseboats.' },
-  { name: 'One-Day Picnics', desc: 'Day outings around Mumbai for families, housing societies and office groups.' },
-  { name: 'Adventure Camps', desc: 'Trekking, rafting and camping programmes for groups, schools and corporates.' },
-  { name: 'Study Tours', desc: 'Educational tours for schools and colleges — itinerary, permissions and supervision handled.' },
-  { name: 'Industrial Visits', desc: 'Factory and plant visits arranged end to end, with permissions, transport and scheduling.' },
-  { name: 'Conferences & Offsites', desc: 'Dealer meets, team offsites and conferences — venue, travel and logistics under one roof.' },
-  { name: 'Passport & Visa', desc: 'Application assistance and visa guidance for every international destination we sell.' },
+  { name: 'Holiday Packages', desc: 'Domestic & international tour packages, customised to your budget, dates and pace.' },
+  { name: 'Hotel Booking', desc: 'Handpicked stays at negotiated rates — from budget rooms to premium resorts.' },
+  { name: 'Air, Rail & Bus Tickets', desc: 'Flight, railway and bus ticket booking — one call and it’s done.' },
+  { name: 'Passport & Visa Assistance', desc: 'Application help and visa guidance for every destination we sell.' },
+  { name: 'Rent-a-Car', desc: 'Sedans to tempo travellers — airport transfers, local and outstation, with driver.' },
+  { name: 'Group Tours', desc: 'Housing societies, friends’ circles and communities — planned end to end.' },
+  { name: 'School & College Tours', desc: 'Educational tours and industrial visits with safety, permissions and coordination handled.' },
+  { name: 'Corporate Tours', desc: 'Offsites, conferences and dealer meets — venue, travel and logistics under one roof.' },
+  { name: 'Honeymoon Packages', desc: 'Per-couple packages with decoration, candlelight dinners and private transfers.' },
+  { name: 'Pilgrimage Tours', desc: 'Char Dham to 12 Jyotirlinga — yatras with darshan assistance and pure-veg meals.' },
 ];
 
 // Package ids shown in the home "Featured" grid and the trending carousel.
-export const FEATURED = ['kashmir', 'kerala', 'rajasthan', 'goa', 'bali', 'dubai'];
+export const FEATURED = ['kashmir', 'kerala', 'rajasthan', 'char-dham', 'goa', 'dubai'];
 export const TRENDING = [
   'kashmir', 'kerala', 'goa', 'bali', 'rajasthan', 'dubai',
-  'himachal', 'maldives', 'sikkim', 'thailand', 'ooty', 'kashi',
+  'himachal', 'maldives', 'kutch', 'thailand', 'andaman', 'char-dham',
 ];
