@@ -131,7 +131,7 @@ const waFloating = waLink('Hi Venus Holidays!');
                         it.slug ? (
                           <li><a href={`/packages/${it.slug}/`}>{it.label}</a></li>
                         ) : (
-                          <li><a href={waLink(`Hi Venus Holidays! I want a ${it.label} package. Please share details.`)} target="_blank" rel="noopener" class="wa-item">{it.label}</a></li>
+                          <li><a href={waLink(`Hi Venus Holidays! I want a ${it.label} package. Please share details.`)} target="_blank" rel="noopener" class="wa-item" title="No set itinerary yet — opens a WhatsApp enquiry">{it.label}</a></li>
                         )
                       )}
                     </ul>
@@ -139,7 +139,7 @@ const waFloating = waLink('Hi Venus Holidays!');
                 ))}
               </div>
               <div class="nav-panel-foot">
-                <span class="npf-hint"><i class="npf-dot" aria-hidden="true"></i> Green dot = no set itinerary yet — opens a WhatsApp enquiry</span>
+                <span class="npf-hint"><b class="npf-arrow" aria-hidden="true">↗</b> Destinations with an arrow open a WhatsApp enquiry — we plan those custom</span>
                 <div class="npf-links">
                   <a href="/destinations/">All destinations →</a>
                   <a href="/packages/">Browse 27 packages →</a>
