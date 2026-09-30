@@ -46,7 +46,7 @@ const isYatra = /yatra|darshan|dham/i.test(pkg.name);
 const isHM = /honeymoon/i.test(pkg.name);
 let title = `${baseName} ${isYatra || isHM ? '' : 'Tour '}Package | ${SITE.name}`;
 if (title.length > 65) title = `${baseName} Package | ${SITE.name}`;
-const description = `${baseName} ${isYatra ? 'yatra' : isHM ? 'honeymoon' : 'tour'} package: ${nightsLabel}, ${pkg.route}. From ${formatINR(pkg.priceINR)} ${perLabel}, taxes included. Book on WhatsApp.`.slice(0, 160);
+const description = `${baseName} ${isYatra ? 'yatra' : isHM ? 'honeymoon' : 'tour'} package: ${nightsLabel}, ${pkg.route}. From ${formatINR(pkg.priceINR)} ${perLabel}. Book on WhatsApp.`.slice(0, 160);
 
 const bookHref = waLink(`Hi! I'd like to book the ${pkg.name} (${nightsLabel}). Please share dates and availability.`);
 const bannerSvg = `<svg viewBox="0 0 400 150" preserveAspectRatio="xMidYMid slice" aria-hidden="true">${ART[pkg.id] || ''}</svg>`;
@@ -99,7 +99,7 @@ const faqs = [
   ],
   [
     `How much does the ${pkg.name} package cost?`,
-    `Prices start at ${formatINR(pkg.priceINR)} ${pkg.per === 'couple' ? 'per couple' : 'per person on twin sharing'}, taxes included, for ${pkg.nights} nights / ${pkg.days} days covering ${pkg.route}. The final quote depends on your travel dates, hotel category and group size — we confirm an exact all-inclusive price before you pay anything.`,
+    `Prices start at ${formatINR(pkg.priceINR)} ${pkg.per === 'couple' ? 'per couple' : 'per person on twin sharing'} for ${pkg.nights} nights / ${pkg.days} days covering ${pkg.route}. The final quote depends on your travel dates, hotel category and group size — we confirm an exact all-inclusive price before you pay anything.`,
   ],
   [
     `Can I customise this ${destName} itinerary?`,
@@ -107,7 +107,7 @@ const faqs = [
   ],
   [
     `How do I book the ${destName} package?`,
-    `Message us on WhatsApp or call ${SITE.phone2Display}. You reserve with a 25% advance and clear the balance up to 21 days before departure — no payment is taken online.`,
+    `Message us on WhatsApp or call ${SITE.phone2Display}. You reserve with an advance and pay the balance before departure — we confirm the exact terms with your quote. No payment is taken online.`,
   ],
   ...(pkg.faq || []),
 ];
@@ -189,16 +189,35 @@ const related = packages
 
           <div class="block">
             <h2>What's covered</h2>
-            <div class="incl-cols">
-              <div class="incl-card inc">
-                <h3>Included</h3>
-                <ul>{pkg.inc.map((t) => <li>{t}</li>)}</ul>
+            {pkg.inc?.length ? (
+              <div class="incl-cols">
+                <div class="incl-card inc">
+                  <h3>Included</h3>
+                  <ul>{pkg.inc.map((t) => <li>{t}</li>)}</ul>
+                </div>
+                {pkg.exc?.length ? (
+                  <div class="incl-card exc">
+                    <h3>Not included</h3>
+                    <ul>{pkg.exc.map((t) => <li>{t}</li>)}</ul>
+                  </div>
+                ) : (
+                  <div class="incl-card exc">
+                    <h3>Anything else?</h3>
+                    <p class="inc-ask">For the complete inclusions & exclusions for your dates, <a href={bookHref} target="_blank" rel="noopener">WhatsApp us</a> — we reply in minutes.</p>
+                  </div>
+                )}
               </div>
-              <div class="incl-card exc">
-                <h3>Not included</h3>
-                <ul>{pkg.exc.map((t) => <li>{t}</li>)}</ul>
+            ) : (
+              <div class="incl-card inc inc-solo">
+                <h3>Customised to you</h3>
+                <p class="inc-ask">
+                  Inclusions for this package are tailored to your dates, group size and hotel
+                  category. <a href={bookHref} target="_blank" rel="noopener">WhatsApp us</a> for
+                  the complete details — we reply in minutes.
+                </p>
               </div>
-            </div>
+            )}
+            {pkg.note && <p class="fare-note">{pkg.note}</p>}
           </div>
 
           <div class="block">
@@ -220,7 +239,7 @@ const related = packages
             <div class="book-row"><span>Duration</span><b>{nightsLabel}</b></div>
             <div class="book-row"><span>Route</span><b>{pkg.route}</b></div>
             <div class="book-row"><span>Best season</span><b>{pkg.season}</b></div>
-            <div class="book-row"><span>Reserve with</span><b>25% advance</b></div>
+            <div class="book-row"><span>Booking</span><b>Advance + balance · ask us</b></div>
           </div>
           <a class="btn btn-wa" href={bookHref} target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>

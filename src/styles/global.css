@@ -523,6 +523,12 @@ a.pkg:hover .pkg-open { background: #11332b; border-color: #11332b; color: #fcf3
 .incl-card li::before { position: absolute; left: 0; font-weight: 700; }
 .incl-card.inc li::before { content: "✓"; color: var(--wa-deep); }
 .incl-card.exc li::before { content: "✕"; color: rgba(87, 100, 137, 0.7); }
+.inc-ask { font-size: 0.9rem; color: var(--text-soft); }
+.inc-ask a { color: var(--wa-deep); font-weight: 700; text-decoration: none; }
+.inc-ask a:hover { text-decoration: underline; }
+.incl-card.inc-solo { max-width: 640px; }
+.incl-card.inc-solo h3 { color: var(--accent-deep); }
+.fare-note { font-size: 0.8rem; color: var(--text-soft); margin-top: 12px; font-style: italic; }
 .book-card {
   position: sticky; top: 92px;
   background: var(--surface); border: 1px solid var(--line-strong); border-radius: 16px;

@@ -83,20 +83,8 @@
         "Haridwar → Mumbai by train; all four dhams complete."
       ]
     ],
-    "inc": [
-      "16 nights — hotels + train nights",
-      "Breakfast & dinner daily (pure veg)",
-      "Private vehicle for the entire hill circuit",
-      "Yatra e-pass registration assistance",
-      "Darshan assistance at all four dhams"
-    ],
-    "exc": [
-      "Train/flight fare (booked at actuals)",
-      "Lunches",
-      "Pony / palki / helicopter charges",
-      "VIP darshan",
-      "Personal expenses"
-    ],
+    "inc": [],
+    "exc": [],
     "photos": [
       "/img/trips/char-dham-1.webp",
       "/img/trips/char-dham-2.webp",
@@ -114,7 +102,8 @@
         91,
         69
       ]
-    }
+    },
+    "note": "Train/flight fare subject to actual booking."
   },
   {
     "id": "jyotirlinga-12",
@@ -181,18 +170,13 @@
       ]
     ],
     "inc": [
-      "3AC train travel throughout",
-      "Hotels & stays (29 nights)",
-      "All meals (pure veg)",
-      "Local transport at every kshetra",
-      "Darshan assistance throughout"
+      "3AC train travel",
+      "Hotels",
+      "Meals",
+      "Local transport",
+      "Darshan assistance"
     ],
-    "exc": [
-      "VIP/special darshan tickets",
-      "Puja samagri & personal puja charges",
-      "Personal expenses",
-      "Anything not listed in inclusions"
-    ],
+    "exc": [],
     "photos": [
       "/img/trips/jyotirlinga-12-1.webp",
       "/img/trips/jyotirlinga-12-2.webp",
@@ -248,18 +232,8 @@
         "Varadvinayak and Ballaleshwar; return to Mumbai by evening."
       ]
     ],
-    "inc": [
-      "2 nights’ stay",
-      "Breakfast & dinner (pure veg)",
-      "AC vehicle for the full circuit",
-      "All tolls and parking",
-      "Traditional yatra sequencing"
-    ],
-    "exc": [
-      "Lunches",
-      "Abhishek / puja charges",
-      "Personal expenses"
-    ],
+    "inc": [],
+    "exc": [],
     "photos": [
       "/img/trips/ashtavinayak-1.webp",
       "/img/trips/ashtavinayak-2.webp",
@@ -277,7 +251,8 @@
         52,
         33
       ]
-    }
+    },
+    "note": "Special rates for 20+ groups."
   },
   {
     "id": "vaidyanath",
@@ -324,17 +299,12 @@
       ]
     ],
     "inc": [
-      "3AC train Mumbai–Deoghar–Mumbai",
-      "Hotel stay at Deoghar",
-      "All meals (pure veg)",
-      "Local transport",
-      "Darshan assistance"
+      "3AC train",
+      "Hotel",
+      "Meals",
+      "Local transport"
     ],
-    "exc": [
-      "VIP darshan tickets",
-      "Puja samagri",
-      "Personal expenses"
-    ],
+    "exc": [],
     "photos": [
       "/img/trips/vaidyanath-1.webp",
       "/img/trips/vaidyanath-2.webp",
@@ -394,18 +364,8 @@
         "Ambabai darshan at Kolhapur, then home to Mumbai."
       ]
     ],
-    "inc": [
-      "3 nights’ stay",
-      "Breakfast & dinner (pure veg)",
-      "Travel & local transport",
-      "Darshan assistance at both shrines",
-      "All tolls and parking"
-    ],
-    "exc": [
-      "Special-entry darshan tickets",
-      "Lunches",
-      "Personal expenses"
-    ],
+    "inc": [],
+    "exc": [],
     "photos": [
       "/img/trips/tirupati-kolhapur-1.webp",
       "/img/trips/tirupati-kolhapur-2.webp",
@@ -470,19 +430,12 @@
       ]
     ],
     "inc": [
-      "4 nights’ stay",
-      "Daily breakfast & dinner",
-      "Private vehicle for the full circuit",
-      "Darshan assistance",
-      "All tolls and parking"
+      "Hotel",
+      "Meals",
+      "Transportation",
+      "Sightseeing"
     ],
-    "exc": [
-      "Train/flight fare (booked at actuals)",
-      "Lunches",
-      "Boat at Bet Dwarka",
-      "Statue of Unity / Girnar add-on",
-      "Personal expenses"
-    ],
+    "exc": [],
     "photos": [
       "/img/trips/dwarka-somnath-1.webp",
       "/img/trips/dwarka-somnath-2.webp",
@@ -550,20 +503,8 @@
         "Dawn boat ride for early risers; return to Mumbai."
       ]
     ],
-    "inc": [
-      "5 nights’ stay near the ghats/temples",
-      "Breakfast & pure-veg dinners",
-      "Private vehicle for all intercity drives",
-      "Reserved boat for the aarti",
-      "Darshan assistance at all shrines"
-    ],
-    "exc": [
-      "Train/flights",
-      "Lunches",
-      "VIP darshan tickets",
-      "Puja samagri",
-      "Personal expenses"
-    ],
+    "inc": [],
+    "exc": [],
     "photos": [
       "/img/trips/kashi.webp",
       "/img/trips/kashi-2.webp",
@@ -636,18 +577,15 @@
       ]
     ],
     "inc": [
-      "6 nights (3★ hotels)",
+      "3-star hotel",
       "Breakfast & dinner",
       "Airport/hotel transfers",
-      "Local sightseeing by private vehicle",
-      "Shikara ride"
+      "Local sightseeing",
+      "Shikara ride",
+      "Driver & vehicle"
     ],
     "exc": [
-      "Mumbai–Srinagar–Mumbai airfare",
-      "Lunches",
-      "Gondola tickets",
-      "Pony rides & sledging",
-      "Personal expenses"
+      "Mumbai–Srinagar–Mumbai airfare"
     ],
     "photos": [
       "/img/trips/kashmir.webp",
@@ -666,7 +604,8 @@
         100,
         94
       ]
-    }
+    },
+    "note": "Final price depends on travel date and hotel category."
   },
   {
     "id": "rajasthan",
@@ -725,18 +664,15 @@
       ]
     ],
     "inc": [
-      "7 nights incl. Sam desert camp",
+      "Hotel stay",
       "Breakfast & dinner",
-      "Private vehicle throughout",
-      "Desert camp cultural evening",
+      "Private vehicle",
+      "Sightseeing",
+      "Desert camp",
       "Local transfers"
     ],
     "exc": [
-      "Mumbai airfare/train fare",
-      "Lunches",
-      "Monument entries",
-      "Camel-cart upgrades",
-      "Personal expenses"
+      "Mumbai airfare / train fare"
     ],
     "photos": [
       "/img/trips/rajasthan.webp",
@@ -799,17 +735,12 @@
       ]
     ],
     "inc": [
-      "3AC train Mumbai–Gokarna–Mumbai",
-      "3 nights’ stay",
+      "3AC train (Mumbai–Gokarna–Mumbai)",
+      "Hotel",
       "Breakfast & dinner",
-      "Local transport & sightseeing",
-      "Darshan assistance"
+      "Local transport"
     ],
-    "exc": [
-      "Lunches",
-      "Water sports",
-      "Personal expenses"
-    ],
+    "exc": [],
     "photos": [
       "/img/trips/gokarna-1.webp",
       "/img/trips/gokarna-2.webp",
@@ -870,19 +801,13 @@
       ]
     ],
     "inc": [
-      "3 nights hotel",
-      "Daily breakfast",
-      "Airport/station transfers",
-      "North & South Goa sightseeing",
+      "Hotel",
+      "Breakfast",
+      "Transfers",
+      "Sightseeing",
       "Private/shared vehicle options"
     ],
-    "exc": [
-      "Travel to Goa",
-      "Lunches & dinners",
-      "Water sports",
-      "Cruise tickets",
-      "Personal expenses"
-    ],
+    "exc": [],
     "photos": [
       "/img/trips/goa.webp",
       "/img/trips/goa-2.webp",
@@ -951,18 +876,14 @@
       ]
     ],
     "inc": [
-      "5 nights’ stay",
+      "Hotel",
       "Breakfast & dinner",
-      "Private vehicle throughout",
-      "Houseboat experience",
-      "All sightseeing per itinerary"
+      "Private vehicle",
+      "Sightseeing",
+      "Houseboat experience"
     ],
     "exc": [
-      "Mumbai airfare",
-      "Lunches",
-      "Periyar boat tickets",
-      "Ayurveda treatments",
-      "Personal expenses"
+      "Airfare"
     ],
     "photos": [
       "/img/trips/kerala.webp",
@@ -1032,17 +953,15 @@
       ]
     ],
     "inc": [
-      "5 nights’ stay",
-      "Daily breakfast",
-      "All ferry tickets",
-      "Island transfers & sightseeing",
+      "Hotel",
+      "Breakfast",
+      "Island transfers",
+      "Sightseeing",
+      "Ferry tickets",
       "Local transfers"
     ],
     "exc": [
-      "Mumbai airfare",
-      "Lunches & dinners",
-      "Water sports & scuba",
-      "Personal expenses"
+      "Airfare"
     ],
     "photos": [
       "/img/trips/andaman-1.webp",
@@ -1100,19 +1019,14 @@
       ]
     ],
     "inc": [
-      "2 nights’ stay",
+      "Hotel",
       "Breakfast & dinner",
-      "Private transportation",
-      "White Rann visit & permits",
+      "Transportation",
+      "Sightseeing",
+      "White Rann visit",
       "Local assistance"
     ],
-    "exc": [
-      "Train/flights to Bhuj",
-      "Lunches",
-      "Camel/ATV rides",
-      "Rann Utsav tent upgrade",
-      "Personal expenses"
-    ],
+    "exc": [],
     "photos": [
       "/img/trips/kutch-1.webp",
       "/img/trips/kutch-2.webp",
@@ -1130,7 +1044,8 @@
         103,
         109
       ]
-    }
+    },
+    "note": "Package can be customised to your convenience."
   },
   {
     "id": "himachal",
@@ -1181,18 +1096,14 @@
       ]
     ],
     "inc": [
-      "5 nights’ stay",
+      "Hotel",
       "Breakfast & dinner",
-      "Private vehicle throughout",
-      "All transfers & sightseeing",
-      "Tolls and parking"
+      "Transfers",
+      "Sightseeing",
+      "Private vehicle"
     ],
     "exc": [
-      "Mumbai–Chandigarh airfare/train",
-      "Lunches",
-      "Adventure activities",
-      "Rohtang permits when open",
-      "Personal expenses"
+      "Mumbai–Chandigarh airfare / train fare"
     ],
     "photos": [
       "/img/trips/himachal.webp",
@@ -1257,19 +1168,8 @@
         "Fly home to Mumbai."
       ]
     ],
-    "inc": [
-      "4 nights (Pattaya + Bangkok)",
-      "Daily breakfast",
-      "Coral Island trip",
-      "Bangkok city tour",
-      "All transfers"
-    ],
-    "exc": [
-      "International flights",
-      "Lunches & dinners",
-      "Water sports",
-      "Travel insurance"
-    ],
+    "inc": [],
+    "exc": [],
     "photos": [
       "/img/trips/thailand.webp",
       "/img/trips/thailand-2.webp",
@@ -1333,20 +1233,8 @@
         "Fly home."
       ]
     ],
-    "inc": [
-      "4 nights hotel",
-      "Daily breakfast",
-      "City tour & Burj Khalifa visit",
-      "Desert safari with dinner",
-      "All transfers"
-    ],
-    "exc": [
-      "International flights",
-      "UAE visa (we assist)",
-      "Lunches & most dinners",
-      "Theme-park entries",
-      "Travel insurance"
-    ],
+    "inc": [],
+    "exc": [],
     "photos": [
       "/img/trips/dubai.webp",
       "/img/trips/dubai-2.webp",
@@ -1410,20 +1298,8 @@
         "Fly home."
       ]
     ],
-    "inc": [
-      "4 nights hotel",
-      "Daily breakfast",
-      "City tour & Sentosa with transfers",
-      "Airport transfers",
-      "Visa assistance"
-    ],
-    "exc": [
-      "International flights",
-      "Visa fee",
-      "Universal tickets",
-      "Lunches & dinners",
-      "Travel insurance"
-    ],
+    "inc": [],
+    "exc": [],
     "photos": [
       "/img/trips/singapore-1.webp",
       "/img/trips/singapore-2.webp",
@@ -1487,19 +1363,8 @@
         "Fly home."
       ]
     ],
-    "inc": [
-      "4 nights hotel",
-      "Daily breakfast",
-      "City tour & Genting excursion",
-      "All transfers",
-      "Visa assistance"
-    ],
-    "exc": [
-      "International flights",
-      "Theme-park tickets",
-      "Lunches & dinners",
-      "Travel insurance"
-    ],
+    "inc": [],
+    "exc": [],
     "photos": [
       "/img/trips/malaysia-1.webp",
       "/img/trips/malaysia-2.webp",
@@ -1567,20 +1432,8 @@
         "Fly home."
       ]
     ],
-    "inc": [
-      "5 nights (KL + Singapore)",
-      "Daily breakfast",
-      "City tours in both countries",
-      "Genting & Sentosa excursions",
-      "Transfers + visa assistance"
-    ],
-    "exc": [
-      "International flights",
-      "Visa fees",
-      "Theme-park tickets",
-      "Lunches & dinners",
-      "Travel insurance"
-    ],
+    "inc": [],
+    "exc": [],
     "photos": [
       "/img/trips/singapore-malaysia-1.webp",
       "/img/trips/singapore-malaysia-2.webp",
@@ -1648,20 +1501,8 @@
         "Fly home."
       ]
     ],
-    "inc": [
-      "5 nights hotels",
-      "Breakfast & dinner",
-      "Private vehicle with driver-guide",
-      "Sightseeing per itinerary",
-      "Visa assistance"
-    ],
-    "exc": [
-      "International flights",
-      "ETA visa fee",
-      "Entrance tickets",
-      "Lunches",
-      "Travel insurance"
-    ],
+    "inc": [],
+    "exc": [],
     "photos": [
       "/img/trips/srilanka-1.webp",
       "/img/trips/srilanka-2.webp",
@@ -1726,19 +1567,8 @@
         "Fly home."
       ]
     ],
-    "inc": [
-      "4 nights hotels",
-      "Breakfast & dinner",
-      "Private vehicle throughout",
-      "Sightseeing per itinerary",
-      "Darshan assistance"
-    ],
-    "exc": [
-      "Flights",
-      "Lunches",
-      "Boating & cable-car tickets",
-      "Personal expenses"
-    ],
+    "inc": [],
+    "exc": [],
     "photos": [
       "/img/trips/nepal-1.webp",
       "/img/trips/nepal-2.webp",
@@ -1806,19 +1636,8 @@
         "Fly home."
       ]
     ],
-    "inc": [
-      "5 nights hotels",
-      "Daily breakfast",
-      "Halong Bay cruise with lunch",
-      "City tours both cities",
-      "Transfers + visa assistance"
-    ],
-    "exc": [
-      "International & internal flights",
-      "Visa fee",
-      "Lunches & dinners not listed",
-      "Travel insurance"
-    ],
+    "inc": [],
+    "exc": [],
     "photos": [
       "/img/trips/vietnam-1.webp",
       "/img/trips/vietnam-2.webp",
@@ -1886,20 +1705,8 @@
         "Fly out of Paro."
       ]
     ],
-    "inc": [
-      "5 nights hotels",
-      "All meals",
-      "Private vehicle + licensed guide",
-      "All permits",
-      "SDF guidance"
-    ],
-    "exc": [
-      "Flights to/from Paro",
-      "SDF where applicable",
-      "Tiger’s Nest entry/horse",
-      "Personal expenses",
-      "Travel insurance"
-    ],
+    "inc": [],
+    "exc": [],
     "photos": [
       "/img/trips/bhutan-1.webp",
       "/img/trips/bhutan-2.webp",
@@ -1967,20 +1774,8 @@
         "Fly home."
       ]
     ],
-    "inc": [
-      "5 nights hotel",
-      "Daily breakfast",
-      "Private car with driver",
-      "Nusa Penida trip",
-      "All transfers"
-    ],
-    "exc": [
-      "International flights",
-      "Visa-on-arrival fee",
-      "Lunches & dinners",
-      "Water sports",
-      "Travel insurance"
-    ],
+    "inc": [],
+    "exc": [],
     "photos": [
       "/img/trips/bali.webp",
       "/img/trips/bali-2.webp",
@@ -2041,20 +1836,8 @@
         "Transfer back and fly home."
       ]
     ],
-    "inc": [
-      "3 nights island resort",
-      "Daily breakfast",
-      "Return speedboat transfers",
-      "Beach & lagoon access",
-      "Airport assistance"
-    ],
-    "exc": [
-      "International flights",
-      "Seaplane upgrade",
-      "Lunches & dinners (plans available)",
-      "Motorised watersports",
-      "Travel insurance"
-    ],
+    "inc": [],
+    "exc": [],
     "photos": [
       "/img/trips/maldives.webp",
       "/img/trips/maldives-2.webp",
@@ -2138,20 +1921,8 @@
         "Fly home from Rome."
       ]
     ],
-    "inc": [
-      "9 nights (3★/4★)",
-      "Daily breakfast",
-      "Intercity travel per itinerary",
-      "Listed city tours",
-      "Schengen visa assistance"
-    ],
-    "exc": [
-      "International flights",
-      "Schengen visa fee",
-      "Lunches & dinners",
-      "Optional excursions",
-      "Travel insurance"
-    ],
+    "inc": [],
+    "exc": [],
     "photos": [
       "/img/trips/europe-1.webp",
       "/img/trips/europe-2.webp",
@@ -2221,12 +1992,7 @@
       "Couple cake & room decoration",
       "Romantic dinner"
     ],
-    "exc": [
-      "Travel to Goa",
-      "Lunches & other dinners",
-      "Water sports",
-      "Personal expenses"
-    ],
+    "exc": [],
     "photos": [
       "/img/trips/goa.webp",
       "/img/trips/goa-2.webp",
@@ -2304,13 +2070,7 @@
       "Couple room decoration",
       "Romantic dinner"
     ],
-    "exc": [
-      "Airfare",
-      "Lunches",
-      "Gondola tickets",
-      "Pony rides",
-      "Personal expenses"
-    ],
+    "exc": [],
     "photos": [
       "/img/trips/kashmir.webp",
       "/img/trips/kashmir-2.webp",
@@ -2384,12 +2144,7 @@
       "Candlelight dinner",
       "Room decoration"
     ],
-    "exc": [
-      "Airfare",
-      "Lunches off-plan",
-      "Ayurveda treatments",
-      "Personal expenses"
-    ],
+    "exc": [],
     "photos": [
       "/img/trips/kerala.webp",
       "/img/trips/kerala-2.webp",
@@ -2467,12 +2222,7 @@
       "Cake",
       "Candlelight dinner"
     ],
-    "exc": [
-      "Travel to Chandigarh",
-      "Lunches",
-      "Adventure activities",
-      "Personal expenses"
-    ],
+    "exc": [],
     "photos": [
       "/img/trips/himachal.webp",
       "/img/trips/himachal-2.webp",
@@ -2550,12 +2300,7 @@
       "Candlelight dinner",
       "Couple special decoration"
     ],
-    "exc": [
-      "Airfare",
-      "Lunches & dinners",
-      "Water sports & scuba",
-      "Personal expenses"
-    ],
+    "exc": [],
     "photos": [
       "/img/trips/andaman-1.webp",
       "/img/trips/andaman-2.webp",
@@ -2633,12 +2378,7 @@
       "Romantic dinner",
       "Couple special arrangements"
     ],
-    "exc": [
-      "Airfare/train",
-      "Lunches",
-      "Monument entries",
-      "Personal expenses"
-    ],
+    "exc": [],
     "photos": [
       "/img/trips/rajasthan.webp",
       "/img/trips/rajasthan-2.webp",
@@ -2708,12 +2448,7 @@
       "Candlelight dinner",
       "Honeymoon cake"
     ],
-    "exc": [
-      "International flights",
-      "Lunches & dinners (plans available)",
-      "Motorised watersports",
-      "Travel insurance"
-    ],
+    "exc": [],
     "photos": [
       "/img/trips/maldives.webp",
       "/img/trips/maldives-2.webp",
@@ -2791,13 +2526,7 @@
       "Candlelight dinner",
       "Flower decoration"
     ],
-    "exc": [
-      "International flights",
-      "Visa-on-arrival fee",
-      "Photoshoot charges",
-      "Lunches & dinners",
-      "Travel insurance"
-    ],
+    "exc": [],
     "photos": [
       "/img/trips/bali.webp",
       "/img/trips/bali-2.webp",
@@ -2871,12 +2600,7 @@
       "City tour",
       "Romantic dinner"
     ],
-    "exc": [
-      "International flights",
-      "Lunches & dinners",
-      "Water sports",
-      "Travel insurance"
-    ],
+    "exc": [],
     "photos": [
       "/img/trips/thailand.webp",
       "/img/trips/thailand-2.webp",
@@ -2950,13 +2674,7 @@
       "Couple dinner",
       "Private transfers"
     ],
-    "exc": [
-      "International flights",
-      "Visa fee",
-      "Universal tickets",
-      "Lunches",
-      "Travel insurance"
-    ],
+    "exc": [],
     "photos": [
       "/img/trips/singapore-1.webp",
       "/img/trips/singapore-2.webp",
@@ -3030,12 +2748,7 @@
       "BBQ dinner",
       "Private/couple arrangements"
     ],
-    "exc": [
-      "International flights",
-      "UAE visa (we assist)",
-      "Lunches & most dinners",
-      "Travel insurance"
-    ],
+    "exc": [],
     "photos": [
       "/img/trips/dubai.webp",
       "/img/trips/dubai-2.webp",
@@ -3109,12 +2822,7 @@
       "Genting Highlands",
       "Couple dinner"
     ],
-    "exc": [
-      "International flights",
-      "Theme-park tickets",
-      "Lunches",
-      "Travel insurance"
-    ],
+    "exc": [],
     "photos": [
       "/img/trips/malaysia-1.webp",
       "/img/trips/malaysia-2.webp",
