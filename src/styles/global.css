@@ -551,6 +551,9 @@ a.pkg:hover .pkg-open { background: #11332b; border-color: #11332b; color: #fcf3
 .svc b { display: block; font-size: 0.97rem; color: var(--heading); margin-bottom: 5px; }
 a.svc-link { text-decoration: none; color: inherit; transition: border-color 0.2s ease, transform 0.2s ease; display: block; }
 a.svc-link:hover { border-color: var(--accent); transform: translateY(-2px); }
+.svc-go { display: inline-block; margin-top: 9px; font-size: 0.74rem; font-weight: 700; color: var(--accent-deep); }
+.svc-go.wa { color: var(--wa-deep); }
+a.svc.svc-wa { border-top-color: var(--wa); }
 .svc p { font-size: 0.85rem; color: var(--text-soft); }
 
 /* About */

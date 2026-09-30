@@ -150,6 +150,7 @@ const waFloating = waLink('Hi Venus Holidays!');
             </div>
           </div>
           <a class:list={['nav-item', { active: isActive('/packages') }]} href="/packages/" aria-current={isActive('/packages') ? 'page' : undefined}>Packages</a>
+          <a class:list={['nav-item', { active: isActive('/services') || isActive('/car-rental') || isActive('/school-tours') }]} href="/services/" aria-current={isActive('/services') ? 'page' : undefined}>Services</a>
           <a class:list={['nav-item', { active: isActive('/about') }]} href="/about/" aria-current={isActive('/about') ? 'page' : undefined}>About</a>
           <a class:list={['nav-item', { active: isActive('/contact') }]} href="/contact/" aria-current={isActive('/contact') ? 'page' : undefined}>Contact</a>
         </div>
@@ -181,6 +182,7 @@ const waFloating = waLink('Hi Venus Holidays!');
             <li><a href="/">Home</a></li>
             <li><a href="/destinations/">Destinations</a></li>
             <li><a href="/packages/">All packages</a></li>
+            <li><a href="/services/">Our services</a></li>
             <li><a href="/school-tours/">School & college tours</a></li>
             <li><a href="/car-rental/">Car rental</a></li>
             <li><a href="/about/">About us</a></li>

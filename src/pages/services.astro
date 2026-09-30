@@ -1,0 +1,71 @@
+---
+import Base from '../layouts/Base.astro';
+import ServiceGrid from '../components/ServiceGrid.astro';
+import { SITE, waLink } from '../data/site.js';
+
+const title = 'Travel Services — Tickets, Visa, Cars & Group Tours | Venus Holidays';
+const description =
+  'Everything you need for a perfect journey, alongside our tour packages: hotel booking, air/rail/bus tickets, passport & visa help, rent-a-car, group, school and corporate tours.';
+
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: new URL('/', Astro.site).href },
+    { '@type': 'ListItem', position: 2, name: 'Services', item: new URL('/services/', Astro.site).href },
+  ],
+};
+---
+
+<Base title={title} description={description} jsonLd={[breadcrumbLd]}>
+  <div class="page-hero">
+    <div class="wrap">
+      <p class="eyebrow">Our services</p>
+      <h1>Everything for a perfect journey.</h1>
+      <p>
+        Our tour packages are the headline — but behind every trip is a full travel desk.
+        Book any of these <strong>with your tour</strong> or completely on their own:
+        one WhatsApp message covers it all.
+      </p>
+    </div>
+  </div>
+
+  <section class="section" style="padding:56px 0">
+    <div class="wrap">
+      <ServiceGrid />
+      <p style="font-size:.85rem;color:var(--text-soft);margin-top:18px">
+        Cards marked <b style="color:var(--wa-deep)">Enquire on WhatsApp ↗</b> open a chat with
+        our team — tell us what you need and we'll confirm availability and price right away.
+      </p>
+    </div>
+  </section>
+
+  <section class="section map-sec" style="border-bottom:0;padding:56px 0">
+    <div class="wrap">
+      <div class="section-head" style="text-align:center;max-width:none">
+        <p class="eyebrow">How it works with a tour</p>
+        <h2>One booking, zero running around</h2>
+      </div>
+      <div class="svc-grid" style="grid-template-columns:repeat(3,1fr)">
+        <div class="svc"><b>1 · Tell us your plan</b><p>Destination, dates and who's travelling — on WhatsApp or a call.</p></div>
+        <div class="svc"><b>2 · We bundle it</b><p>Package + train/flight tickets + visa help + airport cab, quoted as one transparent price.</p></div>
+        <div class="svc"><b>3 · You just travel</b><p>One coordinator, one number, everything confirmed before you leave Mumbai.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <div class="band">
+        <div>
+          <h2>Need something arranged?</h2>
+          <p>Tickets for next week, a car for Sunday, or a full family trip — message us and consider it handled.</p>
+        </div>
+        <a class="btn btn-wa" href={waLink('Hi Venus Holidays! I need help with: ')} target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>
+          Ask on WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+</Base>

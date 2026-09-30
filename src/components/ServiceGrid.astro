@@ -1,0 +1,27 @@
+---
+import { SERVICES, waLink } from '../data/site.js';
+---
+
+<div class="svc-grid">
+  {SERVICES.map((s) =>
+    s.href ? (
+      <a class="svc svc-link" href={s.href}>
+        <b>{s.name}</b>
+        <p>{s.desc}</p>
+        <span class="svc-go">View →</span>
+      </a>
+    ) : (
+      <a
+        class="svc svc-link svc-wa"
+        href={waLink(`Hi Venus Holidays! I need help with ${s.name.toLowerCase()}. `)}
+        target="_blank"
+        rel="noopener"
+        title="Opens a WhatsApp enquiry"
+      >
+        <b>{s.name}</b>
+        <p>{s.desc}</p>
+        <span class="svc-go wa">Enquire on WhatsApp ↗</span>
+      </a>
+    )
+  )}
+</div>

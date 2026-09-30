@@ -34,7 +34,7 @@ export function formatINR(n) {
 
 // Services — from the business's own flyer ("Everything You Need For A Perfect Journey").
 export const SERVICES = [
-  { name: 'Holiday Packages', desc: 'Domestic & international tour packages, customised to your budget, dates and pace.' },
+  { name: 'Holiday Packages', desc: 'Domestic & international tour packages, customised to your budget, dates and pace.', href: '/packages/' },
   { name: 'Hotel Booking', desc: 'Handpicked stays at negotiated rates — from budget rooms to premium resorts.' },
   { name: 'Air, Rail & Bus Tickets', desc: 'Flight, railway and bus ticket booking — one call and it’s done.' },
   { name: 'Passport & Visa Assistance', desc: 'Application help and visa guidance for every destination we sell.' },
@@ -43,7 +43,7 @@ export const SERVICES = [
   { name: 'School & College Tours', desc: 'Educational tours and industrial visits with safety, permissions and coordination handled.', href: '/school-tours/' },
   { name: 'Corporate Tours', desc: 'Offsites, conferences and dealer meets — venue, travel and logistics under one roof.' },
   { name: 'Honeymoon Packages', desc: 'Per-couple packages with decoration, candlelight dinners and private transfers.', href: '/packages/?cat=honeymoon' },
-  { name: 'Pilgrimage Tours', desc: 'Char Dham to 12 Jyotirlinga — yatras with darshan assistance and pure-veg meals.' },
+  { name: 'Pilgrimage Tours', desc: 'Char Dham to 12 Jyotirlinga — yatras with darshan assistance and pure-veg meals.', href: '/packages/?cat=pilgrimage' },
 ];
 
 // Package ids shown in the home "Featured" grid and the trending carousel.

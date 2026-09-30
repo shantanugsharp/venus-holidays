@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import PackageCard from '../components/PackageCard.astro';
+import ServiceGrid from '../components/ServiceGrid.astro';
 import packages from '../data/packages.json';
 import { ART } from '../data/art.js';
 import { SITE, SERVICES, waLink, FEATURED, TRENDING } from '../data/site.js';
@@ -167,29 +168,15 @@ const destOptions = [
       <div class="section-head-row">
         <div class="section-head">
           <p class="eyebrow">Our services</p>
-          <h2>One office for every kind of trip</h2>
+          <h2>More than tours — the whole journey</h2>
           <p>
-            Holidays are the headline, but groups are our backbone — schools, colleges,
-            housing societies and companies across Mumbai travel with us every month.
+            Every tour comes with the full toolkit — tickets, hotels, visas, cars and group
+            coordination. Tap any service to book it with your trip or on its own.
           </p>
         </div>
-        <a class="btn btn-line" href="/about/">More about us →</a>
+        <a class="btn btn-line" href="/services/">All services →</a>
       </div>
-      <div class="svc-grid">
-        {SERVICES.map((s) =>
-          s.href ? (
-            <a class="svc svc-link" href={s.href}>
-              <b>{s.name} →</b>
-              <p>{s.desc}</p>
-            </a>
-          ) : (
-            <div class="svc">
-              <b>{s.name}</b>
-              <p>{s.desc}</p>
-            </div>
-          )
-        )}
-      </div>
+      <ServiceGrid />
     </div>
   </section>
 
