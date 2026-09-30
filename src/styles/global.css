@@ -128,14 +128,15 @@ header.site {
 .nav-wa svg { width: 16px; height: 16px; flex: none; }
 @media (max-width: 760px) {
   .nav { flex-wrap: wrap; gap: 10px; padding: 12px 16px; }
-  .nav-links { margin-left: 0; width: 100%; padding-bottom: 2px; }
+  .nav-links { margin-left: 0; width: 100%; padding-bottom: 2px; overflow-x: auto; }
   .logo-sub { display: none; }
 }
 @media (max-width: 480px) {
-  /* Icon-only WhatsApp pill so all nav items fit without scrolling */
+  /* Icon-only WhatsApp pill; pills wrap to two tidy rows */
   .nav-wa-label { display: none; }
   .nav-wa { padding: 9px 11px; margin-left: auto; }
-  .nav-links a.nav-item { padding: 8px 10px; font-size: 0.88rem; }
+  .nav-links { flex-wrap: wrap; overflow-x: visible; row-gap: 4px; }
+  .nav-links a.nav-item { padding: 7px 10px; font-size: 0.87rem; }
   .logo-name { font-size: 1.18rem; }
 }
 
