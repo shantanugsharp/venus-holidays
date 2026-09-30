@@ -122,24 +122,32 @@ const waFloating = waLink('Hi Venus Holidays!');
           <div class="nav-dd">
             <a class:list={['nav-item', { active: isActive('/destinations') }]} href="/destinations/" aria-current={isActive('/destinations') ? 'page' : undefined}>Destinations <span class="dd-caret" aria-hidden="true">▾</span></a>
             <div class="nav-panel">
-              {DESTINATION_GROUPS.map((g) => (
-                <div class="nav-col">
-                  <b>{g.title}</b>
-                  <ul>
-                    {g.items.map((it) =>
-                      it.slug ? (
-                        <li><a href={`/packages/${it.slug}/`}>{it.label}</a></li>
-                      ) : (
-                        <li><a href={waLink(`Hi Venus Holidays! I want a ${it.label} package. Please share details.`)} target="_blank" rel="noopener" class="wa-item">{it.label} ↗</a></li>
-                      )
-                    )}
-                  </ul>
+              <div class="nav-panel-grid">
+                {DESTINATION_GROUPS.map((g) => (
+                  <div class="nav-col">
+                    <b>{g.title}</b>
+                    <ul>
+                      {g.items.map((it) =>
+                        it.slug ? (
+                          <li><a href={`/packages/${it.slug}/`}>{it.label}</a></li>
+                        ) : (
+                          <li><a href={waLink(`Hi Venus Holidays! I want a ${it.label} package. Please share details.`)} target="_blank" rel="noopener" class="wa-item">{it.label}</a></li>
+                        )
+                      )}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+              <div class="nav-panel-foot">
+                <span class="npf-hint"><i class="npf-dot" aria-hidden="true"></i> Green dot = no set itinerary yet — opens a WhatsApp enquiry</span>
+                <div class="npf-links">
+                  <a href="/destinations/">All destinations →</a>
+                  <a href="/packages/">Browse 27 packages →</a>
                 </div>
-              ))}
+              </div>
             </div>
           </div>
           <a class:list={['nav-item', { active: isActive('/packages') }]} href="/packages/" aria-current={isActive('/packages') ? 'page' : undefined}>Packages</a>
-          <a class:list={['nav-item', { active: isActive('/honeymoon') }]} href="/honeymoon/" aria-current={isActive('/honeymoon') ? 'page' : undefined}>Honeymoon</a>
           <a class:list={['nav-item', { active: isActive('/about') }]} href="/about/" aria-current={isActive('/about') ? 'page' : undefined}>About</a>
           <a class:list={['nav-item', { active: isActive('/contact') }]} href="/contact/" aria-current={isActive('/contact') ? 'page' : undefined}>Contact</a>
           <a class="nav-wa" href={waHeader} target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
@@ -168,7 +176,6 @@ const waFloating = waLink('Hi Venus Holidays!');
             <li><a href="/">Home</a></li>
             <li><a href="/destinations/">Destinations</a></li>
             <li><a href="/packages/">All packages</a></li>
-            <li><a href="/honeymoon/">Honeymoon packages</a></li>
             <li><a href="/about/">About us</a></li>
             <li><a href="/contact/">Contact us</a></li>
           </ul>
