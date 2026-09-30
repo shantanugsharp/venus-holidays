@@ -43,9 +43,10 @@ const tourStyle = [
 // Title targets the exact search phrase ("Kashmir Tour Package"), ≤60 chars.
 const baseName = pkg.name.split(' — ')[0];
 const isYatra = /yatra|darshan|dham/i.test(pkg.name);
-let title = `${baseName} ${isYatra ? '' : 'Tour '}Package | ${SITE.name}`;
+const isHM = /honeymoon/i.test(pkg.name);
+let title = `${baseName} ${isYatra || isHM ? '' : 'Tour '}Package | ${SITE.name}`;
 if (title.length > 65) title = `${baseName} Package | ${SITE.name}`;
-const description = `${baseName} ${isYatra ? 'yatra' : 'tour'} package: ${nightsLabel}, ${pkg.route}. From ${formatINR(pkg.priceINR)} ${perLabel}, taxes included. Book on WhatsApp.`.slice(0, 160);
+const description = `${baseName} ${isYatra ? 'yatra' : isHM ? 'honeymoon' : 'tour'} package: ${nightsLabel}, ${pkg.route}. From ${formatINR(pkg.priceINR)} ${perLabel}, taxes included. Book on WhatsApp.`.slice(0, 160);
 
 const bookHref = waLink(`Hi! I'd like to book the ${pkg.name} (${nightsLabel}). Please share dates and availability.`);
 const bannerSvg = `<svg viewBox="0 0 400 150" preserveAspectRatio="xMidYMid slice" aria-hidden="true">${ART[pkg.id] || ''}</svg>`;

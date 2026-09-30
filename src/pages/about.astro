@@ -75,12 +75,19 @@ const aboutLd = {
         <h2>Everything on our card, under one roof</h2>
       </div>
       <div class="svc-grid">
-        {SERVICES.map((s) => (
-          <div class="svc">
-            <b>{s.name}</b>
-            <p>{s.desc}</p>
-          </div>
-        ))}
+        {SERVICES.map((s) =>
+          s.href ? (
+            <a class="svc svc-link" href={s.href}>
+              <b>{s.name} →</b>
+              <p>{s.desc}</p>
+            </a>
+          ) : (
+            <div class="svc">
+              <b>{s.name}</b>
+              <p>{s.desc}</p>
+            </div>
+          )
+        )}
       </div>
     </div>
   </section>

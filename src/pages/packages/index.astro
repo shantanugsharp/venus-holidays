@@ -6,8 +6,7 @@ import packages from '../../data/packages.json';
 import { waLink } from '../../data/site.js';
 
 const title = 'All Tour Packages & Prices | Venus Holidays';
-const description =
-  '30 tour packages with per-person prices — Kashmir to Kanyakumari, Char Dham & yatras, Andaman, Bali, Dubai. Filter by state on the India map. All customisable.';
+const description = `${packages.length} tour packages with prices — Kashmir to Kanyakumari, Char Dham & yatras, honeymoon specials, Bali, Dubai. Filter by state on the India map.`;
 
 const count = (cat) => packages.filter((p) => p.cat.includes(cat)).length;
 const catFilters = [
@@ -137,6 +136,13 @@ const breadcrumbLd = {
           applyFilters();
         });
       });
+
+      // Deep link: /packages/?cat=honeymoon etc. preselects a filter chip
+      const wantCat = new URLSearchParams(location.search).get('cat');
+      if (wantCat) {
+        const chip = document.querySelector(`.chip[data-filter="${wantCat}"]`);
+        if (chip) (chip as HTMLElement).click();
+      }
 
       /* ── India map → state filter ── */
       const status = document.getElementById('imapStatus');

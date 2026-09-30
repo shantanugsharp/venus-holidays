@@ -38,11 +38,11 @@ export const SERVICES = [
   { name: 'Hotel Booking', desc: 'Handpicked stays at negotiated rates — from budget rooms to premium resorts.' },
   { name: 'Air, Rail & Bus Tickets', desc: 'Flight, railway and bus ticket booking — one call and it’s done.' },
   { name: 'Passport & Visa Assistance', desc: 'Application help and visa guidance for every destination we sell.' },
-  { name: 'Rent-a-Car', desc: 'Sedans to tempo travellers — airport transfers, local and outstation, with driver.' },
+  { name: 'Rent-a-Car', desc: 'Sedans to tempo travellers — airport transfers, local and outstation, with driver.', href: '/car-rental/' },
   { name: 'Group Tours', desc: 'Housing societies, friends’ circles and communities — planned end to end.' },
-  { name: 'School & College Tours', desc: 'Educational tours and industrial visits with safety, permissions and coordination handled.' },
+  { name: 'School & College Tours', desc: 'Educational tours and industrial visits with safety, permissions and coordination handled.', href: '/school-tours/' },
   { name: 'Corporate Tours', desc: 'Offsites, conferences and dealer meets — venue, travel and logistics under one roof.' },
-  { name: 'Honeymoon Packages', desc: 'Per-couple packages with decoration, candlelight dinners and private transfers.' },
+  { name: 'Honeymoon Packages', desc: 'Per-couple packages with decoration, candlelight dinners and private transfers.', href: '/packages/?cat=honeymoon' },
   { name: 'Pilgrimage Tours', desc: 'Char Dham to 12 Jyotirlinga — yatras with darshan assistance and pure-veg meals.' },
 ];
 

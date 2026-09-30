@@ -1,0 +1,124 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE, waLink, formatINR } from '../data/site.js';
+
+const title = 'School, College & Industrial Visit Tours | Venus Holidays';
+const description =
+  'Educational tours & industrial visits for schools and colleges from Mumbai — day trips from ₹799/student to 4-day tours. Transport, hotels, meals and coordination handled.';
+
+const tiers = [
+  { name: '1-Day Educational Tour', price: 799, inc: 'Bus + entry/visit + basic meal. Route and inclusions as selected.' },
+  { name: '2 Days / 1 Night', price: 2999, inc: 'Transport + hotel + meals + sightseeing/visits.' },
+  { name: '3 Days / 2 Nights', price: 4999, inc: 'Transport + accommodation + meals + educational visits + sightseeing.' },
+  { name: '4 Days / 3 Nights', price: 6999, inc: 'Complete educational tour package.' },
+];
+const places = {
+  'Mumbai & Maharashtra': ['Nehru Planetarium', 'CSMVS Museum', 'RBI Monetary Museum', 'Science Centre', 'Elephanta Caves', 'Lonavala–Khandala', 'Mahabaleshwar', 'Pune', 'Ratnagiri', 'Chiplun'],
+  Gujarat: ['Statue of Unity', 'Ahmedabad', 'Science City', 'Kutch'],
+  Rajasthan: ['Jaipur', 'Jodhpur', 'Jaisalmer', 'Udaipur'],
+  'Delhi – Agra': ['Delhi', 'Agra', 'Mathura'],
+  'South India': ['Bengaluru', 'Mysore', 'Hyderabad', 'Chennai'],
+};
+const ivIncludes = ['Industry visit coordination', 'Transportation', 'Accommodation', 'Meals', 'Complete itinerary', 'Faculty coordination', 'Student group management', 'Safety & travel assistance', 'Required documentation', 'Tour coordination'];
+const collegePrograms = ['Engineering & technology visits', 'Manufacturing unit visits', 'IT company visits', 'Automobile industry visits', 'Textile industry visits', 'Food processing units', 'Research & science centres', 'Management & business visits', 'Historical & cultural tours', 'Career-oriented visits'];
+const transport = ['Mini Bus', '27/32 seater', '35/40 seater', '45/49 seater', 'Luxury coach'];
+const safety = ['Experienced tour coordinator', 'Teacher/faculty coordination', 'Pre-planned itinerary', 'Hotel & transport coordination', 'Emergency contact support', 'Group movement planning', 'Student-friendly accommodation'];
+
+const waEnq = waLink('Hi Venus Holidays! We want to plan a school/college tour. Institution: \nStudents + teachers: \nDestination: \nDates: ');
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: new URL('/', Astro.site).href },
+    { '@type': 'ListItem', position: 2, name: 'School & College Tours', item: new URL('/school-tours/', Astro.site).href },
+  ],
+};
+---
+
+<Base title={title} description={description} jsonLd={[breadcrumbLd]}>
+  <div class="page-hero">
+    <div class="wrap">
+      <p class="eyebrow">School · College · Educational tours</p>
+      <h1>Learn. Explore. Experience.</h1>
+      <p>
+        Safe, organised and curriculum-friendly educational tours and industrial visits for
+        schools, colleges, polytechnics and institutes — planned end to end from Mumbai.
+      </p>
+    </div>
+  </div>
+
+  <section class="section" style="padding:56px 0">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Packages</p>
+        <h2>Educational tour packages</h2>
+        <p>Per-student pricing that respects institution budgets. Group size discounts available.</p>
+      </div>
+      <div class="svc-grid">
+        {tiers.map((t) => (
+          <div class="svc">
+            <b>{t.name}</b>
+            <p style="font-weight:700;color:var(--heading);font-size:1.05rem;margin:4px 0 6px">From {formatINR(t.price)}<span style="font-weight:400;font-size:.72rem;color:var(--text-soft)"> / student</span></p>
+            <p>{t.inc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" style="padding:56px 0">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Where groups go</p>
+        <h2>Popular destinations</h2>
+      </div>
+      <div class="dest-cards">
+        {Object.entries(places).map(([region, list]) => (
+          <div class="svc" style="grid-column:span 1">
+            <b>{region}</b>
+            <p>{list.join(' · ')}</p>
+          </div>
+        ))}
+        <div class="svc">
+          <b>Industrial Visits (IV)</b>
+          <p>{collegePrograms.slice(0, 6).join(' · ')} and more — arranged subject to industry availability, prior permission and company rules.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding:56px 0">
+    <div class="wrap">
+      <div class="about-grid">
+        <div class="about-copy">
+          <p class="eyebrow">IV planning includes</p>
+          <h2>Industry exposure beyond the classroom</h2>
+          <div class="hl-chips" style="margin-top:14px">
+            {ivIncludes.map((x) => <span class="hl-chip">{x}</span>)}
+          </div>
+          <p style="margin-top:22px"><strong>Group transport:</strong> {transport.join(' · ')} — chosen by group size and route.</p>
+        </div>
+        <div class="about-points">
+          <div class="point"><b>Student safety first</b><span>{safety.slice(0, 4).join(' · ')}</span></div>
+          <div class="point"><b>Coordination handled</b><span>{safety.slice(4).join(' · ')}</span></div>
+          <div class="point"><b>How it works</b><span>Destination & dates → student strength → budget → customised itinerary → quotation → booking & permissions → tour execution.</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <div class="band">
+        <div>
+          <h2>Plan your institution's next tour.</h2>
+          <p>Tell us the institution name, student strength, destination and dates — we'll send a budget-friendly customised quotation.</p>
+        </div>
+        <a class="btn btn-wa" href={waEnq} target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>
+          Enquire on WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+</Base>

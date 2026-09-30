@@ -588,8 +588,7 @@
     "slug": "kashmir-paradise",
     "name": "Kashmir Paradise",
     "cat": [
-      "domestic",
-      "honeymoon"
+      "domestic"
     ],
     "tag": "Bestseller",
     "nights": 6,
@@ -835,8 +834,7 @@
     "slug": "goa-holiday",
     "name": "Goa Holiday",
     "cat": [
-      "domestic",
-      "honeymoon"
+      "domestic"
     ],
     "tag": "Quick escape",
     "nights": 3,
@@ -909,8 +907,7 @@
     "slug": "kerala-gods-own-country",
     "name": "Kerala — God’s Own Country",
     "cat": [
-      "domestic",
-      "honeymoon"
+      "domestic"
     ],
     "tag": "Honeymoon pick",
     "nights": 5,
@@ -991,8 +988,7 @@
     "slug": "andaman-holiday",
     "name": "Andaman Holiday",
     "cat": [
-      "domestic",
-      "honeymoon"
+      "domestic"
     ],
     "tag": "Islands",
     "nights": 5,
@@ -1141,8 +1137,7 @@
     "slug": "himachal-shimla-manali",
     "name": "Himachal — Shimla & Manali",
     "cat": [
-      "domestic",
-      "honeymoon"
+      "domestic"
     ],
     "tag": "Hills",
     "nights": 5,
@@ -1299,8 +1294,7 @@
     "slug": "dubai-tour",
     "name": "Dubai",
     "cat": [
-      "international",
-      "honeymoon"
+      "international"
     ],
     "tag": "International",
     "nights": 4,
@@ -1377,8 +1371,7 @@
     "slug": "singapore-tour",
     "name": "Singapore",
     "cat": [
-      "international",
-      "honeymoon"
+      "international"
     ],
     "tag": "International",
     "nights": 4,
@@ -1455,8 +1448,7 @@
     "slug": "malaysia-tour",
     "name": "Malaysia",
     "cat": [
-      "international",
-      "honeymoon"
+      "international"
     ],
     "tag": "International",
     "nights": 4,
@@ -1613,8 +1605,7 @@
     "slug": "sri-lanka-tour",
     "name": "Sri Lanka",
     "cat": [
-      "international",
-      "honeymoon"
+      "international"
     ],
     "tag": "International",
     "nights": 5,
@@ -1933,8 +1924,7 @@
     "slug": "bali-tour",
     "name": "Bali",
     "cat": [
-      "international",
-      "honeymoon"
+      "international"
     ],
     "tag": "Honeymoon pick",
     "nights": 5,
@@ -2015,8 +2005,7 @@
     "slug": "maldives-holiday",
     "name": "Maldives",
     "cat": [
-      "international",
-      "honeymoon"
+      "international"
     ],
     "tag": "Honeymoon pick",
     "nights": 3,
@@ -2090,8 +2079,7 @@
     "slug": "europe-tour",
     "name": "Europe — Paris, Switzerland & Italy",
     "cat": [
-      "international",
-      "honeymoon"
+      "international"
     ],
     "tag": "Grand tour",
     "nights": 9,
@@ -2180,6 +2168,969 @@
         126,
         136,
         44
+      ]
+    }
+  },
+  {
+    "id": "hm-goa",
+    "slug": "goa-honeymoon-package",
+    "name": "Goa Honeymoon — Romantic Escape",
+    "cat": [
+      "domestic",
+      "honeymoon"
+    ],
+    "tag": "Per couple",
+    "nights": 3,
+    "days": 4,
+    "per": "couple",
+    "route": "North Goa · South Goa · Beach sunsets",
+    "priceINR": 29999,
+    "season": "Oct – Mar",
+    "desc": "Beach sunsets, a candlelit dinner and a decorated room — Goa made romantic, priced for two.",
+    "lede": "Four easy days for two — beach sunsets on arrival, North and South Goa at your pace, and a romantic dinner with the room decorated when you return.",
+    "highlights": [
+      "3/4★ hotel stay",
+      "Room decoration & couple cake",
+      "Romantic dinner",
+      "Private sightseeing",
+      "Beach sunset evenings"
+    ],
+    "itin": [
+      [
+        "Arrival & beach sunset",
+        "Hotel check-in, decorated room, first sunset on the sand."
+      ],
+      [
+        "North Goa",
+        "Aguada, Baga and Anjuna — private sightseeing."
+      ],
+      [
+        "South Goa & romantic dinner",
+        "Old Goa churches and quiet southern beaches; candlelight dinner."
+      ],
+      [
+        "Leisure & departure",
+        "Slow morning, then airport/station drop."
+      ]
+    ],
+    "inc": [
+      "3/4★ hotel",
+      "Breakfast",
+      "Airport/station transfers",
+      "Private sightseeing",
+      "Couple cake & room decoration",
+      "Romantic dinner"
+    ],
+    "exc": [
+      "Travel to Goa",
+      "Lunches & other dinners",
+      "Water sports",
+      "Personal expenses"
+    ],
+    "photos": [
+      "/img/trips/goa.webp",
+      "/img/trips/goa-2.webp",
+      "/img/trips/goa-3.webp"
+    ],
+    "photo": "/img/trips/goa.webp",
+    "colors": {
+      "deep": [
+        69,
+        68,
+        53
+      ],
+      "vivid": [
+        69,
+        74,
+        35
+      ]
+    }
+  },
+  {
+    "id": "hm-kashmir",
+    "slug": "kashmir-honeymoon-package",
+    "name": "Kashmir Honeymoon — Romantic Holiday",
+    "cat": [
+      "domestic",
+      "honeymoon"
+    ],
+    "tag": "Per couple",
+    "nights": 5,
+    "days": 6,
+    "per": "couple",
+    "route": "Srinagar · Gulmarg · Pahalgam · Sonmarg",
+    "priceINR": 59999,
+    "season": "Apr – Oct",
+    "desc": "Shikara for two, snow at Gulmarg, and a decorated houseboat-style stay — the classic honeymoon valley.",
+    "lede": "Six days in the valley for two — a private shikara evening, Gulmarg and Pahalgam days, Sonmarg’s meadows, and a romantic dinner to close.",
+    "highlights": [
+      "Premium hotel stay",
+      "Private shikara ride",
+      "Room decoration",
+      "Romantic dinner",
+      "Private vehicle throughout"
+    ],
+    "itin": [
+      [
+        "Arrive Srinagar",
+        "Decorated room and an evening shikara ride for two on Dal Lake."
+      ],
+      [
+        "Gulmarg",
+        "Snow points and meadow walks; gondola optional."
+      ],
+      [
+        "Pahalgam",
+        "Betaab and Aru valleys by the Lidder."
+      ],
+      [
+        "Sonmarg",
+        "The Meadow of Gold day trip."
+      ],
+      [
+        "Srinagar & romantic dinner",
+        "Mughal gardens, saffron shopping, candlelight dinner."
+      ],
+      [
+        "Depart",
+        "Airport drop."
+      ]
+    ],
+    "inc": [
+      "Premium hotel",
+      "Breakfast & dinner",
+      "Private vehicle",
+      "Shikara ride",
+      "Couple room decoration",
+      "Romantic dinner"
+    ],
+    "exc": [
+      "Airfare",
+      "Lunches",
+      "Gondola tickets",
+      "Pony rides",
+      "Personal expenses"
+    ],
+    "photos": [
+      "/img/trips/kashmir.webp",
+      "/img/trips/kashmir-2.webp",
+      "/img/trips/kashmir-3.webp"
+    ],
+    "photo": "/img/trips/kashmir.webp",
+    "colors": {
+      "deep": [
+        45,
+        45,
+        45
+      ],
+      "vivid": [
+        104,
+        100,
+        94
+      ]
+    }
+  },
+  {
+    "id": "hm-kerala",
+    "slug": "kerala-honeymoon-package",
+    "name": "Kerala Honeymoon — Romantic Escape",
+    "cat": [
+      "domestic",
+      "honeymoon"
+    ],
+    "tag": "Per couple",
+    "nights": 4,
+    "days": 5,
+    "per": "couple",
+    "route": "Munnar · Thekkady · Alleppey",
+    "priceINR": 49999,
+    "season": "Sep – Mar",
+    "desc": "Misty tea hills, a private houseboat and a candlelight dinner — Kerala for two.",
+    "lede": "Five days from the tea gardens of Munnar to a private Alleppey houseboat — with room decoration and a candlelight dinner along the way.",
+    "highlights": [
+      "Romantic hotel stays",
+      "Alleppey houseboat",
+      "Candlelight dinner",
+      "Room decoration",
+      "Private cab throughout"
+    ],
+    "itin": [
+      [
+        "Cochin → Munnar",
+        "Drive up through waterfalls; decorated room awaits."
+      ],
+      [
+        "Munnar",
+        "Tea gardens, viewpoints and a slow café evening."
+      ],
+      [
+        "Munnar → Thekkady",
+        "Spice hills; optional couples’ ayurveda session."
+      ],
+      [
+        "Alleppey houseboat",
+        "Private backwater cruise with candlelight dinner on board."
+      ],
+      [
+        "Depart Cochin",
+        "Disembark and fly home."
+      ]
+    ],
+    "inc": [
+      "Romantic hotel stay",
+      "Private cab",
+      "Breakfast & dinner",
+      "Alleppey houseboat",
+      "Candlelight dinner",
+      "Room decoration"
+    ],
+    "exc": [
+      "Airfare",
+      "Lunches off-plan",
+      "Ayurveda treatments",
+      "Personal expenses"
+    ],
+    "photos": [
+      "/img/trips/kerala.webp",
+      "/img/trips/kerala-2.webp",
+      "/img/trips/kerala-3.webp"
+    ],
+    "photo": "/img/trips/kerala.webp",
+    "colors": {
+      "deep": [
+        19,
+        22,
+        23
+      ],
+      "vivid": [
+        100,
+        91,
+        78
+      ]
+    }
+  },
+  {
+    "id": "hm-himachal",
+    "slug": "himachal-honeymoon-package",
+    "name": "Himachal Honeymoon",
+    "cat": [
+      "domestic",
+      "honeymoon"
+    ],
+    "tag": "Per couple",
+    "nights": 5,
+    "days": 6,
+    "per": "couple",
+    "route": "Shimla · Manali · Solang Valley",
+    "priceINR": 49999,
+    "season": "Oct – Jun",
+    "desc": "Snow points, riverside Manali and a candlelight dinner — the hills, for two.",
+    "lede": "Six days in the hills for two — Shimla’s Mall Road, the drive to Manali, Solang Valley’s snow, with cake, decoration and a candlelight dinner.",
+    "highlights": [
+      "3/4★ hotels",
+      "Solang Valley day",
+      "Honeymoon room decoration & cake",
+      "Candlelight dinner",
+      "Private cab"
+    ],
+    "itin": [
+      [
+        "Chandigarh → Shimla",
+        "Drive up; evening on the Ridge."
+      ],
+      [
+        "Shimla",
+        "Kufri and Mall Road at your pace."
+      ],
+      [
+        "Shimla → Manali",
+        "Riverside check-in, decorated room."
+      ],
+      [
+        "Solang Valley",
+        "Snow play, ropeway, Atal Tunnel in season."
+      ],
+      [
+        "Manali & candlelight dinner",
+        "Hadimba, Old Manali cafés, candlelight dinner."
+      ],
+      [
+        "Depart",
+        "Drive down to Chandigarh."
+      ]
+    ],
+    "inc": [
+      "3/4★ hotel",
+      "Private cab",
+      "Breakfast & dinner",
+      "Honeymoon room decoration",
+      "Cake",
+      "Candlelight dinner"
+    ],
+    "exc": [
+      "Travel to Chandigarh",
+      "Lunches",
+      "Adventure activities",
+      "Personal expenses"
+    ],
+    "photos": [
+      "/img/trips/himachal.webp",
+      "/img/trips/himachal-2.webp",
+      "/img/trips/himachal-3.webp"
+    ],
+    "photo": "/img/trips/himachal.webp",
+    "colors": {
+      "deep": [
+        20,
+        26,
+        17
+      ],
+      "vivid": [
+        50,
+        68,
+        26
+      ]
+    }
+  },
+  {
+    "id": "hm-andaman",
+    "slug": "andaman-honeymoon-package",
+    "name": "Andaman Honeymoon — Romantic Escape",
+    "cat": [
+      "domestic",
+      "honeymoon"
+    ],
+    "tag": "Per couple",
+    "nights": 5,
+    "days": 6,
+    "per": "couple",
+    "route": "Port Blair · Havelock · Neil Island",
+    "priceINR": 69999,
+    "season": "Oct – May",
+    "desc": "Radhanagar sunsets, a beach resort and a candlelight dinner by the sea — islands for two.",
+    "lede": "Six island days for two — Cellular Jail’s evening show, Radhanagar’s sunset, Havelock’s beaches and Neil’s quiet sands, with couple touches throughout.",
+    "highlights": [
+      "Beach resort stay",
+      "Radhanagar Beach sunset",
+      "Candlelight dinner",
+      "Couple decoration",
+      "All ferry transfers"
+    ],
+    "itin": [
+      [
+        "Port Blair arrival",
+        "Check-in; Cellular Jail light-and-sound in the evening."
+      ],
+      [
+        "To Havelock",
+        "Ferry across; sunset at Radhanagar."
+      ],
+      [
+        "Havelock",
+        "Elephant Beach or Kalapathar; beach day for two."
+      ],
+      [
+        "Neil Island",
+        "Bharatpur and the Natural Bridge; candlelight dinner."
+      ],
+      [
+        "Back to Port Blair",
+        "Ferry return; Corbyn’s Cove evening."
+      ],
+      [
+        "Depart",
+        "Fly home."
+      ]
+    ],
+    "inc": [
+      "Beach resort",
+      "Breakfast",
+      "Ferry transfers",
+      "Private sightseeing",
+      "Candlelight dinner",
+      "Couple special decoration"
+    ],
+    "exc": [
+      "Airfare",
+      "Lunches & dinners",
+      "Water sports & scuba",
+      "Personal expenses"
+    ],
+    "photos": [
+      "/img/trips/andaman-1.webp",
+      "/img/trips/andaman-2.webp",
+      "/img/trips/andaman-3.webp"
+    ],
+    "photo": "/img/trips/andaman-1.webp",
+    "colors": {
+      "deep": [
+        32,
+        32,
+        21
+      ],
+      "vivid": [
+        74,
+        72,
+        51
+      ]
+    }
+  },
+  {
+    "id": "hm-rajasthan",
+    "slug": "rajasthan-honeymoon-package",
+    "name": "Rajasthan Honeymoon — Royal",
+    "cat": [
+      "domestic",
+      "honeymoon"
+    ],
+    "tag": "Per couple",
+    "nights": 5,
+    "days": 6,
+    "per": "couple",
+    "route": "Udaipur · Jodhpur · Jaisalmer",
+    "priceINR": 54999,
+    "season": "Oct – Mar",
+    "desc": "Lake Pichola evenings, the blue city and a desert-camp night — royal Rajasthan for two.",
+    "lede": "Six royal days for two — Udaipur’s lakes, Jodhpur’s ramparts and a Sam-dunes desert camp with a romantic dinner under the stars.",
+    "highlights": [
+      "Heritage/premium hotels",
+      "Lake Pichola evening",
+      "Sam dunes desert camp",
+      "Romantic dinner",
+      "Private vehicle"
+    ],
+    "itin": [
+      [
+        "Arrive Udaipur",
+        "Decorated room; evening by Lake Pichola."
+      ],
+      [
+        "Udaipur",
+        "City Palace and a private boat ride for two."
+      ],
+      [
+        "Udaipur → Jodhpur",
+        "Mehrangarh at golden hour."
+      ],
+      [
+        "Jodhpur → Jaisalmer",
+        "Into the Thar; golden fort evening."
+      ],
+      [
+        "Sam dunes",
+        "Camel ride, cultural night and romantic desert-camp dinner."
+      ],
+      [
+        "Depart",
+        "Drop at Jaisalmer/Jodhpur."
+      ]
+    ],
+    "inc": [
+      "Heritage/premium hotel",
+      "Private vehicle",
+      "Breakfast & dinner",
+      "Desert camp",
+      "Romantic dinner",
+      "Couple special arrangements"
+    ],
+    "exc": [
+      "Airfare/train",
+      "Lunches",
+      "Monument entries",
+      "Personal expenses"
+    ],
+    "photos": [
+      "/img/trips/rajasthan.webp",
+      "/img/trips/rajasthan-2.webp",
+      "/img/trips/rajasthan-3.webp"
+    ],
+    "photo": "/img/trips/rajasthan.webp",
+    "colors": {
+      "deep": [
+        65,
+        49,
+        42
+      ],
+      "vivid": [
+        80,
+        58,
+        46
+      ]
+    }
+  },
+  {
+    "id": "hm-maldives",
+    "slug": "maldives-honeymoon-package",
+    "name": "Maldives Honeymoon",
+    "cat": [
+      "international",
+      "honeymoon"
+    ],
+    "tag": "Per couple",
+    "nights": 3,
+    "days": 4,
+    "per": "couple",
+    "route": "Private island resort · Lagoon",
+    "priceINR": 89999,
+    "season": "Nov – Apr",
+    "desc": "Island resort for two with decoration, candlelight dinner and honeymoon cake included.",
+    "lede": "Four days on a private island — lagoon mornings, water activities, and the honeymoon treatment: decorated room, candlelight dinner, cake.",
+    "highlights": [
+      "Island resort stay",
+      "Couple room decoration",
+      "Candlelight dinner",
+      "Honeymoon cake",
+      "Speedboat transfers"
+    ],
+    "itin": [
+      [
+        "Malé → resort",
+        "Speedboat to the island; decorated villa."
+      ],
+      [
+        "Lagoon day",
+        "Snorkelling, kayaks and beach time for two."
+      ],
+      [
+        "Island romance",
+        "Free day; candlelight dinner on the beach."
+      ],
+      [
+        "Depart",
+        "Speedboat back and fly home."
+      ]
+    ],
+    "inc": [
+      "Resort stay",
+      "Breakfast",
+      "Speedboat transfers",
+      "Couple room decoration",
+      "Candlelight dinner",
+      "Honeymoon cake"
+    ],
+    "exc": [
+      "International flights",
+      "Lunches & dinners (plans available)",
+      "Motorised watersports",
+      "Travel insurance"
+    ],
+    "photos": [
+      "/img/trips/maldives.webp",
+      "/img/trips/maldives-2.webp",
+      "/img/trips/maldives-3.webp"
+    ],
+    "photo": "/img/trips/maldives.webp",
+    "colors": {
+      "deep": [
+        2,
+        42,
+        85
+      ],
+      "vivid": [
+        1,
+        66,
+        109
+      ]
+    }
+  },
+  {
+    "id": "hm-bali",
+    "slug": "bali-honeymoon-package",
+    "name": "Bali Honeymoon",
+    "cat": [
+      "international",
+      "honeymoon"
+    ],
+    "tag": "Per couple",
+    "nights": 5,
+    "days": 6,
+    "per": "couple",
+    "route": "Ubud · Nusa Penida · Kuta",
+    "priceINR": 89999,
+    "season": "Apr – Oct",
+    "desc": "Private sightseeing, flower decoration, candlelight dinner — and a couple photoshoot option.",
+    "lede": "Six days in Bali for two — Ubud’s terraces, the cliffs of Nusa Penida, a flower-decorated room and a candlelight dinner, with a couple photoshoot if you want the memories framed.",
+    "highlights": [
+      "4★ hotel",
+      "Nusa Penida day for two",
+      "Flower decoration",
+      "Candlelight dinner",
+      "Couple photoshoot option"
+    ],
+    "itin": [
+      [
+        "Arrive Bali",
+        "Visa on arrival; flower-decorated room."
+      ],
+      [
+        "Ubud",
+        "Rice terraces, monkey forest, water temple."
+      ],
+      [
+        "Nusa Penida",
+        "Kelingking and snorkelling — private day trip."
+      ],
+      [
+        "Leisure / photoshoot",
+        "Pool day or the couple photoshoot."
+      ],
+      [
+        "Temple sunset & dinner",
+        "Tanah Lot/Uluwatu golden hour; candlelight dinner."
+      ],
+      [
+        "Depart",
+        "Fly home."
+      ]
+    ],
+    "inc": [
+      "4★ hotel",
+      "Breakfast",
+      "Private transfers",
+      "Private sightseeing",
+      "Candlelight dinner",
+      "Flower decoration"
+    ],
+    "exc": [
+      "International flights",
+      "Visa-on-arrival fee",
+      "Photoshoot charges",
+      "Lunches & dinners",
+      "Travel insurance"
+    ],
+    "photos": [
+      "/img/trips/bali.webp",
+      "/img/trips/bali-2.webp",
+      "/img/trips/bali-3.webp"
+    ],
+    "photo": "/img/trips/bali.webp",
+    "colors": {
+      "deep": [
+        41,
+        51,
+        32
+      ],
+      "vivid": [
+        66,
+        105,
+        25
+      ]
+    }
+  },
+  {
+    "id": "hm-thailand",
+    "slug": "thailand-honeymoon-package",
+    "name": "Thailand Honeymoon",
+    "cat": [
+      "international",
+      "honeymoon"
+    ],
+    "tag": "Per couple",
+    "nights": 4,
+    "days": 5,
+    "per": "couple",
+    "route": "Bangkok · Pattaya",
+    "priceINR": 69999,
+    "season": "Nov – Apr",
+    "desc": "Coral Island for two, Bangkok’s city lights and a romantic dinner — an easy first trip abroad together.",
+    "lede": "Five days for two — Pattaya’s Coral Island, beachfront evenings, Bangkok’s temples and malls, and a romantic dinner in between.",
+    "highlights": [
+      "Hotel stays both cities",
+      "Coral Island trip",
+      "City tour",
+      "Romantic dinner",
+      "Airport transfers"
+    ],
+    "itin": [
+      [
+        "Mumbai → Bangkok → Pattaya",
+        "Arrive and transfer; beachfront evening."
+      ],
+      [
+        "Coral Island",
+        "Speedboat day for two."
+      ],
+      [
+        "Pattaya → Bangkok",
+        "Sanctuary of Truth stop; romantic dinner."
+      ],
+      [
+        "Bangkok",
+        "City and temple tour; shopping."
+      ],
+      [
+        "Depart",
+        "Fly home."
+      ]
+    ],
+    "inc": [
+      "Hotel",
+      "Breakfast",
+      "Airport transfers",
+      "Coral Island",
+      "City tour",
+      "Romantic dinner"
+    ],
+    "exc": [
+      "International flights",
+      "Lunches & dinners",
+      "Water sports",
+      "Travel insurance"
+    ],
+    "photos": [
+      "/img/trips/thailand.webp",
+      "/img/trips/thailand-2.webp",
+      "/img/trips/thailand-3.webp"
+    ],
+    "photo": "/img/trips/thailand.webp",
+    "colors": {
+      "deep": [
+        30,
+        32,
+        25
+      ],
+      "vivid": [
+        63,
+        72,
+        30
+      ]
+    }
+  },
+  {
+    "id": "hm-singapore",
+    "slug": "singapore-honeymoon-package",
+    "name": "Singapore Honeymoon",
+    "cat": [
+      "international",
+      "honeymoon"
+    ],
+    "tag": "Per couple",
+    "nights": 4,
+    "days": 5,
+    "per": "couple",
+    "route": "City · Sentosa Island",
+    "priceINR": 99999,
+    "season": "All year",
+    "desc": "Marina Bay nights, a Sentosa day and a couple dinner — polished city romance.",
+    "lede": "Five days in the Lion City for two — Marina Bay’s skyline, Gardens by the Bay, a full Sentosa day and a couple dinner.",
+    "highlights": [
+      "4★ hotel",
+      "Sentosa Island day",
+      "City tour",
+      "Couple dinner",
+      "Private transfers"
+    ],
+    "itin": [
+      [
+        "Arrive Singapore",
+        "Private transfer; Marina Bay evening."
+      ],
+      [
+        "City tour",
+        "Merlion, Gardens by the Bay, Chinatown."
+      ],
+      [
+        "Sentosa",
+        "Cable car, beaches, Wings of Time."
+      ],
+      [
+        "Leisure & couple dinner",
+        "Orchard Road, then dinner for two."
+      ],
+      [
+        "Depart",
+        "Fly home."
+      ]
+    ],
+    "inc": [
+      "4★ hotel",
+      "Breakfast",
+      "Singapore city tour",
+      "Sentosa Island",
+      "Couple dinner",
+      "Private transfers"
+    ],
+    "exc": [
+      "International flights",
+      "Visa fee",
+      "Universal tickets",
+      "Lunches",
+      "Travel insurance"
+    ],
+    "photos": [
+      "/img/trips/singapore-1.webp",
+      "/img/trips/singapore-2.webp",
+      "/img/trips/singapore-3.webp"
+    ],
+    "photo": "/img/trips/singapore-1.webp",
+    "colors": {
+      "deep": [
+        54,
+        64,
+        61
+      ],
+      "vivid": [
+        58,
+        76,
+        69
+      ]
+    }
+  },
+  {
+    "id": "hm-dubai",
+    "slug": "dubai-honeymoon-package",
+    "name": "Dubai Honeymoon",
+    "cat": [
+      "international",
+      "honeymoon"
+    ],
+    "tag": "Per couple",
+    "nights": 4,
+    "days": 5,
+    "per": "couple",
+    "route": "Dubai City · Desert · Burj Khalifa",
+    "priceINR": 99999,
+    "season": "Nov – Mar",
+    "desc": "Burj Khalifa views, a private desert evening with BBQ dinner, and couple arrangements throughout.",
+    "lede": "Five days of Gulf glamour for two — the Burj at sunset, a desert safari with BBQ dinner under the stars, and couple touches throughout.",
+    "highlights": [
+      "4★ hotel",
+      "Burj Khalifa",
+      "Desert safari + BBQ dinner",
+      "City tour",
+      "Couple arrangements"
+    ],
+    "itin": [
+      [
+        "Dubai arrival",
+        "Private transfer; Marina evening."
+      ],
+      [
+        "City tour + Burj Khalifa",
+        "Old Dubai, souks and the view from the top."
+      ],
+      [
+        "Desert safari",
+        "Dunes at golden hour; BBQ dinner for two."
+      ],
+      [
+        "Leisure / Abu Dhabi option",
+        "Mall day or the Grand Mosque."
+      ],
+      [
+        "Depart",
+        "Fly home."
+      ]
+    ],
+    "inc": [
+      "4★ hotel",
+      "Dubai city tour",
+      "Burj Khalifa",
+      "Desert safari",
+      "BBQ dinner",
+      "Private/couple arrangements"
+    ],
+    "exc": [
+      "International flights",
+      "UAE visa (we assist)",
+      "Lunches & most dinners",
+      "Travel insurance"
+    ],
+    "photos": [
+      "/img/trips/dubai.webp",
+      "/img/trips/dubai-2.webp",
+      "/img/trips/dubai-3.webp"
+    ],
+    "photo": "/img/trips/dubai.webp",
+    "colors": {
+      "deep": [
+        18,
+        16,
+        18
+      ],
+      "vivid": [
+        127,
+        83,
+        57
+      ]
+    }
+  },
+  {
+    "id": "hm-malaysia",
+    "slug": "malaysia-honeymoon-package",
+    "name": "Malaysia Honeymoon",
+    "cat": [
+      "international",
+      "honeymoon"
+    ],
+    "tag": "Per couple",
+    "nights": 4,
+    "days": 5,
+    "per": "couple",
+    "route": "Kuala Lumpur · Genting Highlands",
+    "priceINR": 79999,
+    "season": "All year",
+    "desc": "KL’s skyline, the cool Genting Highlands and a couple dinner — easy, breezy romance.",
+    "lede": "Five days for two — Kuala Lumpur’s towers and street food, the cable-car ride into Genting’s clouds, and a couple dinner to finish.",
+    "highlights": [
+      "Hotel stay",
+      "Genting Highlands",
+      "KL city tour",
+      "Couple dinner",
+      "Private transfers"
+    ],
+    "itin": [
+      [
+        "Arrive Kuala Lumpur",
+        "Private transfer; KLCC evening."
+      ],
+      [
+        "City tour",
+        "Petronas, Batu Caves, Merdeka Square."
+      ],
+      [
+        "Genting Highlands",
+        "Awana Skyway for two."
+      ],
+      [
+        "Leisure & couple dinner",
+        "Bukit Bintang, then dinner for two."
+      ],
+      [
+        "Depart",
+        "Fly home."
+      ]
+    ],
+    "inc": [
+      "Hotel",
+      "Breakfast",
+      "Private transfers",
+      "City tour",
+      "Genting Highlands",
+      "Couple dinner"
+    ],
+    "exc": [
+      "International flights",
+      "Theme-park tickets",
+      "Lunches",
+      "Travel insurance"
+    ],
+    "photos": [
+      "/img/trips/malaysia-1.webp",
+      "/img/trips/malaysia-2.webp",
+      "/img/trips/malaysia-3.webp"
+    ],
+    "photo": "/img/trips/malaysia-1.webp",
+    "colors": {
+      "deep": [
+        57,
+        66,
+        70
+      ],
+      "vivid": [
+        69,
+        116,
+        167
       ]
     }
   }

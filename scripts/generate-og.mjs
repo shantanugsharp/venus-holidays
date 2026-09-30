@@ -22,7 +22,7 @@ const LOGO = await sharp(path.join(root, '../public/img/logo.png'))
   .toBuffer();
 const LOGO_META = await sharp(LOGO).metadata();
 
-function ogSvg({ art, title, subtitle, price }) {
+function ogSvg({ art, title, subtitle, price, perLabel = 'per person' }) {
   // Art (if any) fills the top; emerald panel with text at the bottom.
   // Without art the top stays transparent and a photo is composited beneath.
   return `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
@@ -31,7 +31,7 @@ function ogSvg({ art, title, subtitle, price }) {
   <rect x="0" y="396" width="1200" height="6" fill="#E5B52E"/>
   <text x="380" y="505" font-family="${fontStack}" font-size="46" font-weight="800" fill="#FCF3E9">${esc(title)}</text>
   <text x="380" y="556" font-family="${fontStack}" font-size="24" fill="rgba(252,243,233,.75)">${esc(subtitle)}</text>
-  ${price ? `<text x="1120" y="600" text-anchor="end" font-family="${fontStack}" font-size="32" font-weight="800" fill="#E5B52E">${esc(price)} <tspan font-size="20" font-weight="400" fill="rgba(252,243,233,.7)">per person</tspan></text>` : ''}
+  ${price ? `<text x="1120" y="600" text-anchor="end" font-family="${fontStack}" font-size="32" font-weight="800" fill="#E5B52E">${esc(price)} <tspan font-size="20" font-weight="400" fill="rgba(252,243,233,.7)">${perLabel}</tspan></text>` : ''}
 </svg>`;
 }
 
@@ -88,6 +88,7 @@ for (const p of packages) {
       title: p.name,
       subtitle: `${p.nights}N / ${p.days}D · ${p.route}`,
       price: `From ₹${p.priceINR.toLocaleString('en-IN')}`,
+      perLabel: p.per === 'couple' ? 'per couple' : 'per person',
     }),
     usePhoto || null
   );

@@ -1,0 +1,109 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE, waLink } from '../data/site.js';
+
+const title = 'Car Rental in Mumbai — Rent-a-Car with Driver | Venus Holidays';
+const description =
+  'Venus Holidays Rent-a-Car: sedans, SUVs, tempo travellers & luxury cars with driver. Airport transfers, Mumbai local, outstation to Pune, Shirdi, Goa & more.';
+
+const vehicles = [
+  { name: 'Sedan Cars', desc: 'Dzire / Etios / similar · 4+1 seater — everyday comfort for city and highway.' },
+  { name: 'Premium Sedan', desc: 'Comfortable cars for business and family travel.' },
+  { name: 'SUV / MUV', desc: 'Ertiga / similar · 6+1 and 7+1 seater — space for the whole family.' },
+  { name: 'Luxury / Premium', desc: 'For special occasions, corporate travel and VIP requirements.' },
+  { name: 'Tempo Traveller', desc: 'Tourist vehicles for group tours and educational trips.' },
+];
+const services = ['Airport pickup & drop', 'Railway station transfer', 'Mumbai local travel', 'Mumbai–Pune', 'Mumbai–Konkan', 'Maharashtra outstation', 'Goa trips', 'Pilgrimage tours', 'Wedding transportation', 'Corporate travel', 'School & college tours', 'Family holidays', 'Full-day rental', 'Outstation rental'];
+const rentalOptions = [
+  { name: 'Local rental', desc: '8 hours / 80 km' },
+  { name: 'Full-day rental', desc: '10–12 hours' },
+  { name: 'Outstation', desc: 'Per km / per day' },
+  { name: 'One-way', desc: 'Pickup + destination drop' },
+  { name: 'Multi-day rental', desc: 'Long-distance tour / holiday' },
+];
+const routes = ['Mumbai → Pune', 'Mumbai → Nashik', 'Mumbai → Shirdi', 'Mumbai → Mahabaleshwar', 'Mumbai → Ratnagiri / Chiplun', 'Mumbai → Goa', 'Mumbai → Gujarat / Rajasthan'];
+const why = ['Clean & comfortable vehicles', 'Experienced drivers', 'Transparent pricing', 'Timely service', 'Family-friendly service', 'Local & outstation', 'Customized travel solutions'];
+
+const waCar = waLink('Hi Venus Holidays! I want to book a car. \nPickup: \nDrop/route: \nDate & time: \nVehicle type: ');
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: new URL('/', Astro.site).href },
+    { '@type': 'ListItem', position: 2, name: 'Car Rental', item: new URL('/car-rental/', Astro.site).href },
+  ],
+};
+---
+
+<Base title={title} description={description} jsonLd={[breadcrumbLd]}>
+  <div class="page-hero">
+    <div class="wrap">
+      <p class="eyebrow">Rent-a-Car</p>
+      <h1>Comfortable. Reliable. On-time.</h1>
+      <p>
+        Cars with driver for Mumbai and beyond — family trips, business travel, airport
+        transfers, weddings, outstation journeys and tourist groups.
+      </p>
+    </div>
+  </div>
+
+  <section class="section" style="padding:56px 0">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Fleet</p>
+        <h2>Available vehicles</h2>
+      </div>
+      <div class="svc-grid">
+        {vehicles.map((v) => (
+          <div class="svc"><b>{v.name}</b><p>{v.desc}</p></div>
+        ))}
+        <div class="svc" style="border-top-color:var(--accent)">
+          <b>Rental options</b>
+          <p>{rentalOptions.map((r) => `${r.name} (${r.desc})`).join(' · ')}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" style="padding:56px 0">
+    <div class="wrap">
+      <div class="about-grid">
+        <div class="about-copy">
+          <p class="eyebrow">Where we drive</p>
+          <h2>Local, corporate & outstation</h2>
+          <div class="hl-chips" style="margin-top:14px">
+            {services.map((s) => <span class="hl-chip">{s}</span>)}
+          </div>
+          <p style="margin-top:22px">
+            <strong>Popular outstation routes:</strong> {routes.join(' · ')} — one-way, round
+            trip or multi-day.
+          </p>
+          <p style="font-size:.85rem">
+            Rates depend on vehicle type, kilometres, travel days, tolls, parking and driver
+            charges — we quote everything transparently before you book.
+          </p>
+        </div>
+        <div class="about-points">
+          <div class="point"><b>Corporate car rental</b><span>Point-to-point, full-day, airport transfers, monthly/regular requirements and group transportation for companies.</span></div>
+          <div class="point"><b>Why Venus rent-a-car</b><span>{why.slice(0, 4).join(' · ')}</span></div>
+          <div class="point"><b>And</b><span>{why.slice(4).join(' · ')}</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <div class="band">
+        <div>
+          <h2>Book your car.</h2>
+          <p>Tell us pickup, route, date and vehicle type — we'll confirm the fare and driver details right away.</p>
+        </div>
+        <a class="btn btn-wa" href={waCar} target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>
+          Book on WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+</Base>

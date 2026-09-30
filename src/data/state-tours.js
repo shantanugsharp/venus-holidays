@@ -15,6 +15,12 @@ export const PKG_STATES = {
   gokarna: ['KA'],
   kerala: ['KL'],
   andaman: ['AN'],
+  'hm-goa': ['GA'],
+  'hm-kashmir': ['JK'],
+  'hm-kerala': ['KL'],
+  'hm-himachal': ['HP'],
+  'hm-andaman': ['AN'],
+  'hm-rajasthan': ['RJ'],
 };
 
 export function statesFor(pkgId) {

@@ -3,6 +3,7 @@ import '../styles/global.css';
 import { ClientRouter } from 'astro:transitions';
 import { SITE, SERVICES, waLink } from '../data/site.js';
 import { DESTINATION_GROUPS } from '../data/destinations.js';
+import packages from '../data/packages.json';
 
 interface Props {
   title: string;
@@ -141,8 +142,9 @@ const waFloating = waLink('Hi Venus Holidays!');
               <div class="nav-panel-foot">
                 <span class="npf-hint"><b class="npf-arrow" aria-hidden="true">↗</b> Destinations with an arrow open a WhatsApp enquiry — we plan those custom</span>
                 <div class="npf-links">
+                  <a href="/packages/?cat=honeymoon">Honeymoon packages →</a>
                   <a href="/destinations/">All destinations →</a>
-                  <a href="/packages/">Browse 27 packages →</a>
+                  <a href="/packages/">Browse {packages.length} packages →</a>
                 </div>
               </div>
             </div>
@@ -179,6 +181,8 @@ const waFloating = waLink('Hi Venus Holidays!');
             <li><a href="/">Home</a></li>
             <li><a href="/destinations/">Destinations</a></li>
             <li><a href="/packages/">All packages</a></li>
+            <li><a href="/school-tours/">School & college tours</a></li>
+            <li><a href="/car-rental/">Car rental</a></li>
             <li><a href="/about/">About us</a></li>
             <li><a href="/contact/">Contact us</a></li>
           </ul>
