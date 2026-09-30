@@ -3,9 +3,18 @@ import Base from '../layouts/Base.astro';
 import { SITE, waLink } from '../data/site.js';
 import ServiceGrid from '../components/ServiceGrid.astro';
 
-const title = 'About Venus Holidays — Mumbai Tour Operator Since 2009';
+const title = 'About Venus Holidays — Mumbai Tour Operator Since 2000';
 const description =
-  'Venus Holidays, Borivali West: custom holidays, group tours, study tours & industrial visits since 2009. The team behind Learn to Travel · Travel to Learn.';
+  'Venus Holidays, Borivali West — a professionally managed travel company founded by Manoj Mahapadi on 17 July 2000. Domestic & international tours, group travel and complete travel solutions.';
+
+const clients = [
+  'Yerala Medical College, Kharghar', 'Saraswati College, Kharghar', 'M. D. College, Parel',
+  'Parswanath College, Ghodbunder', 'N. S. D. College, Nahur', 'Tasgaonkar College, Bhivpuri',
+  'Siddharth College, Churchgate', 'K. C. College, Mumbai', 'Bhavan’s College, Girgaon',
+  'Sydenham College, Churchgate', 'CIDCO', 'Aakanksha Marketing Concept Pvt. Ltd.', 'Goldstar Jewellery Ltd.',
+];
+const partners =
+  'Tarang Travels (Kalyan) · Go To Joy Holidays (Goregaon) · Go Dream Destination (Borivali) · Chinmay Tours (Dadar) · Saishraddha Travels (Chinchpokli) · Surabhi Tours (Thane) · Konkan Paryatan (Chiplun) · Sky Lab Travels (Dahisar) · Vignaharta Travels (Borivali) · Mangalmurti Travels (Dahisar) · Swastik Tours (Borivali) · Y. P. Holidays (Belapur)';
 
 const breadcrumbLd = {
   '@context': 'https://schema.org',
@@ -28,10 +37,9 @@ const aboutLd = {
   <div class="page-hero">
     <div class="wrap">
       <p class="eyebrow">About us</p>
-      <h1>Seventeen years of first-hand travel</h1>
+      <h1>Your trusted travel partner since 2000.</h1>
       <p>
-        Named for the evening star — the one travellers have navigated by for centuries —
-        because that's the job: point you somewhere worth going, and make sure you get there.
+        Our objective is simple — to make every journey comfortable, well-planned and memorable.
       </p>
     </div>
   </div>
@@ -41,29 +49,26 @@ const aboutLd = {
       <div class="about-grid">
         <div class="about-copy">
           <p class="eyebrow">Our story</p>
-          <h2>From two desks to a full-service operator</h2>
+          <h2>More than two decades of travel</h2>
           <p>
-            <strong>Venus Holidays began in 2009 as a two-desk office</strong> booking rail
-            tickets and weekend Lonavala trips. Today we're a full-service tour operator — but we
-            still plan every itinerary the same way: someone from our team has been there,
-            recently, and liked it enough to recommend it.
+            <strong>Venus Holidays was founded on 17 July 2000 by Mr. Manoj Mahapadi</strong> — a
+            professionally managed travel company based in Mumbai, offering complete domestic and
+            international travel solutions.
           </p>
           <p>
-            We're not an aggregator and we don't resell third-party fixed itineraries. Our
-            destination specialists build every package around your dates, budget, and pace — not
-            the other way around.
+            Our journey has been built on trust, personalised service, professional travel
+            planning and long-term relationships. We cater to individual travellers, families,
+            senior citizens, corporates, schools, colleges, institutions and groups.
           </p>
           <p>
-            Our motto is on the door: <strong>Learn to Travel · Travel to Learn.</strong> It's why
-            half our work is holidays — and the other half is study tours, industrial visits and
-            adventure camps that take students and teams somewhere worth learning from.
+            Our motto is on the door: <strong>Learn to Travel · Travel to Learn.</strong>
           </p>
         </div>
         <div class="about-points">
-          <div class="point"><b>Group tour specialists</b><span>Schools, colleges, housing societies and companies across Mumbai travel with us every month.</span></div>
-          <div class="point"><b>Real humans, 7 days a week</b><span>Your tour manager's personal number, not a call-centre queue.</span></div>
-          <div class="point"><b>Transparent pricing</b><span>Exact all-in quote before you pay — no "mandatory optional" surprises at the hotel desk.</span></div>
-          <div class="point"><b>Simple booking</b><span>Reserve with an advance, pay the balance before departure — terms confirmed with your quote.</span></div>
+          <div class="point"><b>Established 17 July 2000</b><span>25+ years of travel planning and tour operations from Mumbai.</span></div>
+          <div class="point"><b>Personalised service</b><span>Every traveller is different — itineraries built around your needs, dates and budget.</span></div>
+          <div class="point"><b>Everything under one roof</b><span>Tickets, hotels, transport, sightseeing and visas — one office, one coordinator.</span></div>
+          <div class="point"><b>Group travel expertise</b><span>Family groups, pilgrimage groups, educational tours and corporate travel.</span></div>
         </div>
       </div>
     </div>
@@ -73,7 +78,7 @@ const aboutLd = {
     <div class="wrap">
       <div class="section-head">
         <p class="eyebrow">What we do</p>
-        <h2>Everything on our card, under one roof</h2>
+        <h2>Complete travel solutions under one roof</h2>
       </div>
       <ServiceGrid />
     </div>
@@ -81,13 +86,29 @@ const aboutLd = {
 
   <section class="section">
     <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Our clients</p>
+        <h2>Trusted by institutions across Mumbai</h2>
+        <p>Organisations and institutions that have travelled with Venus Holidays over the years.</p>
+      </div>
+      <div class="hl-chips">
+        {clients.map((c) => <span class="hl-chip">{c}</span>)}
+      </div>
+      <p style="font-size:.82rem;color:var(--text-soft);margin-top:22px">
+        <strong style="color:var(--heading)">Travel partners:</strong> {partners}
+      </p>
+    </div>
+  </section>
+
+  <section class="section map-sec" style="border-bottom:0">
+    <div class="wrap">
       <div class="about-grid">
         <div class="about-copy">
           <p class="eyebrow">Visit us</p>
           <h2>Chai's on us in Borivali</h2>
           <p>
             You'll find us at <strong>{SITE.address.street}, {SITE.address.locality},
-            {SITE.address.city} {SITE.address.postalCode}</strong> — Monday to Saturday
+            {SITE.address.city} – {SITE.address.postalCode}</strong> — Monday to Saturday
             10:00–19:30, Sunday 11:00–16:00.
           </p>
           <p>
@@ -101,8 +122,8 @@ const aboutLd = {
           </div>
         </div>
         <div class="about-points">
-          <div class="point"><b>Founder</b><span>Manoj Mahapadi — planning group travel out of Mumbai since 2009.</span></div>
-          <div class="point"><b>Office</b><span>{SITE.address.street}, {SITE.address.locality}, {SITE.address.city} {SITE.address.postalCode}</span></div>
+          <div class="point"><b>Proprietor</b><span>Mr. Manoj Mahapadi — leading Venus Holidays since 17 July 2000.</span></div>
+          <div class="point"><b>Office</b><span>{SITE.address.street}, {SITE.address.locality}, {SITE.address.city} – {SITE.address.postalCode}</span></div>
           <div class="point"><b>Talk to us</b><span>{SITE.phone2Display} · {SITE.phoneDisplay} · {SITE.email}</span></div>
         </div>
       </div>

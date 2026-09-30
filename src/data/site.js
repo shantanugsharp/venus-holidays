@@ -11,14 +11,14 @@ export const SITE = {
   email: 'venusmanoj@gmail.com',
   emailAlt: '',
   address: {
-    street: '39 Target Mall, Chandavarkar Road',
+    street: 'Shop No. 31, 2nd Floor, Target – The Mall, Chandavarkar Road',
     locality: 'Borivali West',
     city: 'Mumbai',
     postalCode: '400092',
     region: 'Maharashtra',
     country: 'IN',
   },
-  foundingYear: 2009,
+  foundingYear: 2000,
   // Cloudflare Web Analytics token — leave empty to disable the beacon entirely.
   // Get one free at dash.cloudflare.com → Analytics & Logs → Web Analytics.
   cfAnalyticsToken: '',
@@ -44,6 +44,8 @@ export const SERVICES = [
   { name: 'Corporate Tours', desc: 'Offsites, conferences and dealer meets — venue, travel and logistics under one roof.' },
   { name: 'Honeymoon Packages', desc: 'Per-couple packages with decoration, candlelight dinners and private transfers.', href: '/packages/?cat=honeymoon' },
   { name: 'Pilgrimage Tours', desc: 'Char Dham to 12 Jyotirlinga — yatras with darshan assistance and pure-veg meals.', href: '/packages/?cat=pilgrimage' },
+  { name: 'Wildlife & Adventure', desc: 'Wildlife, adventure and experiential holidays across India and abroad.' },
+  { name: 'Senior Citizen Tours', desc: 'Comfort-first pilgrimage and holiday programs planned specially for seniors.' },
 ];
 
 // Package ids shown in the home "Featured" grid and the trending carousel.
