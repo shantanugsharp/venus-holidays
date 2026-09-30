@@ -350,8 +350,9 @@ header.site {
   .imap { transform: none; }
 }
 
-/* Package filters */
-.filters { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 30px; }
+/* Package filters — equal 10px rhythm between chips and between rows */
+.filters { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin-bottom: 10px; }
+.filters:last-of-type { margin-bottom: 30px; }
 .chip {
   background: var(--surface); border: 1px solid var(--line-strong); color: var(--text-soft);
   font-size: 0.84rem; font-weight: 600; padding: 8px 18px; border-radius: 99px; cursor: pointer;
