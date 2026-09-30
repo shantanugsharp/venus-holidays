@@ -106,7 +106,7 @@ const faqs = [
   ],
   [
     `How do I book the ${destName} package?`,
-    `Message us on WhatsApp or call ${SITE.phoneDisplay}. You reserve with a 25% advance and clear the balance up to 21 days before departure — no payment is taken online.`,
+    `Message us on WhatsApp or call ${SITE.phone2Display}. You reserve with a 25% advance and clear the balance up to 21 days before departure — no payment is taken online.`,
   ],
   ...(pkg.faq || []),
 ];
@@ -225,7 +225,7 @@ const related = packages
             <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>
             Book on WhatsApp
           </a>
-          <span class="book-alt">or call <a href={`tel:${SITE.phoneHref}`}>{SITE.phoneDisplay}</a></span>
+          <span class="book-alt">or call <a href={`tel:${SITE.phone2Href}`}>{SITE.phone2Display}</a></span>
           <p class="book-note">Customisable — hotels, dates and pace adjusted to you. No payment taken online.</p>
         </aside>
       </div>
